@@ -11,7 +11,6 @@ function Build-NavStructure {
     param([string]$DocsPath)
 
     $nav = @()
-    $nav += "  - Home: index.md"
 
     # Get all subdirectories (categories)
     $categories = Get-ChildItem -Path $DocsPath -Directory | Sort-Object Name
@@ -36,7 +35,7 @@ function Build-NavStructure {
             Write-Host "  [EMPTY] Category: $displayName"
         } else {
             foreach ($file in $files) {
-                $relPath = Join-Path $actualFolderName $file.Name
+                $relPath = $actualFolderName + "/" + $file.Name
                 $fileTitle = $file.BaseName
                 $nav += "    - $($fileTitle): $relPath"
                 Write-Host "  [OK] $displayName / $($file.Name)"

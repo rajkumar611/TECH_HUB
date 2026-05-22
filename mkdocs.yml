@@ -26,64 +26,63 @@ extra_javascript:
   - javascripts/credit.js
 
 nav:
-  - Home: index.md
   - AI:
-    - AI_Agent_Architecture: 01_AI\AI_Agent_Architecture.md
-    - AI_Prompt_Injection: 01_AI\AI_Prompt_Injection.md
-    - Claude_vs_ChatGPT_vs_Perplexity: 01_AI\Claude_vs_ChatGPT_vs_Perplexity.md
-    - LangChain_Framework: 01_AI\LangChain_Framework.md
-    - LLM_Access_Cloud_vs_Local: 01_AI\LLM_Access_Cloud_vs_Local.md
-    - MCP_Servers: 01_AI\MCP_Servers.md
-    - Microsoft_Responsible_AI_Principles: 01_AI\Microsoft_Responsible_AI_Principles.md
-    - OpenClaw_AI_Agent: 01_AI\OpenClaw_AI_Agent.md
-    - RAG_and_Vector_Databases: 01_AI\RAG_and_Vector_Databases.md
-    - SLM_vs_LLM: 01_AI\SLM_vs_LLM.md
-    - Types_of_AI_Agents: 01_AI\Types_of_AI_Agents.md
+    - AI_Agent_Architecture: 01_AI/AI_Agent_Architecture.md
+    - AI_Prompt_Injection: 01_AI/AI_Prompt_Injection.md
+    - Claude_vs_ChatGPT_vs_Perplexity: 01_AI/Claude_vs_ChatGPT_vs_Perplexity.md
+    - LangChain_Framework: 01_AI/LangChain_Framework.md
+    - LLM_Access_Cloud_vs_Local: 01_AI/LLM_Access_Cloud_vs_Local.md
+    - MCP_Servers: 01_AI/MCP_Servers.md
+    - Microsoft_Responsible_AI_Principles: 01_AI/Microsoft_Responsible_AI_Principles.md
+    - OpenClaw_AI_Agent: 01_AI/OpenClaw_AI_Agent.md
+    - RAG_and_Vector_Databases: 01_AI/RAG_and_Vector_Databases.md
+    - SLM_vs_LLM: 01_AI/SLM_vs_LLM.md
+    - Types_of_AI_Agents: 01_AI/Types_of_AI_Agents.md
   - Cloud:
-    - Akamai_CDN: 02_Cloud\Akamai_CDN.md
-    - Azure_Functions_vs_App_Service: 02_Cloud\Azure_Functions_vs_App_Service.md
-    - Azure_Service_Principal_vs_Managed_Identity: 02_Cloud\Azure_Service_Principal_vs_Managed_Identity.md
-    - Containers_Docker_Kubernetes: 02_Cloud\Containers_Docker_Kubernetes.md
-    - Infrastructure_as_Code_Terraform_Bicep_ARM: 02_Cloud\Infrastructure_as_Code_Terraform_Bicep_ARM.md
+    - Akamai_CDN: 02_Cloud/Akamai_CDN.md
+    - Azure_Functions_vs_App_Service: 02_Cloud/Azure_Functions_vs_App_Service.md
+    - Azure_Service_Principal_vs_Managed_Identity: 02_Cloud/Azure_Service_Principal_vs_Managed_Identity.md
+    - Containers_Docker_Kubernetes: 02_Cloud/Containers_Docker_Kubernetes.md
+    - Infrastructure_as_Code_Terraform_Bicep_ARM: 02_Cloud/Infrastructure_as_Code_Terraform_Bicep_ARM.md
   - DotNet:
-    - Application_Pool_and_IIS: 03_DotNet\Application_Pool_and_IIS.md
-    - Async_Await: 03_DotNet\Async_Await.md
-    - Async_vs_Multithreading: 03_DotNet\Async_vs_Multithreading.md
-    - Blazor_WebAssembly: 03_DotNet\Blazor_WebAssembly.md
-    - Design_Patterns: 03_DotNet\Design_Patterns.md
-    - DotNet_History_DLL_GAC_Roslyn: 03_DotNet\DotNet_History_DLL_GAC_Roslyn.md
-    - Entity_Framework: 03_DotNet\Entity_Framework.md
-    - Hangfire_Background_Jobs: 03_DotNet\Hangfire_Background_Jobs.md
-    - Serialization_Deserialization: 03_DotNet\Serialization_Deserialization.md
-    - SQLite_and_Prisma: 03_DotNet\SQLite_and_Prisma.md
+    - Application_Pool_and_IIS: 03_DotNet/Application_Pool_and_IIS.md
+    - Async_Await: 03_DotNet/Async_Await.md
+    - Async_vs_Multithreading: 03_DotNet/Async_vs_Multithreading.md
+    - Blazor_WebAssembly: 03_DotNet/Blazor_WebAssembly.md
+    - Design_Patterns: 03_DotNet/Design_Patterns.md
+    - DotNet_History_DLL_GAC_Roslyn: 03_DotNet/DotNet_History_DLL_GAC_Roslyn.md
+    - Entity_Framework: 03_DotNet/Entity_Framework.md
+    - Hangfire_Background_Jobs: 03_DotNet/Hangfire_Background_Jobs.md
+    - Serialization_Deserialization: 03_DotNet/Serialization_Deserialization.md
+    - SQLite_and_Prisma: 03_DotNet/SQLite_and_Prisma.md
   - Architecture:
-    - API_Gateway: 04_Architecture\API_Gateway.md
-    - API_Styles_REST_RPC_CustomAction: 04_Architecture\API_Styles_REST_RPC_CustomAction.md
-    - Middleware: 04_Architecture\Middleware.md
-    - Monolithic_vs_Microservices: 04_Architecture\Monolithic_vs_Microservices.md
-    - Nginx_vs_Kestrel: 04_Architecture\Nginx_vs_Kestrel.md
-    - REST_API_Complete_Guide: 04_Architecture\REST_API_Complete_Guide.md
-    - SignalR_WCF_gRPC: 04_Architecture\SignalR_WCF_gRPC.md
-    - YAML: 04_Architecture\YAML.md
+    - API_Gateway: 04_Architecture/API_Gateway.md
+    - API_Styles_REST_RPC_CustomAction: 04_Architecture/API_Styles_REST_RPC_CustomAction.md
+    - Middleware: 04_Architecture/Middleware.md
+    - Monolithic_vs_Microservices: 04_Architecture/Monolithic_vs_Microservices.md
+    - Nginx_vs_Kestrel: 04_Architecture/Nginx_vs_Kestrel.md
+    - REST_API_Complete_Guide: 04_Architecture/REST_API_Complete_Guide.md
+    - SignalR_WCF_gRPC: 04_Architecture/SignalR_WCF_gRPC.md
+    - YAML: 04_Architecture/YAML.md
   - Frontend:
-    - JavaScript_Ecosystem_Overview: 05_Frontend\JavaScript_Ecosystem_Overview.md
-    - NodeJS: 05_Frontend\NodeJS.md
-    - React: 05_Frontend\React.md
+    - JavaScript_Ecosystem_Overview: 05_Frontend/JavaScript_Ecosystem_Overview.md
+    - NodeJS: 05_Frontend/NodeJS.md
+    - React: 05_Frontend/React.md
   - DevOps:
-    - DevOps_and_DevSecOps: 06_DevOps\DevOps_and_DevSecOps.md
-    - Dynatrace: 06_DevOps\Dynatrace.md
-    - Error_Logging_and_Monitoring: 06_DevOps\Error_Logging_and_Monitoring.md
-    - Git_and_GitHub: 06_DevOps\Git_and_GitHub.md
-    - JetBrains_Code_Quality_Tools: 06_DevOps\JetBrains_Code_Quality_Tools.md
+    - DevOps_and_DevSecOps: 06_DevOps/DevOps_and_DevSecOps.md
+    - Dynatrace: 06_DevOps/Dynatrace.md
+    - Error_Logging_and_Monitoring: 06_DevOps/Error_Logging_and_Monitoring.md
+    - Git_and_GitHub: 06_DevOps/Git_and_GitHub.md
+    - JetBrains_Code_Quality_Tools: 06_DevOps/JetBrains_Code_Quality_Tools.md
   - Tools and Security:
-    - CyberArk: 07_Tools_and_Security\CyberArk.md
-    - Sharegate: 07_Tools_and_Security\Sharegate.md
-    - Sublime_vs_Cursor: 07_Tools_and_Security\Sublime_vs_Cursor.md
+    - CyberArk: 07_Tools_and_Security/CyberArk.md
+    - Sharegate: 07_Tools_and_Security/Sharegate.md
+    - Sublime_vs_Cursor: 07_Tools_and_Security/Sublime_vs_Cursor.md
   - General:
-    - Firebase_Kafka_Redis_and_More: 08_General\Firebase_Kafka_Redis_and_More.md
-    - General_Concepts: 08_General\General_Concepts.md
-    - Hardware_and_Storage: 08_General\Hardware_and_Storage.md
-    - Insurance_Terms: 08_General\Insurance_Terms.md
+    - Firebase_Kafka_Redis_and_More: 08_General/Firebase_Kafka_Redis_and_More.md
+    - General_Concepts: 08_General/General_Concepts.md
+    - Hardware_and_Storage: 08_General/Hardware_and_Storage.md
+    - Insurance_Terms: 08_General/Insurance_Terms.md
 plugins:
   - search
 
