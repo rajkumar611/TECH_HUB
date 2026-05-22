@@ -26,6 +26,7 @@ extra_javascript:
   - javascripts/credit.js
 
 nav:
+  - Home: index.md
   - AI:
     - AI_Agent_Architecture: 01_AI/AI_Agent_Architecture.md
     - AI_Prompt_Injection: 01_AI/AI_Prompt_Injection.md
