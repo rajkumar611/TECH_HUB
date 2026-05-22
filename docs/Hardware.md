@@ -1,2 +1,0 @@
-SSD (Solid State Drive) Vs HDD (Hard Disk Drive) - Modern laptops uses SSD, having low latency
-NVMe = Non‑Volatile Memory Express. It is a modern, super‑fast protocol used by the latest SSDs to communicate with your computer.

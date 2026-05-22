@@ -4,17 +4,25 @@ echo   Tech Hub - Sync Learnings to Blog
 echo ========================================
 
 set LEARNINGS=C:\Users\QBE\OneDrive\Desktop\Learnings
-set DOCS=C:\Users\QBE\Downloads\Tech-Blog\docs
+set DOCS=%~dp0docs
 
 echo.
-echo Step 1: Copying files from Learnings folder...
+echo Step 1: Copying files from Learnings folder (preserving folder structure, excluding _Backup)...
 
-REM Copy all .txt files recursively (including subfolders) and rename to .md
-powershell -Command "$l='%LEARNINGS%'; $d='%DOCS%'; Get-ChildItem -Path $l -Recurse -Filter '*.txt' | ForEach-Object { $rel=$_.FullName.Substring($l.Length+1); $dest=Join-Path $d ($rel -replace '\.txt$','.md'); $dir=Split-Path $dest; if(-not(Test-Path $dir)){New-Item -ItemType Directory -Path $dir -Force | Out-Null}; Copy-Item $_.FullName $dest -Force; Write-Host ('  Copying: '+$rel) }"
+REM Copy all .txt files recursively (excluding _Backup folder), rename to .md, and preserve folder structure
+powershell -Command "$l='%LEARNINGS%'; $d='%DOCS%'; $count=0; Get-ChildItem -Path $l -Recurse -Filter '*.txt' | Where-Object { $_.FullName -notmatch '_Backup' } | ForEach-Object { $rel=$_.FullName.Substring($l.Length+1); $dest=Join-Path $d ($rel -replace '\.txt$','.md'); $dir=Split-Path $dest; if(-not(Test-Path $dir)){New-Item -ItemType Directory -Path $dir -Force | Out-Null}; Copy-Item $_.FullName $dest -Force; $count++; Write-Host ('  [OK] '+$rel) }; Write-Host ('  Total files synced: '+$count)"
+
+echo.
+echo Step 1b: Removing _Backup folder from docs (if present)...
+powershell -Command "$d='%DOCS%'; $backupPath=Join-Path $d '_Backup'; if(Test-Path $backupPath){ Remove-Item $backupPath -Recurse -Force; Write-Host '  [DELETED] _Backup folder' } else { Write-Host '  [OK] No _Backup folder found' }"
+
+echo.
+echo Step 1c: Cleaning up removed files (files in docs not in Learnings)...
+powershell -Command "$l='%LEARNINGS%'; $d='%DOCS%'; $removed=0; Get-ChildItem -Path $d -Recurse -Filter '*.md' -Exclude 'index.md' | ForEach-Object { $rel=$_.FullName.Substring($d.Length+1); $source=Join-Path $l ($rel -replace '\.md$','.txt'); if(-not(Test-Path $source)){ Remove-Item $_.FullName -Force; $removed++; Write-Host ('  [REMOVED] '+$rel) } }; Write-Host ('  Total files removed: '+$removed)"
 
 echo.
 echo Step 2: Ensuring index.md exists (safety check)...
-if not exist "C:\Users\QBE\Downloads\Tech-Blog\docs\index.md" (
+if not exist "%DOCS%\index.md" (
   (
     echo ---
     echo hide:
@@ -41,7 +49,7 @@ if not exist "C:\Users\QBE\Downloads\Tech-Blog\docs\index.md" (
     echo ---
     echo.
     echo *Use the navigation tabs above or the search bar to find any topic.*
-  ) > "C:\Users\QBE\Downloads\Tech-Blog\docs\index.md"
+  ) > "%DOCS%\index.md"
   echo   index.md was missing - recreated automatically.
 ) else (
   echo   index.md OK.
@@ -49,7 +57,7 @@ if not exist "C:\Users\QBE\Downloads\Tech-Blog\docs\index.md" (
 
 echo.
 echo Step 3: Stamping last-updated time (New Zealand Time)...
-powershell -Command "$nz=[System.TimeZoneInfo]::ConvertTimeBySystemTimeZoneId([DateTime]::UtcNow,'New Zealand Standard Time'); $ts=$nz.ToString('h:mm tt, d MMMM yyyy'); $f='C:\Users\QBE\Downloads\Tech-Blog\docs\index.md'; (Get-Content $f) -replace '^\*Last updated:.*\*$', ('*Last updated: '+$ts+' (New Zealand Time)*') | Set-Content $f; Write-Host ('  Timestamp set to: '+$ts)"
+powershell -Command "$nz=[System.TimeZoneInfo]::ConvertTimeBySystemTimeZoneId([DateTime]::UtcNow,'New Zealand Standard Time'); $ts=$nz.ToString('h:mm tt, d MMMM yyyy'); $f='%DOCS%\index.md'; (Get-Content $f) -replace '^\*Last updated:.*\*$', ('*Last updated: '+$ts+' (New Zealand Time)*') | Set-Content $f; Write-Host ('  Timestamp set to: '+$ts)"
 
 echo.
 echo Step 4: Registering new files in mkdocs.yml nav...
@@ -57,7 +65,7 @@ powershell -ExecutionPolicy Bypass -File "%~dp0update-nav.ps1"
 
 echo.
 echo Step 5: Committing to Git...
-cd /d "C:\Users\QBE\Downloads\Tech-Blog"
+cd /d "%~dp0."
 git add -A
 git commit -m "sync: update from Learnings folder"
 git push

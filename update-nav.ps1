@@ -3,93 +3,88 @@ param(
     [string]$DOCS = "$PSScriptRoot\docs"
 )
 
-# Category rules — first matching rule wins (keyword check is case-insensitive)
-$rules = @(
-    [pscustomobject]@{ Category = 'AI & Modern Tech';   Keywords = 'LLM,SLM,RAG,MCP,Agent,Claude,Langchain,GPT,Perplexity,Prompt Injection,Open Claw,ChatGPT,Embedding,Mistral,Gemini,Ollama,AI' }
-    [pscustomobject]@{ Category = 'APIs & Web';          Keywords = 'API Gateway,REST,RPC,gRPC,WCF,SignalR,Middleware,Nginx,nGinx,Kestrel,Webhook,GraphQL,OAuth' }
-    [pscustomobject]@{ Category = 'Architecture';        Keywords = 'Design Pattern,DLL,GAC,COM,Modular,Monolithic,Microservice,Latency,Architecture,SOLID,CQRS' }
-    [pscustomobject]@{ Category = 'Cloud & DevOps';      Keywords = 'Azure,Akamai,Docker,Kubernetes,Container,Terraform,Bicep,ARM Template,DevOps,DevSecOps,Application Pool,CI/CD,Pipeline,Deployment' }
-    [pscustomobject]@{ Category = 'Data & Storage';      Keywords = 'SQL,Prisma,Redis,MongoDB,CosmosDB,Database,Storage,Cache' }
-    [pscustomobject]@{ Category = 'Frontend';            Keywords = 'Angular,Vue,React,NodeJS,Node.js,TypeScript,JavaScript,CSS,HTML' }
-    [pscustomobject]@{ Category = '.NET & C#';           Keywords = 'Async,Await,Multithreading,Blazor,Entity Framework,Hangfire,Serialization,Deserialization,Roselyn,Roslyn,LINQ,.NET,CSharp' }
-    [pscustomobject]@{ Category = 'Tools & Platforms';   Keywords = 'GitHub,Git,Dynatrace,Error Log,Hardware,JetBrains,Sublime,Cursor,YAML,Cyberark,Sharegate,Monitoring,Logging' }
-    [pscustomobject]@{ Category = 'General';             Keywords = '' }
-)
+# Scan the docs folder for category folders and .md files
+# Folder structure in docs/ becomes nav structure in mkdocs.yml
+# Example: docs/APIs & Web/REST.md becomes a nav entry under "APIs & Web"
 
-function Get-Category($filename) {
-    foreach ($rule in $rules) {
-        if ($rule.Keywords -eq '') { return $rule.Category }
-        foreach ($kw in ($rule.Keywords -split ',')) {
-            if ($filename -imatch [regex]::Escape($kw.Trim())) {
-                return $rule.Category
+function Build-NavStructure {
+    param([string]$DocsPath)
+
+    $nav = @()
+    $nav += "  - Home: index.md"
+
+    # Get all subdirectories (categories)
+    $categories = Get-ChildItem -Path $DocsPath -Directory | Sort-Object Name
+
+    foreach ($cat in $categories) {
+        # Skip special folders
+        if ($cat.Name -eq 'My') {
+            Write-Host "  [SKIP] Folder: $($cat.Name) (in .gitignore)"
+            continue
+        }
+
+        $catName = $cat.Name
+        $nav += "  - $($catName):"
+
+        # Get all .md files in this category folder, sorted alphabetically
+        $files = Get-ChildItem -Path $cat.FullName -Filter '*.md' -File | Sort-Object Name
+
+        if ($files.Count -eq 0) {
+            Write-Host "  [EMPTY] Category: $catName"
+        } else {
+            foreach ($file in $files) {
+                $relPath = Join-Path $catName $file.Name
+                $fileTitle = $file.BaseName
+                $nav += "    - $($fileTitle): $relPath"
+                Write-Host "  [OK] $catName / $($file.Name)"
             }
         }
     }
-    return 'General'
+
+    return $nav
 }
 
-function Get-EntryTitle($line) {
-    if ($line -match '^\s+-\s+(.+?)\s*:') { return $Matches[1] }
-    return $line
-}
+# Build new nav structure
+Write-Host "  Scanning docs folder for category structure..."
+$newNav = Build-NavStructure $DOCS
 
-# Parse already-registered filenames from nav section
+# Read existing mkdocs.yml and preserve non-nav content
 $ymlLines = Get-Content $YML
-$registered = $ymlLines |
-    Where-Object { $_ -match '^\s+-\s+.+:\s+(.+\.md)\s*$' } |
-    ForEach-Object { $Matches[1].Trim() }
+$navStartIdx = -1
+$navEndIdx = -1
 
-# Find new .md files (root of docs only, skip index.md)
-$newFiles = Get-ChildItem -Path $DOCS -Filter '*.md' -File |
-    Where-Object { $_.Name -ne 'index.md' -and $registered -notcontains $_.Name }
-
-if ($newFiles.Count -eq 0) {
-    Write-Host "  nav: nothing new to register."
-    exit 0
+for ($i = 0; $i -lt $ymlLines.Count; $i++) {
+    if ($ymlLines[$i] -match '^nav:') {
+        $navStartIdx = $i
+    }
+    if ($navStartIdx -ge 0 -and $i -gt $navStartIdx -and $ymlLines[$i] -match '^[a-zA-Z_]' -and $ymlLines[$i] -notmatch '^\s') {
+        $navEndIdx = $i
+        break
+    }
 }
 
-# Build a lookup: category -> list of new entries to add
-$pending = @{}
-foreach ($file in $newFiles) {
-    $category = Get-Category $file.BaseName
-    $entry    = "    - $($file.BaseName): $($file.Name)"
-    if (-not $pending.ContainsKey($category)) { $pending[$category] = @() }
-    $pending[$category] += $entry
-    Write-Host "  Queued [$category]: $($file.BaseName)"
+# If nav section not found, add it before the last section
+if ($navStartIdx -eq -1) {
+    $navStartIdx = $ymlLines.Count - 1
+    $navEndIdx = $navStartIdx
 }
 
-# Rebuild yml: for each category block, merge new entries then sort alphabetically
+if ($navEndIdx -eq -1) {
+    $navEndIdx = $ymlLines.Count
+}
+
+# Rebuild the file with new nav
 $output = @()
-$i = 0
-while ($i -lt $ymlLines.Count) {
-    $line = $ymlLines[$i]
+for ($i = 0; $i -lt $navStartIdx; $i++) {
+    $output += $ymlLines[$i]
+}
 
-    # Category header: exactly 2-space indent, ends with colon, no filename
-    if ($line -match '^  - (.+):$') {
-        $catName = $Matches[1]
-        $output += $line
-        $i++
+$output += "nav:"
+$output += $newNav
 
-        # Collect all existing entries for this category (4-space indent)
-        $entries = @()
-        while ($i -lt $ymlLines.Count -and $ymlLines[$i] -match '^    - ') {
-            $entries += $ymlLines[$i]
-            $i++
-        }
-
-        # Merge any new entries for this category
-        if ($pending.ContainsKey($catName)) {
-            $entries += $pending[$catName]
-        }
-
-        # Sort entries alphabetically by display title (case-insensitive)
-        $output += $entries | Sort-Object { Get-EntryTitle $_ }
-    }
-    else {
-        $output += $line
-        $i++
-    }
+for ($i = $navEndIdx; $i -lt $ymlLines.Count; $i++) {
+    $output += $ymlLines[$i]
 }
 
 $output | Set-Content $YML -Encoding UTF8
-Write-Host "  mkdocs.yml updated (entries sorted alphabetically)."
+Write-Host "  mkdocs.yml nav updated (structure based on docs/ folder organization)."
