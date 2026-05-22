@@ -30,37 +30,4 @@
 
 {% block scripts %}
   {{ super() }}
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Make "Tech Hub" site title link to home page
-      const siteTitle = document.querySelector('[data-md-site-name]');
-
-      if (siteTitle) {
-        siteTitle.style.cursor = 'pointer';
-        siteTitle.onclick = function(e) {
-          e.preventDefault();
-          e.stopPropagation();
-          window.location.href = './index.html';
-        };
-      }
-
-      // Also try to find and make clickable any site title link
-      const titleLink = document.querySelector('.md-header__title a');
-      if (titleLink) {
-        titleLink.href = './index.html';
-        titleLink.style.cursor = 'pointer';
-      }
-
-      // Make the header logo/button clickable
-      const logoBtn = document.querySelector('.md-header__button.md-logo');
-      if (logoBtn) {
-        logoBtn.href = './index.html';
-        logoBtn.style.cursor = 'pointer';
-        logoBtn.addEventListener('click', function(e) {
-          if (e.target.closest('a')) return;
-          window.location.href = './index.html';
-        });
-      }
-    });
-  </script>
 {% endblock %}
