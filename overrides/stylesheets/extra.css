@@ -107,11 +107,6 @@
   }
 }
 
-/* Hide "Home" tab but keep it functional for logo clicks */
-.md-tabs__nav > .md-tabs__item:first-child {
-  display: none !important;
-}
-
 /* Hide navigation sidebar on home page */
 .md-sidebar.md-sidebar--primary {
   display: none !important;
