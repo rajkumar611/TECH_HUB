@@ -27,3 +27,17 @@
   <link rel="canonical" href="{{ page.canonical_url }}">
   {% endif %}
 {% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Make the site title/logo link to home page
+      const logoLink = document.querySelector('.md-header__button.md-logo');
+      if (logoLink) {
+        logoLink.href = './index.html';
+        logoLink.style.cursor = 'pointer';
+      }
+    });
+  </script>
+{% endblock %}
