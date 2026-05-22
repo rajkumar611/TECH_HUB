@@ -12,25 +12,27 @@
         <meta name="author" content="Rajkumar">
       
       
+        <link rel="canonical" href="https://rajkumar611.github.io/TechHub/02_Cloud/Infrastructure_as_Code_Terraform_Bicep_ARM/">
+      
       
       
       
         
       
       
-      <link rel="icon" href="/TechHub/assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Tech Hub</title>
+        <title>INFRASTRUCTURE AS CODE (IaC) — TERRAFORM, BICEP, ARM - Tech Hub</title>
       
     
     
-      <link rel="stylesheet" href="/TechHub/assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="/TechHub/assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="/TechHub/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("/TechHub/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -69,16 +71,18 @@
   <!-- Open Graph (Facebook / LinkedIn previews) -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Tech Hub">
-  <meta property="og:url" content="https://rajkumar611.github.io/TechHub/">
-  <meta property="og:title" content="Tech Hub">
+  <meta property="og:url" content="https://rajkumar611.github.io/TechHub/02_Cloud/Infrastructure_as_Code_Terraform_Bicep_ARM/">
+  <meta property="og:title" content="INFRASTRUCTURE AS CODE (IaC) — TERRAFORM, BICEP, ARM – Tech Hub">
   <meta property="og:description" content="Personal technology learning hub by Rajkumar">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Tech Hub">
+  <meta name="twitter:title" content="INFRASTRUCTURE AS CODE (IaC) — TERRAFORM, BICEP, ARM – Tech Hub">
   <meta name="twitter:description" content="Personal technology learning hub by Rajkumar">
 
   <!-- Canonical URL -->
+  
+  <link rel="canonical" href="https://rajkumar611.github.io/TechHub/02_Cloud/Infrastructure_as_Code_Terraform_Bicep_ARM/">
   
 
   </head>
@@ -97,6 +101,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#infrastructure-as-code-iac-terraform-bicep-arm" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -109,7 +118,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/TechHub/." title="Tech Hub" class="md-header__button md-logo" aria-label="Tech Hub" data-md-component="logo">
+    <a href="../.." title="Tech Hub" class="md-header__button md-logo" aria-label="Tech Hub" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -129,7 +138,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              INFRASTRUCTURE AS CODE (IaC) — TERRAFORM, BICEP, ARM
             
           </span>
         </div>
@@ -198,7 +207,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/TechHub/." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -219,7 +228,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/TechHub/01_AI/AI_Agent_Architecture.md" class="md-tabs__link">
+        <a href="../../01_AI/AI_Agent_Architecture.md" class="md-tabs__link">
           
   
   
@@ -239,7 +248,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/TechHub/02_Cloud/Akamai_CDN.md" class="md-tabs__link">
+        <a href="../Akamai_CDN.md" class="md-tabs__link">
           
   
   
@@ -259,7 +268,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/TechHub/03_DotNet/Application_Pool_and_IIS.md" class="md-tabs__link">
+        <a href="../../03_DotNet/Application_Pool_and_IIS.md" class="md-tabs__link">
           
   
   
@@ -279,7 +288,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/TechHub/04_Architecture/API_Gateway.md" class="md-tabs__link">
+        <a href="../../04_Architecture/API_Gateway.md" class="md-tabs__link">
           
   
   
@@ -299,7 +308,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/TechHub/05_Frontend/JavaScript_Ecosystem_Overview.md" class="md-tabs__link">
+        <a href="../../05_Frontend/JavaScript_Ecosystem_Overview.md" class="md-tabs__link">
           
   
   
@@ -319,7 +328,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/TechHub/06_DevOps/DevOps_and_DevSecOps.md" class="md-tabs__link">
+        <a href="../../06_DevOps/DevOps_and_DevSecOps.md" class="md-tabs__link">
           
   
   
@@ -339,7 +348,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/TechHub/07_Tools_and_Security/CyberArk.md" class="md-tabs__link">
+        <a href="../../07_Tools_and_Security/CyberArk.md" class="md-tabs__link">
           
   
   
@@ -359,7 +368,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/TechHub/08_General/Firebase_Kafka_Redis_and_More.md" class="md-tabs__link">
+        <a href="../../08_General/Firebase_Kafka_Redis_and_More.md" class="md-tabs__link">
           
   
   
@@ -399,7 +408,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/TechHub/." title="Tech Hub" class="md-nav__button md-logo" aria-label="Tech Hub" data-md-component="logo">
+    <a href="../.." title="Tech Hub" class="md-nav__button md-logo" aria-label="Tech Hub" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -417,7 +426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -496,7 +505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/01_AI/AI_Agent_Architecture.md" class="md-nav__link">
+      <a href="../../01_AI/AI_Agent_Architecture.md" class="md-nav__link">
         
   
   
@@ -524,7 +533,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/01_AI/AI_Prompt_Injection.md" class="md-nav__link">
+      <a href="../../01_AI/AI_Prompt_Injection.md" class="md-nav__link">
         
   
   
@@ -552,7 +561,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/01_AI/Claude_vs_ChatGPT_vs_Perplexity.md" class="md-nav__link">
+      <a href="../../01_AI/Claude_vs_ChatGPT_vs_Perplexity.md" class="md-nav__link">
         
   
   
@@ -580,7 +589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/01_AI/LangChain_Framework.md" class="md-nav__link">
+      <a href="../../01_AI/LangChain_Framework.md" class="md-nav__link">
         
   
   
@@ -608,7 +617,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/01_AI/LLM_Access_Cloud_vs_Local.md" class="md-nav__link">
+      <a href="../../01_AI/LLM_Access_Cloud_vs_Local.md" class="md-nav__link">
         
   
   
@@ -636,7 +645,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/01_AI/MCP_Servers.md" class="md-nav__link">
+      <a href="../../01_AI/MCP_Servers.md" class="md-nav__link">
         
   
   
@@ -664,7 +673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/01_AI/Microsoft_Responsible_AI_Principles.md" class="md-nav__link">
+      <a href="../../01_AI/Microsoft_Responsible_AI_Principles.md" class="md-nav__link">
         
   
   
@@ -692,7 +701,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/01_AI/OpenClaw_AI_Agent.md" class="md-nav__link">
+      <a href="../../01_AI/OpenClaw_AI_Agent.md" class="md-nav__link">
         
   
   
@@ -720,7 +729,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/01_AI/RAG_and_Vector_Databases.md" class="md-nav__link">
+      <a href="../../01_AI/RAG_and_Vector_Databases.md" class="md-nav__link">
         
   
   
@@ -748,7 +757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/01_AI/SLM_vs_LLM.md" class="md-nav__link">
+      <a href="../../01_AI/SLM_vs_LLM.md" class="md-nav__link">
         
   
   
@@ -776,7 +785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/01_AI/Types_of_AI_Agents.md" class="md-nav__link">
+      <a href="../../01_AI/Types_of_AI_Agents.md" class="md-nav__link">
         
   
   
@@ -863,7 +872,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/02_Cloud/Akamai_CDN.md" class="md-nav__link">
+      <a href="../Akamai_CDN.md" class="md-nav__link">
         
   
   
@@ -891,7 +900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/02_Cloud/Azure_Functions_vs_App_Service.md" class="md-nav__link">
+      <a href="../Azure_Functions_vs_App_Service.md" class="md-nav__link">
         
   
   
@@ -919,7 +928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/02_Cloud/Azure_Service_Principal_vs_Managed_Identity.md" class="md-nav__link">
+      <a href="../Azure_Service_Principal_vs_Managed_Identity.md" class="md-nav__link">
         
   
   
@@ -947,7 +956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/02_Cloud/Containers_Docker_Kubernetes.md" class="md-nav__link">
+      <a href="../Containers_Docker_Kubernetes.md" class="md-nav__link">
         
   
   
@@ -975,7 +984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/02_Cloud/Infrastructure_as_Code_Terraform_Bicep_ARM.md" class="md-nav__link">
+      <a href="../Infrastructure_as_Code_Terraform_Bicep_ARM.md" class="md-nav__link">
         
   
   
@@ -1062,7 +1071,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/03_DotNet/Application_Pool_and_IIS.md" class="md-nav__link">
+      <a href="../../03_DotNet/Application_Pool_and_IIS.md" class="md-nav__link">
         
   
   
@@ -1090,7 +1099,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/03_DotNet/Async_Await.md" class="md-nav__link">
+      <a href="../../03_DotNet/Async_Await.md" class="md-nav__link">
         
   
   
@@ -1118,7 +1127,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/03_DotNet/Async_vs_Multithreading.md" class="md-nav__link">
+      <a href="../../03_DotNet/Async_vs_Multithreading.md" class="md-nav__link">
         
   
   
@@ -1146,7 +1155,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/03_DotNet/Blazor_WebAssembly.md" class="md-nav__link">
+      <a href="../../03_DotNet/Blazor_WebAssembly.md" class="md-nav__link">
         
   
   
@@ -1174,7 +1183,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/03_DotNet/Design_Patterns.md" class="md-nav__link">
+      <a href="../../03_DotNet/Design_Patterns.md" class="md-nav__link">
         
   
   
@@ -1202,7 +1211,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/03_DotNet/DotNet_History_DLL_GAC_Roslyn.md" class="md-nav__link">
+      <a href="../../03_DotNet/DotNet_History_DLL_GAC_Roslyn.md" class="md-nav__link">
         
   
   
@@ -1230,7 +1239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/03_DotNet/Entity_Framework.md" class="md-nav__link">
+      <a href="../../03_DotNet/Entity_Framework.md" class="md-nav__link">
         
   
   
@@ -1258,7 +1267,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/03_DotNet/Hangfire_Background_Jobs.md" class="md-nav__link">
+      <a href="../../03_DotNet/Hangfire_Background_Jobs.md" class="md-nav__link">
         
   
   
@@ -1286,7 +1295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/03_DotNet/Serialization_Deserialization.md" class="md-nav__link">
+      <a href="../../03_DotNet/Serialization_Deserialization.md" class="md-nav__link">
         
   
   
@@ -1314,7 +1323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/03_DotNet/SQLite_and_Prisma.md" class="md-nav__link">
+      <a href="../../03_DotNet/SQLite_and_Prisma.md" class="md-nav__link">
         
   
   
@@ -1401,7 +1410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/04_Architecture/API_Gateway.md" class="md-nav__link">
+      <a href="../../04_Architecture/API_Gateway.md" class="md-nav__link">
         
   
   
@@ -1429,7 +1438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/04_Architecture/API_Styles_REST_RPC_CustomAction.md" class="md-nav__link">
+      <a href="../../04_Architecture/API_Styles_REST_RPC_CustomAction.md" class="md-nav__link">
         
   
   
@@ -1457,7 +1466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/04_Architecture/Middleware.md" class="md-nav__link">
+      <a href="../../04_Architecture/Middleware.md" class="md-nav__link">
         
   
   
@@ -1485,7 +1494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/04_Architecture/Monolithic_vs_Microservices.md" class="md-nav__link">
+      <a href="../../04_Architecture/Monolithic_vs_Microservices.md" class="md-nav__link">
         
   
   
@@ -1513,7 +1522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/04_Architecture/Nginx_vs_Kestrel.md" class="md-nav__link">
+      <a href="../../04_Architecture/Nginx_vs_Kestrel.md" class="md-nav__link">
         
   
   
@@ -1541,7 +1550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/04_Architecture/REST_API_Complete_Guide.md" class="md-nav__link">
+      <a href="../../04_Architecture/REST_API_Complete_Guide.md" class="md-nav__link">
         
   
   
@@ -1569,7 +1578,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/04_Architecture/SignalR_WCF_gRPC.md" class="md-nav__link">
+      <a href="../../04_Architecture/SignalR_WCF_gRPC.md" class="md-nav__link">
         
   
   
@@ -1597,7 +1606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/04_Architecture/YAML.md" class="md-nav__link">
+      <a href="../../04_Architecture/YAML.md" class="md-nav__link">
         
   
   
@@ -1684,7 +1693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/05_Frontend/JavaScript_Ecosystem_Overview.md" class="md-nav__link">
+      <a href="../../05_Frontend/JavaScript_Ecosystem_Overview.md" class="md-nav__link">
         
   
   
@@ -1712,7 +1721,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/05_Frontend/NodeJS.md" class="md-nav__link">
+      <a href="../../05_Frontend/NodeJS.md" class="md-nav__link">
         
   
   
@@ -1740,7 +1749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/05_Frontend/React.md" class="md-nav__link">
+      <a href="../../05_Frontend/React.md" class="md-nav__link">
         
   
   
@@ -1827,7 +1836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/06_DevOps/DevOps_and_DevSecOps.md" class="md-nav__link">
+      <a href="../../06_DevOps/DevOps_and_DevSecOps.md" class="md-nav__link">
         
   
   
@@ -1855,7 +1864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/06_DevOps/Dynatrace.md" class="md-nav__link">
+      <a href="../../06_DevOps/Dynatrace.md" class="md-nav__link">
         
   
   
@@ -1883,7 +1892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/06_DevOps/Error_Logging_and_Monitoring.md" class="md-nav__link">
+      <a href="../../06_DevOps/Error_Logging_and_Monitoring.md" class="md-nav__link">
         
   
   
@@ -1911,7 +1920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/06_DevOps/Git_and_GitHub.md" class="md-nav__link">
+      <a href="../../06_DevOps/Git_and_GitHub.md" class="md-nav__link">
         
   
   
@@ -1939,7 +1948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/06_DevOps/JetBrains_Code_Quality_Tools.md" class="md-nav__link">
+      <a href="../../06_DevOps/JetBrains_Code_Quality_Tools.md" class="md-nav__link">
         
   
   
@@ -2026,7 +2035,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/07_Tools_and_Security/CyberArk.md" class="md-nav__link">
+      <a href="../../07_Tools_and_Security/CyberArk.md" class="md-nav__link">
         
   
   
@@ -2054,7 +2063,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/07_Tools_and_Security/Sharegate.md" class="md-nav__link">
+      <a href="../../07_Tools_and_Security/Sharegate.md" class="md-nav__link">
         
   
   
@@ -2082,7 +2091,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/07_Tools_and_Security/Sublime_vs_Cursor.md" class="md-nav__link">
+      <a href="../../07_Tools_and_Security/Sublime_vs_Cursor.md" class="md-nav__link">
         
   
   
@@ -2169,7 +2178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/08_General/Firebase_Kafka_Redis_and_More.md" class="md-nav__link">
+      <a href="../../08_General/Firebase_Kafka_Redis_and_More.md" class="md-nav__link">
         
   
   
@@ -2197,7 +2206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/08_General/General_Concepts.md" class="md-nav__link">
+      <a href="../../08_General/General_Concepts.md" class="md-nav__link">
         
   
   
@@ -2225,7 +2234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/08_General/Hardware_and_Storage.md" class="md-nav__link">
+      <a href="../../08_General/Hardware_and_Storage.md" class="md-nav__link">
         
   
   
@@ -2253,7 +2262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/08_General/Insurance_Terms.md" class="md-nav__link">
+      <a href="../../08_General/Insurance_Terms.md" class="md-nav__link">
         
   
   
@@ -2298,6 +2307,82 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-iac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WHAT IS IaC?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-arm-templates-azure-resource-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. ARM TEMPLATES (Azure Resource Manager)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-bicep" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. BICEP
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-terraform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. TERRAFORM
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparison-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        COMPARISON TABLE
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloud-specific-iac-equivalents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CLOUD-SPECIFIC IaC EQUIVALENTS
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2310,8 +2395,134 @@
               
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+
+<h1 id="infrastructure-as-code-iac-terraform-bicep-arm">INFRASTRUCTURE AS CODE (IaC) — TERRAFORM, BICEP, ARM<a class="headerlink" href="#infrastructure-as-code-iac-terraform-bicep-arm" title="Permanent link">&para;</a></h1>
+<h2 id="what-is-iac">WHAT IS IaC?<a class="headerlink" href="#what-is-iac" title="Permanent link">&para;</a></h2>
+<p>Instead of manually clicking in the Azure portal to create cloud resources,
+you write code (files) that describe your infrastructure.
+The tool then creates, updates, or deletes resources automatically.</p>
+<p>Benefits: Consistency, repeatability, version control, automation, no human error.</p>
+<h2 id="1-arm-templates-azure-resource-manager">1. ARM TEMPLATES (Azure Resource Manager)<a class="headerlink" href="#1-arm-templates-azure-resource-manager" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Azure's native provisioning engine.</li>
+<li>Every Azure management tool (Portal, CLI, PowerShell, Terraform, Bicep) ultimately sends
+  requests to the ARM REST API at https://management.azure.com/</li>
+<li>Uses declarative JSON to describe desired infrastructure state.</li>
+<li>ARM validates the request, checks RBAC permissions, and provisions resources.</li>
+</ul>
+<p>Example ARM JSON (storage account):
+{
+  "type": "Microsoft.Storage/storageAccounts",
+  "apiVersion": "2022-09-01",
+  "name": "mystorage123",
+  "location": "eastus",
+  "sku": { "name": "Standard_LRS" },
+  "kind": "StorageV2"
+}</p>
+<p>ARM is the underlying engine. It processes all deployments regardless of the tool used.</p>
+<h2 id="2-bicep">2. BICEP<a class="headerlink" href="#2-bicep" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Microsoft's Azure-native IaC DSL (Domain-Specific Language).</li>
+<li>Simpler, cleaner syntax than ARM JSON.</li>
+<li>Compiles directly into ARM JSON (Bicep is just a better way to write ARM templates).</li>
+<li>Azure-only — no multi-cloud support.</li>
+<li>No state file, no provider plugins.</li>
+<li>New Azure resource types are immediately available (ARM schemas).</li>
+</ul>
+<p>Example Bicep:
+resource sa 'Microsoft.Storage/storageAccounts@2022-09-01' = {
+  name: 'mystorage123'
+  location: 'eastus'
+  sku: { name: 'Standard_LRS' }
+  kind: 'StorageV2'
+}</p>
+<p>Best for: Azure-only projects that want simpler IaC without Terraform complexity.</p>
+<h2 id="3-terraform">3. TERRAFORM<a class="headerlink" href="#3-terraform" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Cloud-agnostic IaC tool by HashiCorp.</li>
+<li>Works with Azure, AWS, GCP, Kubernetes, VMware, and 100s of other platforms.</li>
+<li>Uses HCL (HashiCorp Configuration Language).</li>
+<li>Maintains its own state file to track deployed vs desired infrastructure.</li>
+<li>Uses provider plugins to interact with each cloud.</li>
+<li>You run it from CLI: terraform init → terraform plan → terraform apply.</li>
+</ul>
+<p>Best for: Multi-cloud environments, teams that want one tool across platforms.</p>
+<h2 id="comparison-table">COMPARISON TABLE<a class="headerlink" href="#comparison-table" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>ARM Templates</th>
+<th>Bicep</th>
+<th>Terraform</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cloud support</td>
+<td>Azure only</td>
+<td>Azure only</td>
+<td>Multi-cloud</td>
+</tr>
+<tr>
+<td>Language</td>
+<td>JSON</td>
+<td>Bicep DSL</td>
+<td>HCL</td>
+</tr>
+<tr>
+<td>State file</td>
+<td>No</td>
+<td>No</td>
+<td>Yes (terraform.tfstate)</td>
+</tr>
+<tr>
+<td>Compiles to</td>
+<td>-</td>
+<td>ARM JSON</td>
+<td>Provider API calls</td>
+</tr>
+<tr>
+<td>New Azure support</td>
+<td>Immediate</td>
+<td>Immediate</td>
+<td>Depends on provider update</td>
+</tr>
+<tr>
+<td>Complexity</td>
+<td>High (verbose)</td>
+<td>Low (clean syntax)</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Best for</td>
+<td>Legacy/native</td>
+<td>Azure-only IaC</td>
+<td>Multi-cloud IaC</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cloud-specific-iac-equivalents">CLOUD-SPECIFIC IaC EQUIVALENTS<a class="headerlink" href="#cloud-specific-iac-equivalents" title="Permanent link">&para;</a></h2>
+<p>Azure  → ARM Templates / Bicep
+AWS    → CloudFormation (JSON/YAML) or CDK (TypeScript, Python, Java, C#)
+GCP    → Deployment Manager (YAML + Jinja2/Python) or Config Connector</p>
+<p>Terraform works with all of the above as a single unified tool.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -2354,12 +2565,12 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "/TechHub/", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "search.highlight", "search.suggest", "content.code.copy"], "search": "/TechHub/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "search.highlight", "search.suggest", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/TechHub/assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="/TechHub/javascripts/credit.js"></script>
+        <script src="../../javascripts/credit.js"></script>
       
     
   </body>

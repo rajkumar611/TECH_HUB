@@ -12,25 +12,27 @@
         <meta name="author" content="Rajkumar">
       
       
+        <link rel="canonical" href="https://rajkumar611.github.io/TechHub/04_Architecture/SignalR_WCF_gRPC/">
+      
       
       
       
         
       
       
-      <link rel="icon" href="/TechHub/assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Tech Hub</title>
+        <title>SIGNALR, WCF, AND gRPC - Tech Hub</title>
       
     
     
-      <link rel="stylesheet" href="/TechHub/assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="/TechHub/assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="/TechHub/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("/TechHub/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -69,16 +71,18 @@
   <!-- Open Graph (Facebook / LinkedIn previews) -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Tech Hub">
-  <meta property="og:url" content="https://rajkumar611.github.io/TechHub/">
-  <meta property="og:title" content="Tech Hub">
+  <meta property="og:url" content="https://rajkumar611.github.io/TechHub/04_Architecture/SignalR_WCF_gRPC/">
+  <meta property="og:title" content="SIGNALR, WCF, AND gRPC – Tech Hub">
   <meta property="og:description" content="Personal technology learning hub by Rajkumar">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Tech Hub">
+  <meta name="twitter:title" content="SIGNALR, WCF, AND gRPC – Tech Hub">
   <meta name="twitter:description" content="Personal technology learning hub by Rajkumar">
 
   <!-- Canonical URL -->
+  
+  <link rel="canonical" href="https://rajkumar611.github.io/TechHub/04_Architecture/SignalR_WCF_gRPC/">
   
 
   </head>
@@ -97,6 +101,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#signalr-wcf-and-grpc" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -109,7 +118,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/TechHub/." title="Tech Hub" class="md-header__button md-logo" aria-label="Tech Hub" data-md-component="logo">
+    <a href="../.." title="Tech Hub" class="md-header__button md-logo" aria-label="Tech Hub" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -129,7 +138,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              SIGNALR, WCF, AND gRPC
             
           </span>
         </div>
@@ -198,7 +207,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/TechHub/." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -219,7 +228,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/TechHub/01_AI/AI_Agent_Architecture.md" class="md-tabs__link">
+        <a href="../../01_AI/AI_Agent_Architecture.md" class="md-tabs__link">
           
   
   
@@ -239,7 +248,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/TechHub/02_Cloud/Akamai_CDN.md" class="md-tabs__link">
+        <a href="../../02_Cloud/Akamai_CDN.md" class="md-tabs__link">
           
   
   
@@ -259,7 +268,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/TechHub/03_DotNet/Application_Pool_and_IIS.md" class="md-tabs__link">
+        <a href="../../03_DotNet/Application_Pool_and_IIS.md" class="md-tabs__link">
           
   
   
@@ -279,7 +288,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/TechHub/04_Architecture/API_Gateway.md" class="md-tabs__link">
+        <a href="../API_Gateway.md" class="md-tabs__link">
           
   
   
@@ -299,7 +308,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/TechHub/05_Frontend/JavaScript_Ecosystem_Overview.md" class="md-tabs__link">
+        <a href="../../05_Frontend/JavaScript_Ecosystem_Overview.md" class="md-tabs__link">
           
   
   
@@ -319,7 +328,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/TechHub/06_DevOps/DevOps_and_DevSecOps.md" class="md-tabs__link">
+        <a href="../../06_DevOps/DevOps_and_DevSecOps.md" class="md-tabs__link">
           
   
   
@@ -339,7 +348,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/TechHub/07_Tools_and_Security/CyberArk.md" class="md-tabs__link">
+        <a href="../../07_Tools_and_Security/CyberArk.md" class="md-tabs__link">
           
   
   
@@ -359,7 +368,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/TechHub/08_General/Firebase_Kafka_Redis_and_More.md" class="md-tabs__link">
+        <a href="../../08_General/Firebase_Kafka_Redis_and_More.md" class="md-tabs__link">
           
   
   
@@ -399,7 +408,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/TechHub/." title="Tech Hub" class="md-nav__button md-logo" aria-label="Tech Hub" data-md-component="logo">
+    <a href="../.." title="Tech Hub" class="md-nav__button md-logo" aria-label="Tech Hub" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -417,7 +426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -496,7 +505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/01_AI/AI_Agent_Architecture.md" class="md-nav__link">
+      <a href="../../01_AI/AI_Agent_Architecture.md" class="md-nav__link">
         
   
   
@@ -524,7 +533,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/01_AI/AI_Prompt_Injection.md" class="md-nav__link">
+      <a href="../../01_AI/AI_Prompt_Injection.md" class="md-nav__link">
         
   
   
@@ -552,7 +561,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/01_AI/Claude_vs_ChatGPT_vs_Perplexity.md" class="md-nav__link">
+      <a href="../../01_AI/Claude_vs_ChatGPT_vs_Perplexity.md" class="md-nav__link">
         
   
   
@@ -580,7 +589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/01_AI/LangChain_Framework.md" class="md-nav__link">
+      <a href="../../01_AI/LangChain_Framework.md" class="md-nav__link">
         
   
   
@@ -608,7 +617,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/01_AI/LLM_Access_Cloud_vs_Local.md" class="md-nav__link">
+      <a href="../../01_AI/LLM_Access_Cloud_vs_Local.md" class="md-nav__link">
         
   
   
@@ -636,7 +645,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/01_AI/MCP_Servers.md" class="md-nav__link">
+      <a href="../../01_AI/MCP_Servers.md" class="md-nav__link">
         
   
   
@@ -664,7 +673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/01_AI/Microsoft_Responsible_AI_Principles.md" class="md-nav__link">
+      <a href="../../01_AI/Microsoft_Responsible_AI_Principles.md" class="md-nav__link">
         
   
   
@@ -692,7 +701,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/01_AI/OpenClaw_AI_Agent.md" class="md-nav__link">
+      <a href="../../01_AI/OpenClaw_AI_Agent.md" class="md-nav__link">
         
   
   
@@ -720,7 +729,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/01_AI/RAG_and_Vector_Databases.md" class="md-nav__link">
+      <a href="../../01_AI/RAG_and_Vector_Databases.md" class="md-nav__link">
         
   
   
@@ -748,7 +757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/01_AI/SLM_vs_LLM.md" class="md-nav__link">
+      <a href="../../01_AI/SLM_vs_LLM.md" class="md-nav__link">
         
   
   
@@ -776,7 +785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/01_AI/Types_of_AI_Agents.md" class="md-nav__link">
+      <a href="../../01_AI/Types_of_AI_Agents.md" class="md-nav__link">
         
   
   
@@ -863,7 +872,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/02_Cloud/Akamai_CDN.md" class="md-nav__link">
+      <a href="../../02_Cloud/Akamai_CDN.md" class="md-nav__link">
         
   
   
@@ -891,7 +900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/02_Cloud/Azure_Functions_vs_App_Service.md" class="md-nav__link">
+      <a href="../../02_Cloud/Azure_Functions_vs_App_Service.md" class="md-nav__link">
         
   
   
@@ -919,7 +928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/02_Cloud/Azure_Service_Principal_vs_Managed_Identity.md" class="md-nav__link">
+      <a href="../../02_Cloud/Azure_Service_Principal_vs_Managed_Identity.md" class="md-nav__link">
         
   
   
@@ -947,7 +956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/02_Cloud/Containers_Docker_Kubernetes.md" class="md-nav__link">
+      <a href="../../02_Cloud/Containers_Docker_Kubernetes.md" class="md-nav__link">
         
   
   
@@ -975,7 +984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/02_Cloud/Infrastructure_as_Code_Terraform_Bicep_ARM.md" class="md-nav__link">
+      <a href="../../02_Cloud/Infrastructure_as_Code_Terraform_Bicep_ARM.md" class="md-nav__link">
         
   
   
@@ -1062,7 +1071,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/03_DotNet/Application_Pool_and_IIS.md" class="md-nav__link">
+      <a href="../../03_DotNet/Application_Pool_and_IIS.md" class="md-nav__link">
         
   
   
@@ -1090,7 +1099,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/03_DotNet/Async_Await.md" class="md-nav__link">
+      <a href="../../03_DotNet/Async_Await.md" class="md-nav__link">
         
   
   
@@ -1118,7 +1127,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/03_DotNet/Async_vs_Multithreading.md" class="md-nav__link">
+      <a href="../../03_DotNet/Async_vs_Multithreading.md" class="md-nav__link">
         
   
   
@@ -1146,7 +1155,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/03_DotNet/Blazor_WebAssembly.md" class="md-nav__link">
+      <a href="../../03_DotNet/Blazor_WebAssembly.md" class="md-nav__link">
         
   
   
@@ -1174,7 +1183,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/03_DotNet/Design_Patterns.md" class="md-nav__link">
+      <a href="../../03_DotNet/Design_Patterns.md" class="md-nav__link">
         
   
   
@@ -1202,7 +1211,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/03_DotNet/DotNet_History_DLL_GAC_Roslyn.md" class="md-nav__link">
+      <a href="../../03_DotNet/DotNet_History_DLL_GAC_Roslyn.md" class="md-nav__link">
         
   
   
@@ -1230,7 +1239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/03_DotNet/Entity_Framework.md" class="md-nav__link">
+      <a href="../../03_DotNet/Entity_Framework.md" class="md-nav__link">
         
   
   
@@ -1258,7 +1267,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/03_DotNet/Hangfire_Background_Jobs.md" class="md-nav__link">
+      <a href="../../03_DotNet/Hangfire_Background_Jobs.md" class="md-nav__link">
         
   
   
@@ -1286,7 +1295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/03_DotNet/Serialization_Deserialization.md" class="md-nav__link">
+      <a href="../../03_DotNet/Serialization_Deserialization.md" class="md-nav__link">
         
   
   
@@ -1314,7 +1323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/03_DotNet/SQLite_and_Prisma.md" class="md-nav__link">
+      <a href="../../03_DotNet/SQLite_and_Prisma.md" class="md-nav__link">
         
   
   
@@ -1401,7 +1410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/04_Architecture/API_Gateway.md" class="md-nav__link">
+      <a href="../API_Gateway.md" class="md-nav__link">
         
   
   
@@ -1429,7 +1438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/04_Architecture/API_Styles_REST_RPC_CustomAction.md" class="md-nav__link">
+      <a href="../API_Styles_REST_RPC_CustomAction.md" class="md-nav__link">
         
   
   
@@ -1457,7 +1466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/04_Architecture/Middleware.md" class="md-nav__link">
+      <a href="../Middleware.md" class="md-nav__link">
         
   
   
@@ -1485,7 +1494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/04_Architecture/Monolithic_vs_Microservices.md" class="md-nav__link">
+      <a href="../Monolithic_vs_Microservices.md" class="md-nav__link">
         
   
   
@@ -1513,7 +1522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/04_Architecture/Nginx_vs_Kestrel.md" class="md-nav__link">
+      <a href="../Nginx_vs_Kestrel.md" class="md-nav__link">
         
   
   
@@ -1541,7 +1550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/04_Architecture/REST_API_Complete_Guide.md" class="md-nav__link">
+      <a href="../REST_API_Complete_Guide.md" class="md-nav__link">
         
   
   
@@ -1569,7 +1578,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/04_Architecture/SignalR_WCF_gRPC.md" class="md-nav__link">
+      <a href="../SignalR_WCF_gRPC.md" class="md-nav__link">
         
   
   
@@ -1597,7 +1606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/04_Architecture/YAML.md" class="md-nav__link">
+      <a href="../YAML.md" class="md-nav__link">
         
   
   
@@ -1684,7 +1693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/05_Frontend/JavaScript_Ecosystem_Overview.md" class="md-nav__link">
+      <a href="../../05_Frontend/JavaScript_Ecosystem_Overview.md" class="md-nav__link">
         
   
   
@@ -1712,7 +1721,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/05_Frontend/NodeJS.md" class="md-nav__link">
+      <a href="../../05_Frontend/NodeJS.md" class="md-nav__link">
         
   
   
@@ -1740,7 +1749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/05_Frontend/React.md" class="md-nav__link">
+      <a href="../../05_Frontend/React.md" class="md-nav__link">
         
   
   
@@ -1827,7 +1836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/06_DevOps/DevOps_and_DevSecOps.md" class="md-nav__link">
+      <a href="../../06_DevOps/DevOps_and_DevSecOps.md" class="md-nav__link">
         
   
   
@@ -1855,7 +1864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/06_DevOps/Dynatrace.md" class="md-nav__link">
+      <a href="../../06_DevOps/Dynatrace.md" class="md-nav__link">
         
   
   
@@ -1883,7 +1892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/06_DevOps/Error_Logging_and_Monitoring.md" class="md-nav__link">
+      <a href="../../06_DevOps/Error_Logging_and_Monitoring.md" class="md-nav__link">
         
   
   
@@ -1911,7 +1920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/06_DevOps/Git_and_GitHub.md" class="md-nav__link">
+      <a href="../../06_DevOps/Git_and_GitHub.md" class="md-nav__link">
         
   
   
@@ -1939,7 +1948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/06_DevOps/JetBrains_Code_Quality_Tools.md" class="md-nav__link">
+      <a href="../../06_DevOps/JetBrains_Code_Quality_Tools.md" class="md-nav__link">
         
   
   
@@ -2026,7 +2035,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/07_Tools_and_Security/CyberArk.md" class="md-nav__link">
+      <a href="../../07_Tools_and_Security/CyberArk.md" class="md-nav__link">
         
   
   
@@ -2054,7 +2063,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/07_Tools_and_Security/Sharegate.md" class="md-nav__link">
+      <a href="../../07_Tools_and_Security/Sharegate.md" class="md-nav__link">
         
   
   
@@ -2082,7 +2091,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/07_Tools_and_Security/Sublime_vs_Cursor.md" class="md-nav__link">
+      <a href="../../07_Tools_and_Security/Sublime_vs_Cursor.md" class="md-nav__link">
         
   
   
@@ -2169,7 +2178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/08_General/Firebase_Kafka_Redis_and_More.md" class="md-nav__link">
+      <a href="../../08_General/Firebase_Kafka_Redis_and_More.md" class="md-nav__link">
         
   
   
@@ -2197,7 +2206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/08_General/General_Concepts.md" class="md-nav__link">
+      <a href="../../08_General/General_Concepts.md" class="md-nav__link">
         
   
   
@@ -2225,7 +2234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/08_General/Hardware_and_Storage.md" class="md-nav__link">
+      <a href="../../08_General/Hardware_and_Storage.md" class="md-nav__link">
         
   
   
@@ -2253,7 +2262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TechHub/08_General/Insurance_Terms.md" class="md-nav__link">
+      <a href="../../08_General/Insurance_Terms.md" class="md-nav__link">
         
   
   
@@ -2298,6 +2307,82 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wcf-windows-communication-foundation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WCF — WINDOWS COMMUNICATION FOUNDATION
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grpc-google-remote-procedure-call" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gRPC — GOOGLE REMOTE PROCEDURE CALL
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#signalr-real-time-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SIGNALR — REAL-TIME COMMUNICATION
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modern-net-architecture-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MODERN .NET ARCHITECTURE PATTERN
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        QUICK COMPARISON
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-facts-to-remember" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        KEY FACTS TO REMEMBER
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2310,8 +2395,151 @@
               
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+
+<h1 id="signalr-wcf-and-grpc">SIGNALR, WCF, AND gRPC<a class="headerlink" href="#signalr-wcf-and-grpc" title="Permanent link">&para;</a></h1>
+<p>These are three different communication technologies in the .NET ecosystem.
+They serve different purposes and should not be confused with each other.</p>
+<h2 id="wcf-windows-communication-foundation">WCF — WINDOWS COMMUNICATION FOUNDATION<a class="headerlink" href="#wcf-windows-communication-foundation" title="Permanent link">&para;</a></h2>
+<p>What it is:
+WCF is a .NET Framework technology for building enterprise service-oriented applications.
+Released in 2006 by Microsoft.</p>
+<p>Key characteristics:
+- Protocol-agnostic: supports HTTP, TCP, named pipes, MSMQ
+- Built primarily for SOAP/enterprise RPC communication
+- Uses service contracts and operation contracts (interfaces + attributes)
+- Supports strong typing, auto-generated clients, streaming, and high performance
+- Can technically support REST, but it's awkward — WCF is fundamentally SOAP-centric
+- Considered legacy; not supported in .NET Core / .NET 5+</p>
+<p>When it was used:
+Banking systems, insurance platforms, enterprise integrations with strict contracts.</p>
+<p>WCF's strengths (that made it popular):
+- Strong typed contracts
+- RPC-style communication
+- Auto-generated client proxies
+- Streaming support
+- Cross-protocol support (HTTP, TCP, etc.)</p>
+<p>WCF's successor:
+Microsoft officially says: "If you used WCF, use gRPC now."
+gRPC matches WCF's strengths but is modern, cross-platform, and open source.</p>
+<h2 id="grpc-google-remote-procedure-call">gRPC — GOOGLE REMOTE PROCEDURE CALL<a class="headerlink" href="#grpc-google-remote-procedure-call" title="Permanent link">&para;</a></h2>
+<p>What it is:
+gRPC is a high-performance, open-source Remote Procedure Call (RPC) framework from Google.
+It allows one service to call a method on another service as if it were a local function.</p>
+<p>Key characteristics:
+- Uses HTTP/2 (faster, multiplexed binary protocol)
+- Uses Protocol Buffers (Protobuf) — binary serialization, much smaller than JSON
+- Strong contract via .proto files — enforces strict typing
+- Auto-generates client and server code from .proto definitions
+- Supports streaming (client, server, and bidirectional)
+- Cross-language: C#, Go, Java, Python, Node.js all supported
+- Not browser-friendly (browsers don't support raw HTTP/2 binary framing)</p>
+<p>What is HTTP/2?
+A faster, binary, multiplexed version of HTTP that:
+- Allows multiple requests over a single connection
+- Removes head-of-line blocking
+- Is required by gRPC for its streaming and binary framing</p>
+<p>When to use gRPC:
+- Microservices communicating with each other (this is the #1 use case)
+- You need high performance (binary + HTTP/2 = very fast)
+- You need strong contracts enforced across services
+- You need streaming (telemetry, IoT, real-time data pipelines)
+- You need cross-language support between services</p>
+<p>gRPC vs REST summary:
+Feature        | gRPC                        | REST (Web API)
+---------------|-----------------------------|-----------------------
+Protocol       | HTTP/2 binary               | HTTP/1.1 text (JSON)
+Performance    | Very fast                   | Moderate
+Contracts      | Strict (.proto files)       | Loose (OpenAPI/Swagger)
+Browser support| Limited                     | Full
+Streaming      | Yes (native)                | Limited
+Best for       | Microservice-to-microservice| Browser/public APIs</p>
+<h2 id="signalr-real-time-communication">SIGNALR — REAL-TIME COMMUNICATION<a class="headerlink" href="#signalr-real-time-communication" title="Permanent link">&para;</a></h2>
+<p>What it is:
+SignalR is a real-time messaging library for ASP.NET Core.
+It enables the SERVER to push messages to clients instantly, without the client polling.</p>
+<p>Key characteristics:
+- Uses WebSockets (with fallback to long-polling if WebSockets not supported)
+- Bidirectional communication — server AND client can send messages
+- No polling required
+- Real-time, low latency
+- Works great with Blazor and browser-based apps</p>
+<p>SignalR is NOT an API style — it is a real-time messaging system.</p>
+<p>When to use SignalR:
+- Live dashboards and charts
+- Chat applications
+- Real-time notifications
+- Collaborative tools (e.g., shared document editing)
+- Stock price / sports score feeds</p>
+<h2 id="modern-net-architecture-pattern">MODERN .NET ARCHITECTURE PATTERN<a class="headerlink" href="#modern-net-architecture-pattern" title="Permanent link">&para;</a></h2>
+<p>Microsoft's recommended pattern for .NET 8+:</p>
+<p>Frontend (Blazor / React / Angular)
+        → Web API (REST)       ← browser-facing, JSON-based</p>
+<p>Backend microservices
+        → gRPC                 ← fast, strongly-typed, binary</p>
+<p>Real-time UI updates
+        → SignalR              ← server pushes to browser instantly</p>
+<p>Each technology has its own lane — they complement each other.</p>
+<h2 id="quick-comparison">QUICK COMPARISON<a class="headerlink" href="#quick-comparison" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Technology</th>
+<th>Category</th>
+<th>Transport</th>
+<th>Best for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WCF</td>
+<td>SOAP/RPC framework</td>
+<td>HTTP, TCP, MSMQ</td>
+<td>Legacy enterprise (now replaced by gRPC)</td>
+</tr>
+<tr>
+<td>gRPC</td>
+<td>RPC framework</td>
+<td>HTTP/2 + Protobuf</td>
+<td>Microservice-to-microservice calls</td>
+</tr>
+<tr>
+<td>SignalR</td>
+<td>Real-time messaging</td>
+<td>WebSockets</td>
+<td>Live UI updates, chat, notifications</td>
+</tr>
+<tr>
+<td>REST</td>
+<td>API style</td>
+<td>HTTP/1.1 + JSON</td>
+<td>Browser, mobile, public APIs</td>
+</tr>
+</tbody>
+</table>
+<h2 id="key-facts-to-remember">KEY FACTS TO REMEMBER<a class="headerlink" href="#key-facts-to-remember" title="Permanent link">&para;</a></h2>
+<ul>
+<li>WCF = enterprise legacy; use gRPC for new projects</li>
+<li>gRPC = fast, binary, strongly-typed; ideal for internal microservices</li>
+<li>SignalR = server pushes updates to browser in real time; not REST, not RPC</li>
+<li>REST (Web API) = best for browser/public-facing APIs</li>
+<li>ServiceStack = third-party alternative to WCF; commercial license for enterprise use</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -2354,12 +2582,12 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "/TechHub/", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "search.highlight", "search.suggest", "content.code.copy"], "search": "/TechHub/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "search.highlight", "search.suggest", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/TechHub/assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="/TechHub/javascripts/credit.js"></script>
+        <script src="../../javascripts/credit.js"></script>
       
     
   </body>
