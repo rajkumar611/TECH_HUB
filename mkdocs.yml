@@ -27,7 +27,7 @@ extra_javascript:
 
 nav:
   - Home: index.md
-  - 01_AI:
+  - AI:
     - AI_Agent_Architecture: 01_AI\AI_Agent_Architecture.md
     - AI_Prompt_Injection: 01_AI\AI_Prompt_Injection.md
     - Claude_vs_ChatGPT_vs_Perplexity: 01_AI\Claude_vs_ChatGPT_vs_Perplexity.md
@@ -39,13 +39,13 @@ nav:
     - RAG_and_Vector_Databases: 01_AI\RAG_and_Vector_Databases.md
     - SLM_vs_LLM: 01_AI\SLM_vs_LLM.md
     - Types_of_AI_Agents: 01_AI\Types_of_AI_Agents.md
-  - 02_Cloud:
+  - Cloud:
     - Akamai_CDN: 02_Cloud\Akamai_CDN.md
     - Azure_Functions_vs_App_Service: 02_Cloud\Azure_Functions_vs_App_Service.md
     - Azure_Service_Principal_vs_Managed_Identity: 02_Cloud\Azure_Service_Principal_vs_Managed_Identity.md
     - Containers_Docker_Kubernetes: 02_Cloud\Containers_Docker_Kubernetes.md
     - Infrastructure_as_Code_Terraform_Bicep_ARM: 02_Cloud\Infrastructure_as_Code_Terraform_Bicep_ARM.md
-  - 03_DotNet:
+  - DotNet:
     - Application_Pool_and_IIS: 03_DotNet\Application_Pool_and_IIS.md
     - Async_Await: 03_DotNet\Async_Await.md
     - Async_vs_Multithreading: 03_DotNet\Async_vs_Multithreading.md
@@ -56,7 +56,7 @@ nav:
     - Hangfire_Background_Jobs: 03_DotNet\Hangfire_Background_Jobs.md
     - Serialization_Deserialization: 03_DotNet\Serialization_Deserialization.md
     - SQLite_and_Prisma: 03_DotNet\SQLite_and_Prisma.md
-  - 04_Architecture:
+  - Architecture:
     - API_Gateway: 04_Architecture\API_Gateway.md
     - API_Styles_REST_RPC_CustomAction: 04_Architecture\API_Styles_REST_RPC_CustomAction.md
     - Middleware: 04_Architecture\Middleware.md
@@ -65,21 +65,21 @@ nav:
     - REST_API_Complete_Guide: 04_Architecture\REST_API_Complete_Guide.md
     - SignalR_WCF_gRPC: 04_Architecture\SignalR_WCF_gRPC.md
     - YAML: 04_Architecture\YAML.md
-  - 05_Frontend:
+  - Frontend:
     - JavaScript_Ecosystem_Overview: 05_Frontend\JavaScript_Ecosystem_Overview.md
     - NodeJS: 05_Frontend\NodeJS.md
     - React: 05_Frontend\React.md
-  - 06_DevOps:
+  - DevOps:
     - DevOps_and_DevSecOps: 06_DevOps\DevOps_and_DevSecOps.md
     - Dynatrace: 06_DevOps\Dynatrace.md
     - Error_Logging_and_Monitoring: 06_DevOps\Error_Logging_and_Monitoring.md
     - Git_and_GitHub: 06_DevOps\Git_and_GitHub.md
     - JetBrains_Code_Quality_Tools: 06_DevOps\JetBrains_Code_Quality_Tools.md
-  - 07_Tools_and_Security:
+  - Tools and Security:
     - CyberArk: 07_Tools_and_Security\CyberArk.md
     - Sharegate: 07_Tools_and_Security\Sharegate.md
     - Sublime_vs_Cursor: 07_Tools_and_Security\Sublime_vs_Cursor.md
-  - 08_General:
+  - General:
     - Firebase_Kafka_Redis_and_More: 08_General\Firebase_Kafka_Redis_and_More.md
     - General_Concepts: 08_General\General_Concepts.md
     - Hardware_and_Storage: 08_General\Hardware_and_Storage.md

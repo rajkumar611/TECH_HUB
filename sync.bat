@@ -57,7 +57,7 @@ if not exist "%DOCS%\index.md" (
 
 echo.
 echo Step 3: Stamping last-updated time (New Zealand Time)...
-powershell -Command "$nz=[System.TimeZoneInfo]::ConvertTimeBySystemTimeZoneId([DateTime]::UtcNow,'New Zealand Standard Time'); $ts=$nz.ToString('h:mm tt, d MMMM yyyy'); $f='%DOCS%\index.md'; (Get-Content $f) -replace '^\*Last updated:.*\*$', ('*Last updated: '+$ts+' (New Zealand Time)*') | Set-Content $f; Write-Host ('  Timestamp set to: '+$ts)"
+powershell -Command "$nz=[System.TimeZoneInfo]::ConvertTimeBySystemTimeZoneId([DateTime]::UtcNow,'New Zealand Standard Time'); $ts=$nz.ToString('h:mm tt, d MMMM yyyy'); $f='%DOCS%\index.md'; (Get-Content $f) -replace '> \*\*Last updated:.*\*\*', ('> **Last updated: '+$ts+' (New Zealand Time)**') | Set-Content $f; Write-Host ('  Timestamp set to: '+$ts)"
 
 echo.
 echo Step 4: Registering new files in mkdocs.yml nav...
@@ -67,8 +67,27 @@ echo.
 echo Step 5: Committing to Git...
 cd /d "%~dp0."
 git add -A
+if errorlevel 1 (
+  echo   [ERROR] git add failed
+  pause
+  exit /b 1
+)
+
 git commit -m "sync: update from Learnings folder"
+if errorlevel 1 (
+  echo   [ERROR] git commit failed
+  pause
+  exit /b 1
+)
+echo   [OK] Files committed locally
+
 git push
+if errorlevel 1 (
+  echo   [ERROR] git push failed - check your network and GitHub authentication
+  pause
+  exit /b 1
+)
+echo   [OK] Files pushed to GitHub
 
 echo.
 echo ========================================

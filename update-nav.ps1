@@ -23,20 +23,23 @@ function Build-NavStructure {
             continue
         }
 
-        $catName = $cat.Name
-        $nav += "  - $($catName):"
+        # Clean up folder name for display: remove numbers and underscores
+        # e.g., "01_AI" -> "AI", "02_Cloud_DevOps" -> "Cloud DevOps"
+        $displayName = $cat.Name -replace '^\d+_', '' -replace '_', ' '
+        $actualFolderName = $cat.Name
+        $nav += "  - $($displayName):"
 
         # Get all .md files in this category folder, sorted alphabetically
         $files = Get-ChildItem -Path $cat.FullName -Filter '*.md' -File | Sort-Object Name
 
         if ($files.Count -eq 0) {
-            Write-Host "  [EMPTY] Category: $catName"
+            Write-Host "  [EMPTY] Category: $displayName"
         } else {
             foreach ($file in $files) {
-                $relPath = Join-Path $catName $file.Name
+                $relPath = Join-Path $actualFolderName $file.Name
                 $fileTitle = $file.BaseName
                 $nav += "    - $($fileTitle): $relPath"
-                Write-Host "  [OK] $catName / $($file.Name)"
+                Write-Host "  [OK] $displayName / $($file.Name)"
             }
         }
     }
