@@ -107,13 +107,15 @@
   }
 }
 
-/* Hide navigation sidebar on home page */
-.md-sidebar.md-sidebar--primary {
+/* Hide navigation sidebar only on home page */
+.md-page:has(h1:first-child) .md-sidebar.md-sidebar--primary,
+[data-md-page-title="Tech Hub"] .md-sidebar.md-sidebar--primary {
   display: none !important;
 }
 
-/* Full width content on home page */
-.md-content {
+/* Full width content on home page only */
+.md-page:has(h1:first-child) .md-content,
+[data-md-page-title="Tech Hub"] .md-content {
   margin-left: 0 !important;
 }
 
