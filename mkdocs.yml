@@ -34,6 +34,7 @@ nav:
     - LLM_Access_Cloud_vs_Local: 01_AI/LLM_Access_Cloud_vs_Local.md
     - MCP_Servers: 01_AI/MCP_Servers.md
     - Microsoft_Responsible_AI_Principles: 01_AI/Microsoft_Responsible_AI_Principles.md
+    - ML Evals Metrics: 01_AI/ML Evals Metrics.md
     - OpenClaw_AI_Agent: 01_AI/OpenClaw_AI_Agent.md
     - RAG_and_Vector_Databases: 01_AI/RAG_and_Vector_Databases.md
     - SLM_vs_LLM: 01_AI/SLM_vs_LLM.md
