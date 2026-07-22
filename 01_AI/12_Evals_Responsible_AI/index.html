@@ -12,26 +12,28 @@
         <meta name="author" content="Rajkumar">
       
       
-        <link rel="canonical" href="https://rajkumar611.github.io/TechHub/01_AI/AI_Agent_Architecture/">
+        <link rel="canonical" href="https://rajkumar611.github.io/TechHub/01_AI/12_Evals_Responsible_AI/">
       
       
+        <link rel="prev" href="../11_LangChain_LangGraph_Frameworks/">
       
-        <link rel="next" href="../AI_Prompt_Injection/">
+      
+        <link rel="next" href="../13_Model_Context_Protocol_MCP/">
       
       
         
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>AI_Agent_Architecture - Tech Hub</title>
+        <title>12_Evals_Responsible_AI - Tech Hub</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -73,18 +75,18 @@
   <!-- Open Graph (Facebook / LinkedIn previews) -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Tech Hub">
-  <meta property="og:url" content="https://rajkumar611.github.io/TechHub/01_AI/AI_Agent_Architecture/">
-  <meta property="og:title" content="AI_Agent_Architecture – Tech Hub">
+  <meta property="og:url" content="https://rajkumar611.github.io/TechHub/01_AI/12_Evals_Responsible_AI/">
+  <meta property="og:title" content="12_Evals_Responsible_AI – Tech Hub">
   <meta property="og:description" content="Personal technology learning hub by Rajkumar">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="AI_Agent_Architecture – Tech Hub">
+  <meta name="twitter:title" content="12_Evals_Responsible_AI – Tech Hub">
   <meta name="twitter:description" content="Personal technology learning hub by Rajkumar">
 
   <!-- Canonical URL -->
   
-  <link rel="canonical" href="https://rajkumar611.github.io/TechHub/01_AI/AI_Agent_Architecture/">
+  <link rel="canonical" href="https://rajkumar611.github.io/TechHub/01_AI/12_Evals_Responsible_AI/">
   
 
   </head>
@@ -102,11 +104,6 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
-      
-        
-        <a href="#ai-agent-architecture" class="md-skip">
-          Skip to content
-        </a>
       
     </div>
     <div data-md-component="announce">
@@ -140,7 +137,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              AI_Agent_Architecture
+              12_Evals_Responsible_AI
             
           </span>
         </div>
@@ -213,7 +210,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../00_INDEX_AND_LEARNING_PATH/" class="md-tabs__link">
           
   
   
@@ -465,6 +462,342 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_INDEX_AND_LEARNING_PATH/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    00_INDEX_AND_LEARNING_PATH
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_What_is_AI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01_What_is_AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_What_is_Machine_Learning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02_What_is_Machine_Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_Deep_Learning_and_Neural_Networks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03_Deep_Learning_and_Neural_Networks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_Forward_and_Backward_Propagation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04_Forward_and_Backward_Propagation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_Attention_Mechanism/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05_Attention_Mechanism
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_Transformer_Architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06_Transformer_Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_Large_Language_Models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07_Large_Language_Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_Prompt_Engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08_Prompt_Engineering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_Retrieval_Augmented_Generation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09_Retrieval_Augmented_Generation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_Agents_and_Agentic_AI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10_Agents_and_Agentic_AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11_LangChain_LangGraph_Frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11_LangChain_LangGraph_Frameworks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -474,26 +807,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    AI_Agent_Architecture
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -502,7 +815,7 @@
   <span class="md-ellipsis">
     
   
-    AI_Agent_Architecture
+    12_Evals_Responsible_AI
   
 
     
@@ -511,58 +824,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#the-4-core-layers-of-an-ai-agent" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The 4 Core Layers of an AI Agent
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#extended-layers-for-complex-enterprise-systems" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        EXTENDED LAYERS (for complex / enterprise systems)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#simple-analogy" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SIMPLE ANALOGY
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -576,294 +837,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../AI_Prompt_Injection/" class="md-nav__link">
+      <a href="../13_Model_Context_Protocol_MCP/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    AI_Prompt_Injection
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Claude_vs_ChatGPT_vs_Perplexity/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Claude_vs_ChatGPT_vs_Perplexity
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../LangChain_Framework/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    LangChain_Framework
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../LLM_Access_Cloud_vs_Local/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    LLM_Access_Cloud_vs_Local
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../MCP_Servers/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    MCP_Servers
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Microsoft_Responsible_AI_Principles/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Microsoft_Responsible_AI_Principles
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ML%20Evals%20Metrics/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ML Evals Metrics
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../OpenClaw_AI_Agent/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    OpenClaw_AI_Agent
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../RAG_and_Vector_Databases/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    RAG_and_Vector_Databases
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../SLM_vs_LLM/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    SLM_vs_LLM
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Types_of_AI_Agents/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Types_of_AI_Agents
+    13_Model_Context_Protocol_MCP
   
 
     
@@ -2378,49 +2359,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#the-4-core-layers-of-an-ai-agent" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The 4 Core Layers of an AI Agent
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#extended-layers-for-complex-enterprise-systems" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        EXTENDED LAYERS (for complex / enterprise systems)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#simple-analogy" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SIMPLE ANALOGY
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -2437,51 +2375,339 @@
 
 
 
-<h1 id="ai-agent-architecture">AI AGENT ARCHITECTURE<a class="headerlink" href="#ai-agent-architecture" title="Permanent link">&para;</a></h1>
-<h2 id="the-4-core-layers-of-an-ai-agent">The 4 Core Layers of an AI Agent<a class="headerlink" href="#the-4-core-layers-of-an-ai-agent" title="Permanent link">&para;</a></h2>
+  <h1>12_Evals_Responsible_AI</h1>
+
+<p>╔════════════════════════════════════════════════════════════════╗
+║            EVALS, RESPONSIBLE AI &amp; ADVANCED TOPICS            ║
+║          Testing, Monitoring, Ethics, and Model Context      ║
+╚════════════════════════════════════════════════════════════════╝</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<p>📖 INTRODUCTION</p>
+<p>Building AI apps is half the battle.
+The other half: Making sure they work correctly and safely.</p>
+<p>This module covers:
+  ├─ Evaluations (Testing AI)
+  ├─ Responsible AI (Ethics)
+  ├─ Model Context Protocol (MCP)
+  └─ Other practical considerations</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<p>🧪 EVALUATIONS (Testing AI Systems)</p>
+<p>The Challenge:
+  └─ Traditional testing: Unit tests pass/fail
+  └─ AI testing: "Is this output good?" (subjective!)</p>
+<p>Types of Evaluations:</p>
 <ol>
-<li>PERCEPTION</li>
-<li>The agent receives input (text, images, data, tool results).</li>
 <li>
-<p>This is how the agent observes the world.</p>
+<p>AUTOMATED EVALS
+   └─ Use metrics to measure quality
+   └─ Can run without humans
+   └─ Examples:
+       ├─ BLEU score (translation quality)
+       ├─ ROUGE score (summarization quality)
+       ├─ Exact match (QA correctness)
+       ├─ F1 score (classification accuracy)
+       └─ Semantic similarity (embeddings)</p>
 </li>
 <li>
-<p>REASONING</p>
-</li>
-<li>The LLM processes the input and decides what to do next.</li>
-<li>
-<p>This is the "brain" powered by the language model.</p>
-</li>
-<li>
-<p>MEMORY</p>
-</li>
-<li>Short-term: The current conversation or task context.</li>
-<li>
-<p>Long-term: Stored knowledge (databases, vector stores, files).</p>
+<p>HUMAN EVALS
+   └─ Human raters judge outputs
+   └─ Gold standard for quality
+   └─ Expensive and slow
+   └─ Examples:
+       ├─ Rate helpfulness 1-5
+       ├─ Rate correctness (yes/no)
+       ├─ Rank multiple outputs
+       └─ Write comments on quality</p>
 </li>
 <li>
-<p>ACTION</p>
+<p>HYBRID EVALS
+   └─ Combination of automated + human
+   └─ Use automated on 90% of data
+   └─ Use human on samples for validation
+   └─ Most practical for production</p>
 </li>
-<li>The agent calls tools, APIs, or executes code based on reasoning.</li>
-<li>Examples: web search, running code, writing files, calling APIs.</li>
 </ol>
-<h2 id="extended-layers-for-complex-enterprise-systems">EXTENDED LAYERS (for complex / enterprise systems)<a class="headerlink" href="#extended-layers-for-complex-enterprise-systems" title="Permanent link">&para;</a></h2>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<p>📊 COMMON EVALUATION METRICS</p>
+<p>For Question Answering:
+  ├─ Exact Match: Did AI give exact right answer?
+  ├─ F1 Score: Partial credit for partial answers
+  ├─ MRR (Mean Reciprocal Rank): How high is correct answer?
+  └─ Accuracy: Simple % of correct answers</p>
+<p>For Summarization:
+  ├─ ROUGE: Overlap with human summary
+  ├─ BERTScore: Semantic similarity
+  └─ METEOR: Considers synonyms</p>
+<p>For Translation:
+  ├─ BLEU: N-gram overlap with reference
+  ├─ METEOR: Synonym-aware comparison
+  └─ ChrF: Character-level comparison</p>
+<p>For Generative Tasks (like essay writing):
+  ├─ Human evaluation (best, but slow)
+  ├─ LLM-as-Judge (use GPT-4 to rate)
+  ├─ Semantic similarity to reference
+  └─ Readability metrics</p>
+<p>For Classification:
+  ├─ Accuracy: % correct
+  ├─ Precision: Of predicted positives, how many correct?
+  ├─ Recall: Of actual positives, how many found?
+  └─ F1: Harmonic mean of precision &amp; recall</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<p>🔄 EVALUATION FRAMEWORKS</p>
+<p>LangSmith (Anthropic/LangChain):
+  ├─ Track runs and evaluations
+  ├─ Human feedback interface
+  ├─ Analytics dashboard
+  └─ Integrates with LangChain</p>
+<p>Braintrust:
+  ├─ Evaluation platform
+  ├─ Set baselines, catch regressions
+  ├─ Collaborative evaluation
+  └─ Track experiment results</p>
+<p>Argilla:
+  ├─ Open-source labeling platform
+  ├─ Crowdsource evaluations
+  ├─ Feedback loop for improvement
+  └─ Community edition free</p>
+<p>Wandb (Weights &amp; Biases):
+  ├─ Experiment tracking
+  ├─ Compare model versions
+  ├─ Visualize metrics
+  └─ Collaboration tools</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<p>🛡️ RESPONSIBLE AI</p>
+<p>Responsible AI = Building AI safely and ethically</p>
+<p>Key Areas:</p>
 <ol>
-<li>PLANNING     - Breaking a large goal into smaller steps.</li>
-<li>TOOL USE     - Integrating with external services via tools/APIs.</li>
-<li>FEEDBACK     - Evaluating output and self-correcting.</li>
-<li>ORCHESTRATION- Managing multiple agents working together.</li>
+<li>BIAS AND FAIRNESS
+   Problem:
+     ├─ Models learn biases from training data
+     ├─ Example: Resume screener biased against women
+     ├─ Example: Facial recognition worse for dark skin
+     └─ Real harm to real people</li>
 </ol>
-<p>These extra layers add operational rigor for:
-- Multi-agent systems
-- Enterprise workflows requiring audit and monitoring
-- Long-running autonomous tasks</p>
-<h2 id="simple-analogy">SIMPLE ANALOGY<a class="headerlink" href="#simple-analogy" title="Permanent link">&para;</a></h2>
-<p>Think of an AI agent like a consultant:
-- Perception  = Reads your brief / listens to you
-- Reasoning   = Thinks about the problem
-- Memory      = Refers to past knowledge and notes
-- Action      = Does the work and delivers output</p>
+<p>Solutions:
+     ├─ Audit training data for biases
+     ├─ Use balanced datasets
+     ├─ Test for disparities across groups
+     ├─ Use fairness metrics
+     └─ Continuous monitoring</p>
+<ol>
+<li>TRANSPARENCY
+   Problem:
+     └─ "Black box" - Why did AI make decision?</li>
+</ol>
+<p>Solutions:
+     ├─ Explainability: Why did model predict X?
+     ├─ Interpretability: Which features matter?
+     ├─ Model cards: Document capabilities/limitations
+     ├─ Disclosure: Tell users they're talking to AI
+     └─ Audit trails: Log all decisions</p>
+<ol>
+<li>SAFETY
+   Problem:
+     ├─ AI could refuse helpful requests
+     ├─ AI could cause harm
+     ├─ AI could be manipulated
+     └─ AI could leak private data</li>
+</ol>
+<p>Solutions:
+     ├─ Red teaming: Try to break it
+     ├─ Adversarial testing: Malicious inputs
+     ├─ Rate limiting: Prevent abuse
+     ├─ Content filtering: Block harmful outputs
+     └─ Privacy preservation: Encrypt sensitive data</p>
+<ol>
+<li>PRIVACY
+   Problem:
+     ├─ Training data might leak
+     ├─ User interactions recorded
+     ├─ Personal info exposed
+     └─ Data breaches</li>
+</ol>
+<p>Solutions:
+     ├─ Differential privacy: Add noise to data
+     ├─ Federated learning: Train locally
+     ├─ Data minimization: Collect less
+     ├─ Consent: Ask users first
+     └─ GDPR compliance: Right to deletion</p>
+<ol>
+<li>ACCOUNTABILITY
+   Problem:
+     └─ If AI does harm, who's responsible?</li>
+</ol>
+<p>Solutions:
+     ├─ Clear ownership and governance
+     ├─ Impact assessments before deployment
+     ├─ Incident response plans
+     ├─ Human oversight of critical decisions
+     └─ Legal frameworks (increasingly)</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<p>🔐 RESPONSIBLE AI CHECKLIST</p>
+<p>Before Deploying:</p>
+<p>□ Audit training data for biases
+□ Test on diverse populations
+□ Document model capabilities/limitations
+□ Implement content filters for harmful content
+□ Set up monitoring and alerts
+□ Plan for human oversight of critical decisions
+□ Prepare incident response plan
+□ Test for privacy/security vulnerabilities
+□ Get stakeholder approval
+□ Tell users they're talking to AI
+□ Have clear data retention policy
+□ Test for adversarial/malicious inputs
+□ Create model cards documenting everything
+□ Set up feedback mechanism for users
+□ Plan for AI system updates
+□ Document assumptions and limitations</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<p>📡 MODEL CONTEXT PROTOCOL (MCP)</p>
+<p>MCP = Standard way for tools to connect to AI models</p>
+<p>Problem Without MCP:
+  └─ Each tool needs custom integration
+  └─ OpenAI API for one tool, Google for another
+  └─ Hard to build complex tool ecosystems</p>
+<p>MCP Solution:
+  ├─ Standardized protocol
+  ├─ Models can access tools without knowing implementation
+  ├─ Tools don't need to know which model is using them
+  └─ Plug-and-play integration</p>
+<p>MCP Components:</p>
+<p>Servers (Tool Providers):
+  ├─ Expose tools/resources via MCP
+  ├─ Examples: Database server, Email server, Calendar
+  └─ Handle tool execution</p>
+<p>Clients (Tool Consumers):
+  ├─ Claude, other LLMs
+  ├─ Make requests to servers
+  └─ Use tools to accomplish goals</p>
+<p>Bridges:
+  ├─ Connect servers to clients
+  ├─ Handle communication
+  └─ Manage sessions</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<p>📚 CONTEXT WINDOW</p>
+<p>Context Window = How much previous text model can see</p>
+<p>Why It Matters:
+  └─ LLMs process tokens sequentially
+  └─ Can't see beyond context window
+  └─ Affects quality and use cases</p>
+<p>Evolution:</p>
+<p>Early LLMs (2017-2020):
+  └─ Context: 1,000-2,000 tokens</p>
+<p>GPT-3:
+  └─ Context: 4,000 tokens</p>
+<p>GPT-4:
+  └─ Context: 8,000-128,000 tokens</p>
+<p>Claude 3:
+  └─ Context: 200,000 tokens (!!)</p>
+<p>Future:
+  └─ Million token context expected soon
+  └─ Will enable processing entire books</p>
+<p>Implications:</p>
+<p>Short Context (4K):
+  ├─ Can only see recent messages
+  ├─ Good for: Quick Q&amp;A
+  └─ Bad for: Long documents</p>
+<p>Long Context (128K+):
+  ├─ Can see entire conversation + documents
+  ├─ Good for: Complex research, long documents
+  └─ Bad for: Performance, costs</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<p>🔍 MONITORING AND OBSERVABILITY</p>
+<p>In Production, You Need:</p>
+<p>Logging:
+  ├─ Log every prompt and response
+  ├─ For debugging and auditing
+  └─ Use LangSmith or similar</p>
+<p>Metrics:
+  ├─ Response latency
+  ├─ Error rate
+  ├─ User satisfaction
+  ├─ Cost per request
+  └─ Hallucination rate</p>
+<p>Alerts:
+  ├─ High error rate
+  ├─ High latency
+  ├─ Unusual patterns
+  ├─ Cost overages
+  └─ Quality drops</p>
+<p>Dashboards:
+  ├─ Real-time metrics
+  ├─ Historical trends
+  ├─ Performance comparison
+  └─ User analytics</p>
+<p>Red Teaming:
+  ├─ Regular security audits
+  ├─ Try to break the system
+  ├─ Find vulnerabilities
+  └─ Fix before users find them</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<p>🎯 COST OPTIMIZATION</p>
+<p>LLM APIs are expensive at scale!</p>
+<p>Optimization Strategies:</p>
+<ol>
+<li>
+<p>Right-Size Models
+   └─ Use smaller models for simple tasks
+   └─ Example: GPT-3.5 instead of GPT-4 for classification
+   └─ Saves 10x on cost</p>
+</li>
+<li>
+<p>Prompt Optimization
+   └─ Shorter prompts = fewer tokens
+   └─ Only include necessary context
+   └─ Few-shot examples add tokens, but improve accuracy</p>
+</li>
+<li>
+<p>Caching
+   └─ Cache common prompt results
+   └─ Use prompt caching (OpenAI feature)
+   └─ Saves 90% on repeated queries</p>
+</li>
+<li>
+<p>Batch Processing
+   └─ Process multiple requests together
+   └─ Cheaper than real-time API
+   └─ If latency isn't critical</p>
+</li>
+<li>
+<p>Self-Hosting
+   └─ Run open-source models locally
+   └─ No API costs, but infra costs
+   └─ Best for high volume</p>
+</li>
+<li>
+<p>Hybrid Approach
+   └─ Use smaller models for 90% of requests
+   └─ Use powerful models for hard cases
+   └─ Balanced cost-quality</p>
+</li>
+</ol>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<p>🎓 KEY TAKEAWAYS</p>
+<ol>
+<li>Evaluations test AI system quality</li>
+<li>Automated evals fast, human evals accurate</li>
+<li>Use metrics suited to your task</li>
+<li>Responsible AI covers: bias, transparency, safety, privacy</li>
+<li>Red teaming finds vulnerabilities before users</li>
+<li>Model cards document capabilities/limitations</li>
+<li>MCP standardizes tool integration</li>
+<li>Context window affects capability vs cost tradeoff</li>
+<li>Monitoring in production is essential</li>
+<li>Cost optimization needed for scale</li>
+</ol>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<p>🤔 THINK ABOUT IT</p>
+<ul>
+<li>Why does bias in AI systems matter more than bias in code?</li>
+<li>How would you test if your chatbot discriminates?</li>
+<li>What's the tradeoff between accuracy and cost?</li>
+</ul>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<p>CONGRATULATIONS! You've completed the AI Learning Curriculum!</p>
 
 
 
@@ -2541,7 +2767,7 @@
     
     
   
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="../../javascripts/credit.js"></script>
       
