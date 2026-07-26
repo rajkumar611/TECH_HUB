@@ -3,9 +3,6 @@
 {% block extrahead %}
   {{ super() }}
 
-  <!-- Store deployment time for display -->
-  <meta id="deployment-time" name="deployment-time" content="{{ now.strftime('%Y-%m-%d %H:%M:%S') }}">
-
   <!-- Hide title and reposition image to top-left on About page -->
   {% if "about" in page.url %}
   <style>
