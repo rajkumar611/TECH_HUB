@@ -1,6 +1,8 @@
 ---
+title: ""
 hide:
   - title
+  - navigation
 ---
 
 ![Raj Kumar](../images/profile.png)
