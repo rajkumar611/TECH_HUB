@@ -1,4 +1,4 @@
-﻿site_name: Tech Hub
+﻿site_name: Raj's Tech Hub
 site_description: Personal technology learning hub by Rajkumar
 site_author: Rajkumar
 site_url: https://rajkumar611.github.io/TechHub
@@ -26,6 +26,7 @@ extra_javascript:
   - javascripts/credit.js
 
 nav:
+  - About Me: about.md
   - AI:
     - 00_INDEX_AND_LEARNING_PATH: 01_AI/00_INDEX_AND_LEARNING_PATH.md
     - 01_What_is_AI: 01_AI/01_What_is_AI.md
