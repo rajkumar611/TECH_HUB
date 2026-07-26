@@ -148,19 +148,25 @@ body {
   border: none !important;
 }
 
-/* Position image on left side, below menu */
+/* Position image strictly on left side */
 .md-content {
   padding-top: 0 !important;
 }
 
 .md-content img:first-of-type {
-  margin: 0 !important;
-  padding: 0 !important;
-  width: 400px !important;
-  max-width: 45% !important;
   float: left !important;
+  width: 400px !important;
+  margin: 0 0 20px 0 !important;
   margin-right: 30px !important;
-  margin-bottom: 20px !important;
-  display: block !important;
+  padding: 0 !important;
+  clear: none !important;
+}
+
+/* Remove extra spacing */
+.md-content > *:first-child {
+  margin-top: 0 !important;
+}
+
+.md-typeset p:first-of-type {
   margin-top: 0 !important;
 }
