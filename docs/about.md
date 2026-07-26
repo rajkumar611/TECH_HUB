@@ -1,3 +1,8 @@
+---
+hide:
+  - title
+---
+
 ![Raj Kumar](../images/profile.png)
 
 ---
