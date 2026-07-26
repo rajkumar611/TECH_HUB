@@ -128,14 +128,29 @@ body {
   background-color: #1e1e1e;
 }
 
-/* Hide page title on About Me page */
-.md-content__inner > h1 {
+/* Aggressively hide ALL h1 headers */
+.md-typeset h1 {
   display: none !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  visibility: hidden !important;
 }
 
-/* Move image to top and ensure it displays first */
+.md-content__inner h1 {
+  display: none !important;
+  height: 0 !important;
+  visibility: hidden !important;
+}
+
+/* Position image at the very top */
+.md-content img {
+  margin-top: -40px !important;
+  margin-bottom: 30px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
 .md-content img:first-of-type {
-  margin-top: 0 !important;
-  margin-bottom: 20px !important;
-  display: block !important;
+  margin-top: -40px !important;
 }
