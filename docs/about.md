@@ -1,78 +1,105 @@
-# About Me
+---
+hide:
+  - navigation
+---
 
-<div style="display: flex; gap: 30px; align-items: flex-start;">
+<div style="text-align: center; margin-bottom: 40px;">
 
-<div style="flex: 1; text-align: center;">
-
-![Raj Kumar](../images/profile.png)
-
-**Raj Kumar**
-
-[LinkedIn](https://www.linkedin.com/in/raj-chellababu/){.md-button .md-button--primary}
+![Raj Kumar](images/profile.png)
 
 </div>
-
-<div style="flex: 2;">
-
-## Solution Architect | Enterprise Technology Leader
-
-I am a **Solution Architect** by profession, deeply passionate about **AI and Generative AI**, with extensive expertise as an **Enterprise Technology Leader** specializing in **Insurance Platforms**.
-
-### Experience
-
-With **20+ years** of global experience, I've successfully delivered enterprise technology solutions across multiple sectors:
-- 🏦 **Insurance** (primary expertise)
-- 💰 **Financial Services**
-- 🏥 **Healthcare**
-- 🛢️ **Oil & Gas**
-- 🚂 **Rail & Transportation**
-
-### Current Role
-
-At **QBE**, I provide architecture-led technology leadership, driving solution direction across:
-- Critical insurance platforms
-- Financial reporting systems
-- Enterprise integration solutions
-- Cloud-native modernization
-- AI architecture and governance
-
-### Leadership & Expertise
-
-**People Leadership:** Managing 25+ direct and indirect team members across global onshore/offshore delivery models
-
-**Strategic Impact:** 
-- Partnering with C-level executives on strategic planning
-- Overseeing vendor ecosystems and technology investments
-- Contributing to enterprise-wide technology strategy
-
-**Global Experience:** 
-- 🇳🇿 New Zealand
-- 🇦🇺 Australia
-- 🇬🇧 United Kingdom
-- 🇨🇦 Canada
-- 🇮🇳 India
-- 🇺🇸 Additional US exposure
-
-Operating within global consulting, outsourcing, and managed service delivery models.
-
-### Specialization
-
-**Generative AI & Modern Tech:**
-- Production LLM systems architecture
-- LangGraph & agentic AI frameworks
-- Retrieval-Augmented Generation (RAG)
-- Model Context Protocol (MCP)
-- Governed enterprise AI delivery
-- Responsible AI practices
-
-### Mission
-
-Leveraging deep technical expertise combined with enterprise leadership experience to architect modern, scalable, and responsible technology solutions that drive business transformation.
 
 ---
 
-**Connect with me on [LinkedIn](https://www.linkedin.com/in/raj-chellababu/)** to discuss enterprise technology strategy, AI architecture, or consulting opportunities.
+## Professional Introduction
 
-</div>
+I am **Raj Kumar**, a results-driven **Solution Architect** and **Enterprise Technology Leader** with a distinguished track record of architecting and delivering transformative enterprise solutions. My professional passion centers on **Artificial Intelligence** and **Generative AI**, with deep specialization in **Insurance Platform Architecture** and enterprise-scale technology modernization.
 
-</div>
+---
+
+## Core Expertise
+
+**20+ Years of Global Enterprise Experience**
+
+Throughout my career, I have successfully designed, architected, and delivered mission-critical technology solutions across diverse industries:
+
+| Industry | Focus |
+|----------|-------|
+| **Insurance** | Primary expertise — platform architecture, digital transformation |
+| **Financial Services** | Enterprise banking, reporting, compliance systems |
+| **Healthcare** | Clinical systems, enterprise integration, data governance |
+| **Oil & Gas** | Enterprise platforms, operational technology |
+| **Rail & Transportation** | Industry-specific solutions, modernization initiatives |
+
+---
+
+## Current Leadership Role — QBE
+
+**Title:** Senior Solutions Architect
+
+**Responsibility:** Architecture-led technology leadership driving strategic solution direction across:
+
+- **Critical Insurance Platforms** — Design and governance of core insurance systems
+- **Financial Reporting Systems** — Enterprise-scale financial reporting architecture
+- **Enterprise Integration** — Cross-platform connectivity and data orchestration
+- **Cloud-Native Modernization** — Legacy-to-cloud transformation initiatives
+- **AI Architecture & Governance** — Responsible AI delivery at enterprise scale
+
+---
+
+## Leadership & Team Management
+
+- **25+ Direct and Indirect Team Members** — Managing globally distributed teams across onshore and offshore delivery models
+- **C-Level Partnership** — Collaborating with executive leadership on strategic technology planning and investment decisions
+- **Vendor Ecosystem Management** — Overseeing technology partnerships and vendor relationships
+- **Strategic Planning** — Contributing to enterprise technology strategy and roadmap development
+
+---
+
+## Global Experience
+
+Professional presence and delivery experience across multiple regions:
+
+- 🇳🇿 **New Zealand** — Based market experience
+- 🇦🇺 **Australia** — Extensive consulting engagements
+- 🇬🇧 **United Kingdom** — Enterprise delivery programs
+- 🇨🇦 **Canada** — Client-facing architecture roles
+- 🇮🇳 **India** — Team leadership and delivery centers
+- 🇺🇸 **United States** — Cross-border consulting initiatives
+
+Operating within **global consulting**, **outsourcing**, and **managed service delivery** models.
+
+---
+
+## Technical Specialization
+
+### Generative AI & Modern Architecture
+
+- **Production LLM Systems** — Enterprise-grade large language model implementation and governance
+- **Agentic AI Frameworks** — LangGraph, agent orchestration, autonomous systems
+- **Retrieval-Augmented Generation (RAG)** — Context-aware AI systems, knowledge integration
+- **Model Context Protocol (MCP)** — Standard enterprise AI integration patterns
+- **Responsible AI** — Ethical AI, bias mitigation, governance frameworks
+- **Enterprise AI Delivery** — Secured, compliant, production-ready AI solutions
+
+---
+
+## Professional Philosophy
+
+I believe in architecting solutions that balance **technical excellence**, **business value**, and **responsible innovation**. My approach emphasizes:
+
+- Strategic alignment with business objectives
+- Sustainable, scalable architecture patterns
+- Team enablement and knowledge transfer
+- Continuous learning and industry evolution
+- Ethical and governed technology delivery
+
+---
+
+## Connect
+
+**LinkedIn Profile:** [Raj Chellababu](https://www.linkedin.com/in/raj-chellababu/)
+
+I am open to discussing enterprise technology strategy, AI architecture initiatives, consulting opportunities, and collaborative partnerships.
+
+---
