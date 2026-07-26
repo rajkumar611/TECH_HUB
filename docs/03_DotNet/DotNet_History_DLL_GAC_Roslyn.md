@@ -1,8 +1,7 @@
 DOTNET HISTORY — DLL HELL, GAC, ROSLYN, AND GC
-================================================
 
 DLL HELL
----------
+
 In the VB6/COM era, DLLs were stored in System32 and shared by ALL applications.
 Installers could overwrite a shared DLL with a different version.
 Result: Installing App A could break App B. This was "DLL Hell."
@@ -12,9 +11,8 @@ COM (Component Object Model):
 - COM DLLs lived in System32 with no versioning.
 - One app could overwrite a DLL used by another = the origin of DLL Hell.
 
-
 SOLUTION 1: GAC (Global Assembly Cache) — .NET Framework
----------------------------------------------------------
+
 .NET Framework solved DLL Hell with the GAC:
 - Strong-named assemblies (signed with a cryptographic key).
 - Multiple versions of the same DLL could live side-by-side in the GAC.
@@ -25,9 +23,8 @@ Downsides:
 - Not cross-platform.
 - Still machine-wide — shared between all apps.
 
-
 SOLUTION 2: Per-App Isolation — .NET Core
-------------------------------------------
+
 .NET Core removed the GAC entirely.
 Each app now carries its OWN copy of all DLLs inside its own folder.
 No shared DLLs = no conflicts = DLL Hell eliminated.
@@ -38,9 +35,8 @@ Benefits:
 - Cross-platform (Windows, Linux, Mac).
 - Fully isolated per application.
 
-
 ROSLYN COMPILER
-----------------
+
 Roslyn is the modern, open-source C# and VB.NET compiler.
 
 The old compiler was a closed black box that:
@@ -57,9 +53,8 @@ Roslyn converts C# → Intermediate Language (IL).
 IL can be executed by CLR (.NET Framework) or CoreCLR (.NET Core/5+).
 The IL is runtime-agnostic.
 
-
 GARBAGE COLLECTOR (GC)
------------------------
+
 .NET's Garbage Collector automatically manages memory.
 - Allocates memory for objects.
 - Frees memory when objects are no longer referenced.
@@ -72,24 +67,21 @@ GC has improved significantly in each .NET release:
 
 Developer benefit: No manual memory management (unlike C or C++).
 
-
 MODULAR ARCHITECTURE (.NET Core)
----------------------------------
+
 Old .NET Framework: Loads ALL assemblies at startup = heavy.
 .NET Core onwards: Load only what you need via NuGet packages = lightweight.
 
 Think of it like a buffet: take only what you need.
 This makes .NET Core apps smaller and faster.
 
-
 LATENCY
---------
+
 Latency = delay before something starts.
 - Low latency = fast, responsive (what we want).
 - High latency = slow, laggy.
 
 In .NET: Async I/O, GC optimizations, and modular loading all help reduce latency.
-
 
 NAS
 ----

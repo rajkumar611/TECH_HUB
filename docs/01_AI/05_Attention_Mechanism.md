@@ -1,9 +1,6 @@
-╔════════════════════════════════════════════════════════════════╗
-║              ATTENTION MECHANISM                              ║
-║   "All You Need Is Attention" - The Revolution in AI           ║
-╚════════════════════════════════════════════════════════════════╝
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+﻿
+               ATTENTION MECHANISM
+    "All You Need Is Attention" - The Revolution in AI
 
 📖 INTRODUCTION
 
@@ -15,8 +12,6 @@ It introduced the ATTENTION MECHANISM, which powers:
   └─ Almost all cutting-edge AI today
 
 This mechanism is the KEY to understanding modern AI!
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🧠 REAL-WORLD ANALOGY: YOUR ATTENTION
 
@@ -30,8 +25,6 @@ Imagine reading a book:
 
 That's exactly how the Attention Mechanism works!
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🔍 ATTENTION IN LANGUAGE
 
 Example: Translating a sentence
@@ -40,7 +33,7 @@ English: "The cat sat on the mat"
 
 Without Attention:
   Translator processes left-to-right:
-  "The" → "cat" → "sat" → ... 
+  "The" → "cat" → "sat" → ...
   Can't look back at important words!
 
 With Attention:
@@ -49,10 +42,8 @@ With Attention:
     ├─ Look at "The" (40% attention)
     ├─ Look at "cat" (50% attention) ← MOST IMPORTANT
     ├─ Look at "mat" (10% attention)
-  
-  "sat" is about the CAT! Focus there!
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  "sat" is about the CAT! Focus there!
 
 ⚙️ HOW ATTENTION WORKS (Simplified)
 
@@ -89,10 +80,8 @@ Use these scores as ATTENTION WEIGHTS:
               ↓
 Combine values weighted by attention:
   Result = (0.1 × The_value) + (0.8 × cat_value) + ...
-  
-Output: Rich understanding of "sat" focused on "cat"
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Output: Rich understanding of "sat" focused on "cat"
 
 🔢 ATTENTION MATH (The Formula)
 
@@ -117,8 +106,6 @@ Breaking it down:
    └─ Focus on important information
 
 Result: Attention output (rich, focused information)
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🎯 MULTI-HEAD ATTENTION
 
@@ -146,8 +133,6 @@ Then ALL heads combined give complete understanding!
 
 Multi-Head Attention = 8, 12, or 16 heads working in parallel
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🏗️ SELF-ATTENTION VS CROSS-ATTENTION
 
 SELF-ATTENTION:
@@ -162,8 +147,6 @@ CROSS-ATTENTION:
   └─ Used in: Some vision-language models
 
 Self-Attention is the foundation of modern LLMs!
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ⏱️ CONTEXT WINDOW AND ATTENTION
 
@@ -182,8 +165,6 @@ Bigger context window:
   ├─ More expensive to compute (attention is O(n²))
   └─ But: Modern techniques making it more efficient
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🚀 WHY ATTENTION CHANGED EVERYTHING
 
 Before Attention (RNNs):
@@ -201,14 +182,12 @@ With Attention (Transformers):
 
 This parallelization is why modern AI is so powerful!
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 📊 VISUALIZING ATTENTION WEIGHTS
 
 Example: "The cat sat on the mat"
 
 When processing "sat", attention weights:
-  
+
   "The"  [██████░░░░░░░░░░░░░░░░░░] 10%
   "cat"  [████████████████████████] 85% ← HIGHEST
   "sat"  [█████████░░░░░░░░░░░░░░░░] 20%
@@ -218,8 +197,6 @@ When processing "sat", attention weights:
 
 Model "knows" that "cat" is the subject of "sat"!
 No human told it this rule—it learned from data!
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🎓 KEY TAKEAWAYS
 
@@ -232,14 +209,11 @@ No human told it this rule—it learned from data!
 7. Attention is differentiable = Can train with backprop
 8. This is WHY modern AI (ChatGPT) works!
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🤔 THINK ABOUT IT
 
 - Why is attention better than processing words one-by-one?
 - How would multi-head attention help understand puns?
 - What would happen with context window of only 10 words?
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 NEXT UP: Module 06 - Transformer Architecture
+

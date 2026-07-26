@@ -1,8 +1,7 @@
 NODE.JS — COMPLETE GUIDE
-=========================
 
 WHAT IS NODE.JS?
------------------
+
 Node.js is a runtime environment that executes JavaScript code on the SERVER side.
 
 JavaScript is the language.
@@ -16,9 +15,8 @@ Analogy:
 Before Node.js: JavaScript only ran inside browsers (client-side).
 After Node.js: JavaScript can run on servers, building backend APIs and services.
 
-
 THE PARALLEL WITH .NET
-------------------------
+
 .NET world                  | JavaScript world
 ----------------------------|---------------------------
 C# language                 | JavaScript / TypeScript language
@@ -39,9 +37,8 @@ Node.js + Express (JavaScript):
 
 Both approaches return JSON from a REST endpoint — they're architecturally equivalent.
 
-
 NODE.JS vs ASP.NET CORE
-------------------------
+
 Feature         | Node.js (JavaScript)      | ASP.NET Core (C#)
 ----------------|---------------------------|---------------------------
 Type safety     | Dynamic (runtime errors)  | Static (compile-time errors)
@@ -53,9 +50,8 @@ Full-stack      | Same JS for frontend + backend | Different language for fronte
 .NET is statically typed: type errors caught at compile time.
 JavaScript/Node.js is dynamically typed: types resolved at runtime (more flexible, less safe).
 
-
 HOW REACT TALKS TO NODE.JS
----------------------------
+
 React component
   → fetch() or axios API call
   → Node.js (Express) endpoint
@@ -65,9 +61,8 @@ React component
 React and Node.js are a common pairing (MERN stack = MongoDB, Express, React, Node.js),
 but React works with any backend that returns JSON (.NET, Java, Python, etc.).
 
-
 EXPRESS.JS
------------
+
 Express.js is the most popular framework built on Node.js — it's to Node.js what
 ASP.NET Core is to .NET. It makes building REST APIs simple and fast.
 
@@ -80,9 +75,8 @@ ASP.NET Core is to .NET. It makes building REST APIs simple and fast.
 
   app.listen(3000);
 
-
 WHAT NODE.JS IS USED FOR
--------------------------
+
 - REST API backends
 - Microservices
 - CLI tools
@@ -90,9 +84,8 @@ WHAT NODE.JS IS USED FOR
 - Serverless functions (AWS Lambda, Azure Functions with JS)
 - Build tools (webpack, vite, eslint all run on Node.js)
 
-
 KEY FACTS TO REMEMBER
-----------------------
+
 - Node.js = runtime environment for server-side JavaScript (NOT a language, NOT a framework)
 - JavaScript = the language; Node.js = the runtime
 - Express.js = the framework for building APIs on Node.js (like ASP.NET Core for .NET)

@@ -1,30 +1,23 @@
-╔════════════════════════════════════════════════════════════════╗
-║                    WHAT IS ARTIFICIAL INTELLIGENCE?           ║
-║         A Beginner's Guide for High School Students            ║
-╚════════════════════════════════════════════════════════════════╝
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+﻿
+                     WHAT IS ARTIFICIAL INTELLIGENCE?
+          A Beginner's Guide for High School Students
 
 📖 INTRODUCTION
 
-Artificial Intelligence (AI) is everywhere today. From Netflix recommending 
-your next favorite show to your phone's face recognition, from ChatGPT 
-answering your questions to self-driving cars navigating roads—all of 
+Artificial Intelligence (AI) is everywhere today. From Netflix recommending
+your next favorite show to your phone's face recognition, from ChatGPT
+answering your questions to self-driving cars navigating roads—all of
 these use AI.
 
 But what exactly IS artificial intelligence?
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🤔 THE SIMPLE DEFINITION
 
 Artificial Intelligence = Machines Learning to Solve Problems Like Humans Do
 
-Instead of being explicitly programmed with every rule (like old computer 
-games), AI systems learn from examples and data to make decisions and solve 
+Instead of being explicitly programmed with every rule (like old computer
+games), AI systems learn from examples and data to make decisions and solve
 problems.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🎯 THREE TYPES OF AI (Based on Capability)
 
@@ -42,10 +35,8 @@ problems.
    └─ Hypothetical AI smarter than all humans combined
    └─ Pure science fiction at this point
 
-⚡ Right now, we only have Narrow AI. Most AI today is actually VERY narrow 
+⚡ Right now, we only have Narrow AI. Most AI today is actually VERY narrow
    and does only one thing.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🧠 HOW AI THINKS: THE LEARNING PROCESS
 
@@ -70,8 +61,6 @@ AI Way:
   - AI learns: "Hmm, spam usually has these patterns..."
   - Now it can catch new spam it's never seen before!
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🎬 EVERYDAY AI YOU ALREADY USE
 
 ✓ Phone Face Unlock     → Recognizes your face
@@ -82,8 +71,6 @@ AI Way:
 ✓ Spotify              → Creates playlists based on taste
 ✓ Maps                 → Predicts traffic
 ✓ ChatGPT              → Generates human-like text
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🏗️ THREE MAIN PILLARS OF AI
 
@@ -103,8 +90,6 @@ AI Way:
 
 We'll explore each in detail in upcoming modules!
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 ⚠️ COMMON MISCONCEPTIONS
 
 ❌ "AI is like a robot that thinks like humans"
@@ -115,8 +100,6 @@ We'll explore each in detail in upcoming modules!
 
 ❌ "AI can do anything"
 ✅ "Narrow AI can do ONE thing very well"
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📊 A QUICK HISTORY TIMELINE
 
@@ -129,8 +112,6 @@ We'll explore each in detail in upcoming modules!
 2022  → ChatGPT launches (changed EVERYTHING)
 2023-2024 → Explosion of AI tools and apps
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🎓 KEY TAKEAWAYS
 
 1. AI is about machines learning patterns from data
@@ -139,14 +120,11 @@ We'll explore each in detail in upcoming modules!
 4. Three pillars: Machine Learning, Deep Learning, LLMs
 5. AI is not magic—it's sophisticated mathematics
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🤔 THINK ABOUT IT
 
 - What AI do you use every day without realizing?
 - How would ChatGPT writing an essay be different from you writing one?
 - Why do you think AI needs SO MUCH data to learn?
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 NEXT UP: Module 02 - What is Machine Learning?
+

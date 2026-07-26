@@ -1,33 +1,28 @@
-╔════════════════════════════════════════════════════════════════╗
-║                  WHAT IS MACHINE LEARNING?                    ║
-║         Understanding How Machines Learn from Data             ║
-╚════════════════════════════════════════════════════════════════╝
+﻿# What is Machine Learning?
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Understanding how machines learn from data
 
-📖 INTRODUCTION
+## 📖 Introduction
 
-Machine Learning (ML) is the core of artificial intelligence. Instead of 
-telling a computer exactly what to do, ML lets the computer learn from 
+Machine Learning (ML) is the core of artificial intelligence. Instead of
+telling a computer exactly what to do, ML lets the computer learn from
 examples and improve on its own.
 
-Think of it like learning to ride a bike. No one can explain EXACTLY how 
-to balance perfectly, but through practice, your brain learns the pattern. 
+Think of it like learning to ride a bike. No one can explain EXACTLY how
+to balance perfectly, but through practice, your brain learns the pattern.
 ML works the same way—through examples!
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-🔑 THE THREE TYPES OF MACHINE LEARNING
+## 🔑 The Three Types of Machine Learning
 
 1️⃣  SUPERVISED LEARNING
     └─ "Learning with a teacher giving correct answers"
-    
+
     How it works:
     ├─ You show the machine MANY examples with correct labels
     ├─ Example: 1000 cat and dog photos labeled "cat" or "dog"
     ├─ Machine learns: "Cats have whiskers, pointy ears..."
     └─ Now it can identify cats/dogs in new photos
-    
+
     Real-world uses:
     ├─ Spam detection (email labeled as spam/not spam)
     ├─ Medical diagnosis (images labeled as healthy/disease)
@@ -36,13 +31,13 @@ ML works the same way—through examples!
 
 2️⃣  UNSUPERVISED LEARNING
     └─ "Learning without being told the right answer"
-    
+
     How it works:
     ├─ Show machine data WITHOUT labels
     ├─ Example: 1000 customer records, no labels
     ├─ Machine finds patterns: "These customers buy together..."
     └─ Discovers groups/patterns humans didn't know existed
-    
+
     Real-world uses:
     ├─ Customer segmentation (finding customer groups)
     ├─ Recommendation systems (finding similar products)
@@ -51,20 +46,18 @@ ML works the same way—through examples!
 
 3️⃣  REINFORCEMENT LEARNING
     └─ "Learning through rewards and punishment"
-    
+
     How it works:
     ├─ Machine takes actions in an environment
     ├─ Gets reward (good action) or penalty (bad action)
     ├─ Over time, learns to maximize rewards
     └─ Like training a dog—reward for good behavior!
-    
+
     Real-world uses:
     ├─ Game AI (AlphaGo learned to beat world champion)
     ├─ Robot control (learn to walk, manipulate objects)
     ├─ Self-driving cars (learn to drive safely)
     └─ Trading algorithms (learn to make profitable trades)
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🎯 SUPERVISED LEARNING IN DETAIL (Most Common Type)
 
@@ -77,7 +70,7 @@ A) CLASSIFICATION
    ├─ Image: Cat, Dog, or Bird?
    ├─ Movie: Horror, Comedy, or Drama?
    └─ Medical: Disease or Healthy?
-   
+
 B) REGRESSION
    Question: What number will this be?
    Examples:
@@ -92,8 +85,6 @@ C) RANKING
    ├─ Search results (most relevant first)
    ├─ Recommendations (most likely to like first)
    └─ News feed (most interesting first)
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📚 THE ML WORKFLOW (Step-by-Step)
 
@@ -123,8 +114,6 @@ Step 6: DEPLOY & USE
     └─ Put it in the real world
     └─ Make predictions on new data
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🧮 WHAT IS A "MODEL" ANYWAY?
 
 A machine learning MODEL is essentially:
@@ -136,12 +125,10 @@ A machine learning MODEL is essentially:
 Example:
   Old: If age > 18 AND salary > 50,000 → Approve credit
        (Humans wrote this rule)
-  
+
   ML:  Input: age, income, credit_history
        Output: Approval probability (78% likely)
        (Model learned the complex pattern from 100,000 examples)
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ⚖️ THE ACCURACY PARADOX
 
@@ -161,8 +148,6 @@ JUST RIGHT: Good balance
   ├─ Train accuracy: 92%
   ├─ Real-world accuracy: 90%
   └─ Like understanding the concept deeply
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🔄 KEY ML ALGORITHMS
 
@@ -190,8 +175,6 @@ Support Vector Machines (Finding boundaries)
   └─ Used for: Complex classification
   └─ Good for many types of data
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 📊 EXAMPLE: PREDICTING STUDENT GRADES
 
 Task: Predict if student will score A, B, C based on hours studied
@@ -210,8 +193,6 @@ Prediction:
   New student says: "I studied 4.5 hours"
   Model predicts: "You'll probably get an A" (based on pattern)
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🎓 KEY TAKEAWAYS
 
 1. ML learns patterns from examples, not programmed rules
@@ -221,14 +202,11 @@ Prediction:
 5. A model is essentially learned mathematical equations
 6. Balance is key: not too simple, not too complex
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🤔 THINK ABOUT IT
 
 - Why does a spam filter need thousands of examples, not just the rules?
 - What data would you need to predict a student's college major?
 - Why is it dangerous if your model overfits?
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 NEXT UP: Module 03 - Deep Learning Fundamentals
+

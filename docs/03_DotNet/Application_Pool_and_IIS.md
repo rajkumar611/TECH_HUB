@@ -1,8 +1,6 @@
 APPLICATION POOL, IIS, AND WEB HOSTING
-========================================
 
 IIS ARCHITECTURE
------------------
 
 Windows Server (the machine)
    └── IIS (the web server software)
@@ -13,9 +11,8 @@ Each App Pool gets its own worker process (w3wp.exe).
 Each worker process loads its own .NET runtime.
 This is how different apps can run different .NET versions on the same server.
 
-
 APPLICATION POOL
------------------
+
 An Application Pool is a logical container in IIS that isolates web apps.
 - Each app runs in its own worker process (w3wp.exe).
 - If one app crashes or leaks memory, others are NOT affected.
@@ -24,9 +21,7 @@ An Application Pool is a logical container in IIS that isolates web apps.
 Request flow:
 Client → IIS → Application Pool → w3wp.exe → .NET Runtime → ThreadPool → Thread executes → Response
 
-
 WEB GARDEN vs WEB FARM
-------------------------
 
 Web Garden = Multiple worker processes on ONE server.
   - One machine → One IIS → One App Pool → Multiple w3wp.exe processes
@@ -42,9 +37,7 @@ Web Farm = Multiple servers each running IIS.
 
 One-liner: Web Garden = scale up on one machine. Web Farm = scale out across machines.
 
-
 IIS EXPRESS vs IIS SERVER
---------------------------
 
 Feature           | IIS Express          | IIS Server
 ------------------|----------------------|------------------------
@@ -63,9 +56,8 @@ In production: Code deployed → w3wp.exe runs 24/7 → Handles real user traffi
 w3wp.exe is installed once. IIS launches multiple instances (one per App Pool).
 Each instance loads its own .NET runtime version.
 
-
 ASYNC IN IIS
-------------
+
 Each request normally uses one ThreadPool thread.
 With async, the thread is released at await, allowing the server to handle more requests.
 The key to ASP.NET scalability.

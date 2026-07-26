@@ -1,9 +1,6 @@
-╔════════════════════════════════════════════════════════════════╗
-║              PROMPT ENGINEERING                              ║
-║      The Art of Talking to AI Models Effectively              ║
-╚════════════════════════════════════════════════════════════════╝
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+﻿
+               PROMPT ENGINEERING
+       The Art of Talking to AI Models Effectively
 
 📖 INTRODUCTION
 
@@ -21,105 +18,99 @@ Engineered Prompt:
 
 Small differences in prompts = HUGE differences in output quality!
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🎯 PRINCIPLES OF GOOD PROMPTS
 
 1. BE CLEAR AND SPECIFIC
-   
+
    Bad: "Tell me about AI"
    Better: "Explain how ChatGPT generates text, step by step"
-   
+
    LLMs respond better to specificity!
 
 2. PROVIDE CONTEXT
-   
+
    Bad: "Translate this"
    Better: "Translate this English sentence to Spanish: 'Hello world'"
-   
+
    Context helps the model understand your intent.
 
 3. SPECIFY THE FORMAT
-   
+
    Bad: "Give me information about cats"
    Better: "Give me 5 facts about cats in bullet points"
    Better: "Give me information about cats in JSON format"
-   
+
    Structured output is easier to parse!
 
 4. USE EXAMPLES (Few-Shot Learning)
-   
+
    Give examples of what you want:
-   
+
    "Classify sentiment as positive or negative:
-    
+
     Example 1: 'This movie was amazing!' → Positive
     Example 2: 'Worst day ever' → Negative
     Example 3: 'I like pizza' → ?"
-   
+
    Model learns from examples and applies to new data.
 
 5. BREAK DOWN COMPLEX TASKS
-   
-   Bad: "Write me a 1000-word essay about climate change"
-   Better: "First, list 5 key causes of climate change. 
-            Then write 2 paragraphs about each."
-   
-   Simpler steps = Better results!
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   Bad: "Write me a 1000-word essay about climate change"
+   Better: "First, list 5 key causes of climate change.
+            Then write 2 paragraphs about each."
+
+   Simpler steps = Better results!
 
 💡 TECHNIQUES FOR BETTER PROMPTS
 
 A) CHAIN-OF-THOUGHT (CoT)
-   
+
    Ask model to explain its thinking:
-   
+
    Bad:  "What's 15 + 27 + 83?"
    Better: "What's 15 + 27 + 83? Work through it step by step."
-   
+
    Result: Model shows each addition step
    Better accuracy, especially for reasoning!
 
 B) ROLE-PLAYING (Give it a persona)
-   
+
    "You are an expert biology teacher. Explain photosynthesis..."
    "You are a professional coder. Write Python code to..."
-   
+
    Models perform better when given a role!
 
 C) REVERSE PROMPTING
-   
+
    Instead of asking for output, describe what you want:
-   
+
    Bad:  "Create a question about machine learning"
    Better: "I'm a teacher. Create multiple-choice question..."
-   
+
    More specific direction = better results.
 
 D) TEMPERATURE AND RANDOMNESS
-   
+
    (In API calls, not just prompts)
-   
+
    Temperature = 0 (Deterministic, same answer every time)
    Temperature = 0.5 (Balanced)
    Temperature = 1.0+ (Creative, different answers)
-   
+
    For precise tasks: Use low temperature
    For creative tasks: Use high temperature
 
 E) CONSTRAINT-BASED PROMPTING
-   
+
    Add constraints to guide output:
-   
+
    "Write a poem about nature that:
     - Has exactly 4 lines
     - Rhymes AABB
     - Uses only 5-letter words"
-   
-   Constraints improve quality!
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   Constraints improve quality!
 
 🔄 ITERATIVE IMPROVEMENT
 
@@ -134,13 +125,11 @@ Version 2:
   Result: Better, but not formatted well
 
 Version 3:
-  "Explain AI to a 12th grade student. Use 2-3 real-world 
+  "Explain AI to a 12th grade student. Use 2-3 real-world
    examples. Format with clear sections and bullet points."
   Result: Much better!
 
 Iterative refinement is KEY!
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🛡️ PROMPT INJECTION (The Dark Side)
 
@@ -168,8 +157,6 @@ In APIs like Claude and ChatGPT:
   ├─ Much harder to inject (but not impossible)
   └─ Always assume users MIGHT try to inject
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🎬 SYSTEM PROMPTS vs USER PROMPTS
 
 SYSTEM PROMPT:
@@ -191,8 +178,6 @@ USER PROMPT:
   └─ Specific to that conversation
 
 Both combined = Final behavior
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📊 EXAMPLES OF PROMPT ENGINEERING
 
@@ -225,8 +210,6 @@ Better: "Translate to Spanish Spanish (not Latin American):
          [text]
          Keep formal tone. Preserve formatting."
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🎓 PROMPT ENGINEERING FRAMEWORKS
 
 1-STEP PROMPT:
@@ -253,8 +236,6 @@ SELF-CONSISTENCY:
   ├─ Take majority vote/consensus
   ├─ More reliable than single output
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🔧 PRACTICAL TIPS
 
 1. Use clear language (not vague)
@@ -267,8 +248,6 @@ SELF-CONSISTENCY:
 8. Use constraints
 9. Give context when needed
 10. Specify tone/style
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🎓 KEY TAKEAWAYS
 
@@ -283,14 +262,11 @@ SELF-CONSISTENCY:
 9. Different techniques for different tasks
 10. Good prompt engineering is a skill!
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🤔 THINK ABOUT IT
 
 - Why do examples help LLMs understand better?
 - How would you prevent prompt injection?
 - Why is "think step by step" so effective?
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 NEXT UP: Module 09 - Retrieval-Augmented Generation (RAG)
+

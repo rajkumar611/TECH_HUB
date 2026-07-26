@@ -1,8 +1,7 @@
 SQLITE AND PRISMA
-==================
 
 SQLITE
--------
+
 What it is:
 SQLite is a lightweight, file-based relational database that lives inside your
 application itself. It does NOT need a separate database server.
@@ -32,9 +31,8 @@ package. You write the same EF code — EF just targets a .db file instead of SQ
    // EF Core with SQLite
    optionsBuilder.UseSqlite("Data Source=myapp.db");
 
-
 PRISMA
--------
+
 What it is:
 Prisma is a modern, strongly-typed ORM for Node.js and TypeScript.
 Think of it as the equivalent of Entity Framework Core — but for the JavaScript/
@@ -74,9 +72,8 @@ Prisma vs EF Core comparison:
    Type safety        | Yes                   | Yes
    Supported DBs      | SQL Server, PG, MySQL, SQLite | PG, MySQL, SQLite, SQL Server, MongoDB
 
-
 SQLITE + PRISMA TOGETHER
--------------------------
+
 SQLite is commonly used with Prisma in:
 - Local development (fast, no server setup)
 - Prototypes
@@ -88,9 +85,8 @@ SQLite is commonly used with Prisma in:
      url      = "file:./dev.db"
    }
 
-
 SUMMARY
---------
+
 - SQLite = file-based database, no server needed, great for local/small-scale apps
 - Prisma = modern ORM for Node.js/TypeScript, equivalent to EF Core in .NET
 - Together, they offer a fast, zero-config database setup for JavaScript apps

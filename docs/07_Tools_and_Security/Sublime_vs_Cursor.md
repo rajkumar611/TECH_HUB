@@ -1,8 +1,7 @@
 SUBLIME TEXT vs CURSOR
-=======================
 
 SUBLIME TEXT
--------------
+
 What it is:
 A lightweight, fast, general-purpose text/code editor.
 
@@ -20,9 +19,8 @@ Best for:
 - Developers who prefer speed and simplicity
 - Offline environments
 
-
 CURSOR
--------
+
 What it is:
 A modern AI-powered code editor built on top of Visual Studio Code.
 Designed specifically for AI-assisted coding, refactoring, debugging, and code generation.
@@ -44,9 +42,8 @@ Best for:
 - Developers who want productivity acceleration through AI
 - Teams adopting AI-first development practices
 
-
 COMPARISON TABLE
------------------
+
 Feature            | Sublime Text          | Cursor
 -------------------|-----------------------|---------------------------
 Type               | Text/code editor      | AI-powered code editor
@@ -60,15 +57,13 @@ Learning curve     | Very easy             | Easy (if you know VS Code)
 Offline work       | Yes, fully offline    | Limited (AI features need internet)
 Best for           | Speed, simplicity     | AI-driven productivity
 
-
 ONE-LINER SUMMARY
-------------------
+
 Sublime Text is a fast, lightweight text editor for manual coding and quick edits.
 Cursor is an AI-powered coding environment built for modern, assisted development.
 
-
 RELATED: CLAUDE CODE vs GITHUB COPILOT
------------------------------------------
+
 (Both are AI coding tools, different from Sublime/Cursor)
 
 Claude Code: Anthropic's agentic coding tool — works in the terminal, writes and

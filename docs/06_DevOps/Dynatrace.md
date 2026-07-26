@@ -1,8 +1,7 @@
 DYNATRACE
-==========
 
 WHAT IS DYNATRACE?
--------------------
+
 Dynatrace is an AI-driven, full-stack observability and security platform.
 
 Originally known as a powerful APM (Application Performance Monitoring) tool,
@@ -17,9 +16,8 @@ it has evolved into a complete platform covering:
 - Infrastructure monitoring
 - Edge and cloud integrations
 
-
 WHAT DYNATRACE ACTUALLY SHOWS YOU
-------------------------------------
+
 Dynatrace automatically detects issues and explains root causes.
 Here are the types of real-world insights it produces:
 
@@ -81,9 +79,8 @@ Here are the types of real-world insights it produces:
       Payment Service: 900 ms | Database: 160 ms
     Root Cause: Order Service slow due to Inventory query
 
-
 KEY DYNATRACE FEATURES
------------------------
+
 Feature                  | What it does
 -------------------------|-------------------------------------------
 Davis AI                 | Automatic root cause analysis — no manual searching
@@ -96,9 +93,8 @@ Log Analytics            | Search and analyse logs with context
 Kubernetes Monitoring    | Pod health, restarts, resource usage
 Infrastructure Monitoring| Host, cloud, network performance
 
-
 DYNATRACE IN THE OBSERVABILITY LANDSCAPE
------------------------------------------
+
 Observability = ability to understand what is happening inside a system from outside signals.
 
 Three pillars of observability:
@@ -110,9 +106,8 @@ Dynatrace covers all three — and adds AI-powered analysis on top.
 
 Competitors: Datadog, New Relic, AppDynamics, Splunk, Azure Monitor + Application Insights
 
-
 KEY FACTS TO REMEMBER
-----------------------
+
 - Dynatrace = AI-driven full-stack observability + security platform
 - Davis AI automatically identifies root causes without manual investigation
 - PurePath = end-to-end distributed tracing (see every hop in a request)

@@ -1,16 +1,14 @@
 CONTAINERS, DOCKER, AND KUBERNETES
-====================================
 
 THE PROBLEM BEFORE CONTAINERS
--------------------------------
+
 "It works on my machine" was the biggest problem in software delivery.
 Different machines had different OS versions, runtimes, library versions, and configs.
 Deployment required installers, ZIP files, VM images, or manual server setup documents.
 Every deployment was fragile and inconsistent.
 
-
 WHAT IS A CONTAINER?
----------------------
+
 A container packages your app + its runtime + its dependencies into one isolated, portable unit.
 The app runs the same everywhere: laptop, QA, UAT, production, cloud, or on-prem.
 
@@ -22,9 +20,8 @@ Analogy:
   Before: Send a chef to a random kitchen, hope the tools match.
   After:  Send the chef WITH their own kitchen, tools, and ingredients.
 
-
 DOCKER
--------
+
 Docker is the tool that builds and runs containers.
 
 Key components:
@@ -41,9 +38,8 @@ Analogy: Dockerfile = recipe. Docker = chef. Image = prepared dish. Container = 
 
 Reference video: https://www.youtube.com/watch?v=i8vnIi08UxQ
 
-
 KUBERNETES
------------
+
 In real projects, you run hundreds or thousands of containers.
 Kubernetes (K8s) is a container orchestration system that manages containers at scale.
 
@@ -53,9 +49,7 @@ Kubernetes handles:
 - Load balancing (distribute traffic)
 - Self-healing (restart crashed containers)
 
-
 KUBERNETES ARCHITECTURE
-------------------------
 
 Control Plane (the brain):
   - API Server       → Central hub; all communication goes through here.
@@ -76,9 +70,8 @@ How it works:
 5. Kubelet on those nodes runs the containers via container runtime.
 6. If a container crashes, Kubelet reports it. Controller Manager recreates it automatically.
 
-
 KUBERNETES vs CLOUD SERVICES
-------------------------------
+
 Kubernetes is NOT cloud-specific. It can run:
 - On-premises (your company's physical servers)
 - On cloud (as managed services)
@@ -89,14 +82,12 @@ Managed Kubernetes services:
 - EKS (Elastic Kubernetes Service) → Kubernetes on AWS
 - GKE (Google Kubernetes Engine)   → Kubernetes on GCP
 
-
 DO CONTAINERS NEED CLOUD?
---------------------------
+
 No. Containers run perfectly on your laptop, on-prem servers, or in a data center.
 Cloud just makes it easier to provision the infrastructure Kubernetes needs.
 
-
 SUMMARY
---------
+
 Docker creates containers. Kubernetes manages them at scale.
 This combination is the standard for modern cloud-native application deployment.

@@ -1,8 +1,7 @@
 REST API — COMPLETE GUIDE
-==========================
 
 WHAT IS REST?
--------------
+
 REST = Representational State Transfer.
 It is an architectural style (not a technology) created by Roy Fielding in his
 2000 PhD dissertation.
@@ -15,9 +14,8 @@ REST defines HOW to properly use HTTP for building web services:
 Before REST, developers sent everything via POST regardless of the operation.
 REST established clear rules about which HTTP method to use for which operation.
 
-
 EVOLUTION OF .NET WEB SERVICE TECHNOLOGY
-------------------------------------------
+
 1. ASMX (early 2000s):
    - First way to build web services in .NET
    - Built entirely on SOAP (XML-based, verbose)
@@ -35,9 +33,8 @@ EVOLUTION OF .NET WEB SERVICE TECHNOLOGY
    - Minimal configuration, clean and intuitive
    - The modern standard for REST APIs in .NET
 
-
 HTTP METHODS AND WHEN TO USE THEM
-------------------------------------
+
 Method | Use for               | Idempotent? | Cacheable?
 -------|-----------------------|-------------|----------
 GET    | Retrieve data         | Yes         | Yes (by default)
@@ -68,9 +65,8 @@ PATCH:
 DELETE:
 - Idempotent: deleting twice just means the resource is still gone (404 on second call)
 
-
 WHY NOT USE POST FOR EVERYTHING?
-----------------------------------
+
 1. Idempotency matters in distributed systems.
    - Load balancers and clients retry failed requests automatically.
    - If you use POST for updates, retries cause duplicate writes.
@@ -88,9 +84,8 @@ WHY NOT USE POST FOR EVERYTHING?
    - Microservices relay requests across many hops; non-idempotent methods
      cause cascading duplicates if any hop retries.
 
-
 ASP.NET CORE REST EXAMPLE
----------------------------
+
 [ApiController]
 [Route("customers")]
 public class CustomersController : ControllerBase
@@ -118,9 +113,8 @@ URL patterns:
 - PUT    /customers/5  → Replace customer 5 entirely
 - DELETE /customers/5  → Delete customer 5
 
-
 REST vs ALTERNATIVES
----------------------
+
 Technology  | Best for                          | Transport
 ------------|-----------------------------------|-----------
 REST        | Browsers, mobile, public APIs     | HTTP/1.1 + JSON
@@ -134,9 +128,8 @@ REST is still the dominant standard because:
 - Leverages HTTP caching natively
 - Human-readable (JSON)
 
-
 KEY FACTS TO REMEMBER
-----------------------
+
 - REST = architectural style, not a technology
 - ASP.NET Web API = the Microsoft framework that implements REST
 - URLs should be nouns: /customers, /orders — not /getCustomer, /deleteOrder

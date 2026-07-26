@@ -1,9 +1,6 @@
-╔════════════════════════════════════════════════════════════════╗
-║           LARGE LANGUAGE MODELS (LLMs)                        ║
-║         ChatGPT, Claude, Gemini and their Friends            ║
-╚════════════════════════════════════════════════════════════════╝
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+﻿
+            LARGE LANGUAGE MODELS (LLMs)
+          ChatGPT, Claude, Gemini and their Friends
 
 📖 INTRODUCTION
 
@@ -21,8 +18,6 @@ Examples of LLMs:
   ├─ Gemini (Google) - 100B+ parameters
   ├─ LLaMA (Meta) - 7B, 13B, 70B versions
   └─ Mistral (Open-source) - 7B, 8x7B versions
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🎯 WHAT MAKES A MODEL "LARGE"?
 
@@ -46,8 +41,6 @@ Compute Resources:
 
 The "Large" in LLM means all three are huge!
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 📚 TRAINING DATA SOURCES
 
 Where do LLMs learn from?
@@ -69,8 +62,6 @@ How Much?
 Quality Matters:
   └─ Not just quantity, but QUALITY of data
   └─ That's why models are fine-tuned after initial training
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🔄 THREE TRAINING PHASES
 
@@ -100,8 +91,6 @@ Phase 3: REINFORCEMENT LEARNING FROM HUMAN FEEDBACK (RLHF)
   └─ Cost: Millions (paying human raters)
 
 Result: ChatGPT!
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🧠 WHAT CAN LLMs DO?
 
@@ -136,8 +125,6 @@ Reasoning:
 Knowledge Retrieval:
   └─ Input: "Who won Nobel Prize in 2023?"
   └─ Output: "Jon Kabat-Zinn for Medicine"
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ⚠️ LLM LIMITATIONS
 
@@ -192,8 +179,6 @@ Bias and Fairness:
 ❌ "LLMs are conscious"
 ✅ "LLMs are mathematical models doing matrix multiplication"
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 📊 COMPARISON OF POPULAR LLMs
 
                     Params  Context   Strength
@@ -206,8 +191,6 @@ Mistral 8x7B        56B     32K       Speed, efficient
 ────────────────────────────────────────────────────
 Smaller = Faster + Cheaper (but less capable)
 Larger = Smarter + Slower (but more expensive)
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🎯 USING LLMs IN PRACTICE
 
@@ -231,8 +214,6 @@ Fine-Tuning:
   ├─ Better results for your use case
   └─ Less cost than training from scratch
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🎓 KEY TAKEAWAYS
 
 1. LLMs predict next token based on previous tokens
@@ -244,14 +225,11 @@ Fine-Tuning:
 7. Three ways to use: API, self-hosted, fine-tuned
 8. Understand limitations before using in critical apps
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🤔 THINK ABOUT IT
 
 - Why do LLMs sometimes make confident mistakes?
 - How would you prevent hallucinations?
 - What's the difference between "understanding" and "pattern matching"?
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 NEXT UP: Module 08 - Prompt Engineering
+

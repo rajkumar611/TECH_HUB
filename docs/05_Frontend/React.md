@@ -1,17 +1,15 @@
 REACT — COMPLETE GUIDE
-=======================
 
 WHAT IS REACT?
---------------
+
 React is a JavaScript library for building user interfaces (UI), created by Facebook.
 It is component-based: you build the UI as a collection of small, reusable components.
 
 React is NOT a full framework — it handles only the UI layer.
 You combine it with other libraries for routing (React Router), state (Redux), and API calls.
 
-
 WHY REACT IS SO POPULAR
--------------------------
+
 React has the largest frontend ecosystem in the world:
 - Biggest collection of libraries, UI kits, tools, and community packages
 - Millions of npm packages available
@@ -22,7 +20,6 @@ React = The biggest city in the world — more shops, services, and options than
 Angular = A planned town — everything available, but controlled and limited.
 Vue = A smaller but beautiful city — growing fast, not as massive.
 
-
 JSX
 ----
 React uses JSX (JavaScript XML) — HTML-like syntax written inside JavaScript files.
@@ -31,18 +28,16 @@ React uses JSX (JavaScript XML) — HTML-like syntax written inside JavaScript f
   }
 JSX is compiled to plain JavaScript before the browser executes it.
 
-
 FUNCTIONAL COMPONENTS (MODERN STANDARD)
------------------------------------------
+
 Class components are legacy. The modern standard is functional components with hooks.
   function Counter() {
     const [count, setCount] = useState(0);
     return <button onClick={() => setCount(count + 1)}>Count: {count}</button>;
   }
 
-
 REACT HOOKS
-------------
+
 Hooks are built-in functions that let functional components manage state, side effects,
 and context.
 
@@ -57,9 +52,8 @@ Common built-in hooks:
 
 Mental model: React hooks manage component-level behaviour.
 
-
 PROPS — PARENT TO CHILD DATA FLOW
------------------------------------
+
 Props = properties passed from a parent component to a child component.
 Data flows DOWN (parent → child only, not upward).
   // Parent
@@ -70,9 +64,8 @@ Data flows DOWN (parent → child only, not upward).
     return <p>{name} — {role}</p>;
   }
 
-
 STATE MANAGEMENT OPTIONS
---------------------------
+
 1. useState (local state):
    - State lives inside one component
    - Good for simple, isolated state
@@ -110,9 +103,8 @@ Analogy:
 Context API = small shared backpack
 Redux = full warehouse with rules, logs, and security
 
-
 REACT vs ANGULAR vs VUE
--------------------------
+
 Feature            | React          | Angular         | Vue
 -------------------|----------------|-----------------|---------------------
 Type               | UI library     | Full framework  | Progressive framework
@@ -128,9 +120,8 @@ When to use:
 - Angular: Full-featured framework with built-in routing, forms, DI
 - Vue: Mid-size projects, quick prototypes, easier learning curve
 
-
 KEY FACTS TO REMEMBER
-----------------------
+
 - React = UI library, not a full framework
 - Functional components + hooks = the modern standard (not class components)
 - useState manages local state; useEffect handles side effects

@@ -1,9 +1,6 @@
-╔════════════════════════════════════════════════════════════════╗
-║        LANGCHAIN AND LANGGRAPH FRAMEWORKS                     ║
-║      Building Production AI Applications with Python          ║
-╚════════════════════════════════════════════════════════════════╝
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+﻿
+         LANGCHAIN AND LANGGRAPH FRAMEWORKS
+       Building Production AI Applications with Python
 
 📖 INTRODUCTION
 
@@ -23,8 +20,6 @@ It's like:
   └─ LangChain simplifies building LLM apps
 
 Used by: Startups, enterprises, researchers building AI apps
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🎯 WHAT IS LANGCHAIN?
 
@@ -63,8 +58,6 @@ LangChain is a Python library that provides:
    └─ Query vector stores
    └─ Combine with generation
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🔗 LANGCHAIN ARCHITECTURE
 
 Components:
@@ -92,8 +85,6 @@ Components:
 │ ├─ Database                                     │
 │ └─ Business logic                               │
 └──────────────────────────────────────────────────┘
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 💻 SIMPLE LANGCHAIN EXAMPLE
 
@@ -130,8 +121,6 @@ print(result)
 ```
 
 Much cleaner! Uses pipe operator (|) to chain.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🔄 CHAINS (Connecting Multiple Steps)
 
@@ -171,8 +160,6 @@ print(expanded)
 ```
 
 Simple pipeline!
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 💾 MEMORY (Remembering Conversations)
 
@@ -215,8 +202,6 @@ conversation.run("Hi, my name is Alice")
 conversation.run("What's my name?")  # AI remembers!
 ```
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🛠️ TOOLS AND AGENTS
 
 Build agents with LangChain:
@@ -247,8 +232,6 @@ Agent automatically:
   ├─ Uses them correctly
   ├─ Combines results
   └─ Provides answer
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📚 RAG WITH LANGCHAIN
 
@@ -289,8 +272,6 @@ result = qa.run("What is covered in this document?")
 ```
 
 Complete RAG pipeline in ~20 lines!
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🌳 LANGGRAPH (Advanced Workflows)
 
@@ -343,8 +324,6 @@ result = compiled_graph.invoke({"query": "Find papers about AI"})
 
 More powerful for complex workflows!
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 ⚙️ OTHER AI FRAMEWORKS
 
 Semantic Kernel (Microsoft):
@@ -372,8 +351,6 @@ LiteLLM:
   ├─ Unified interface
   ├─ Good for: Cost optimization
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 📊 LANGCHAIN ECOSYSTEM
 
 LangChain Core:
@@ -390,8 +367,6 @@ LangSmith:
 
 Together = Complete platform for building LLM apps!
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🎓 KEY TAKEAWAYS
 
 1. LangChain simplifies building LLM applications
@@ -405,14 +380,11 @@ Together = Complete platform for building LLM apps!
 9. LangSmith debugs and monitors
 10. Python-first, great ecosystem
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🤔 THINK ABOUT IT
 
 - Why is chains better than calling LLM API directly?
 - How does memory prevent losing conversation context?
 - When would you use LangGraph instead of LangChain?
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 NEXT UP: Module 12 - Advanced Topics (Evals, Responsible AI)
+

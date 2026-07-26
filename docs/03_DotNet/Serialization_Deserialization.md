@@ -1,8 +1,7 @@
 SERIALIZATION AND DESERIALIZATION
-===================================
 
 WHAT IS IT?
------------
+
 Serialization   = Converting an object into a transferable/storable format (like JSON or XML).
 Deserialization = Reconstructing the original object back from that format.
 
@@ -10,9 +9,8 @@ Simple analogy:
 - Serialization   = packing your belongings into boxes for moving.
 - Deserialization = unpacking the boxes and putting everything back.
 
-
 WHY IS IT NEEDED?
------------------
+
 Objects in memory cannot be sent over a network or stored to disk directly.
 They need to be converted to a portable format first.
 
@@ -26,16 +24,14 @@ Without serialization, these things don't work:
 "Serialization turns objects into transferable formats like JSON;
 deserialization rebuilds them. Without it, APIs and microservices simply don't work."
 
-
 COMMON FORMATS
---------------
+
 - JSON  → Most common for REST APIs and web. Human-readable.
 - XML   → Older, verbose. Used in SOAP, WCF, legacy systems.
 - Binary → Compact, fast. Used in gRPC (Protobuf), performance-critical systems.
 
-
 .NET EXAMPLE
-------------
+
 // Object to JSON (Serialization)
 string json = JsonSerializer.Serialize(customer);
 

@@ -1,9 +1,6 @@
-╔════════════════════════════════════════════════════════════════╗
-║      RETRIEVAL-AUGMENTED GENERATION (RAG)                     ║
-║   Giving LLMs Access to Real Knowledge Beyond Training Data   ║
-╚════════════════════════════════════════════════════════════════╝
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+﻿
+       RETRIEVAL-AUGMENTED GENERATION (RAG)
+    Giving LLMs Access to Real Knowledge Beyond Training Data
 
 📖 INTRODUCTION
 
@@ -25,8 +22,6 @@ Real-world Examples:
   ├─ Medical diagnosis: Access to latest research papers
   └─ Company assistant: Access to internal documents
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🔄 HOW RAG WORKS (Step-by-Step)
 
 User asks:
@@ -42,10 +37,10 @@ Step 2: AUGMENT THE PROMPT
   └─ Add retrieved documents as context
   └─ New prompt:
       "Question: What are the latest safety features...?
-       
+
        Context:
        [Full text of Model 3 2024 Safety article]
-       
+
        Answer the question based on the context above."
 
 Step 3: GENERATE ANSWER
@@ -55,8 +50,6 @@ Step 3: GENERATE ANSWER
   └─ Can cite sources
 
 Output: "Based on the 2024 Tesla Model 3 documentation..."
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 💾 VECTOR DATABASES (The Engine of RAG)
 
@@ -91,14 +84,12 @@ How it works:
   4. LLM gets these relevant documents
      └─ Generates answer from actual sources!
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🔢 EMBEDDINGS (The Magic)
 
 An embedding is a vector representation of text.
 
 Simple Example (3-dimensional for illustration):
-  
+
   "cat"        → [0.2, 0.8, 0.1]
   "dog"        → [0.25, 0.75, 0.15]  (similar to cat)
   "chair"      → [-0.1, 0.1, 0.8]    (very different)
@@ -114,8 +105,6 @@ Embedding Models:
   ├─ Sentence-Transformers (open-source)
   ├─ Google PaLM Embeddings
   └─ Each model embeds differently, but principle is same
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📚 RAG PIPELINE (Complete)
 
@@ -156,8 +145,6 @@ Embedding Models:
    └─ Send answer to user
    └─ Can include citations (which documents were used)
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🛠️ POPULAR VECTOR DATABASES
 
 Pinecone:
@@ -196,8 +183,6 @@ Postgres with pgvector:
   ├─ Simple if you know SQL
   └─ Good for: Integrated systems
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🎯 ADVANCED RAG TECHNIQUES
 
 Hybrid Search:
@@ -228,8 +213,6 @@ Multi-hop Reasoning:
   ├─ Combine results
   └─ More sophisticated answering
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 ⚠️ RAG CHALLENGES
 
 Relevance:
@@ -256,8 +239,6 @@ Cost:
   └─ Embedding API calls add up
   └─ Solution: Embed once, not per query
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 📊 EXAMPLE: DOCUMENT QA SYSTEM
 
 Input Documents:
@@ -282,8 +263,6 @@ System:
 
 Perfect answer, no hallucination!
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🎓 KEY TAKEAWAYS
 
 1. RAG solves knowledge cutoff problem
@@ -297,14 +276,11 @@ Perfect answer, no hallucination!
 9. Challenges: Relevance, latency, privacy, cost
 10. RAG powers many modern AI applications
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🤔 THINK ABOUT IT
 
 - Why is semantic search better than keyword search?
 - What would happen if vector DB stored irrelevant chunks?
 - How would you prevent retrieval hallucinations?
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 NEXT UP: Module 10 - Agents and Agentic AI
+

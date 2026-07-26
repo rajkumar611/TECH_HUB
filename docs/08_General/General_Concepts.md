@@ -1,8 +1,7 @@
 GENERAL TECHNOLOGY CONCEPTS
-=============================
 
 GO (GOLANG)
-------------
+
 What it is:
 Go is a fast, simple, compiled programming language created by Google.
 Designed for building scalable, concurrent systems.
@@ -24,9 +23,8 @@ Go vs .NET:
 Go compiles to a single binary with a built-in runtime — no CLR installation needed.
 .NET requires the .NET runtime to be installed on the machine.
 
-
 MICROSOFT GRAPH API
---------------------
+
 What it is:
 Microsoft Graph API is a single unified gateway to the entire Microsoft 365 ecosystem.
 
@@ -45,9 +43,8 @@ the answer is almost always "use Microsoft Graph API."
 It acts as an API Gateway (see Architecture notes) for all Microsoft 365 services.
 Authentication is done via Azure AD (OAuth 2.0 and JWT tokens).
 
-
 OAUTH AND JWT
---------------
+
 OAuth:
 OAuth is a protocol/process for granting access to resources without sharing passwords.
 It issues tokens that represent authorisation to access something.
@@ -66,9 +63,8 @@ Relationship:
 Note: OAuth can also issue opaque tokens (random strings that don't contain readable data).
 JWT is just the most common choice.
 
-
 FIDDLER AND POSTMAN
---------------------
+
 Fiddler:
 - Captures and inspects REAL HTTP/HTTPS traffic from your running applications
 - Acts as a proxy between your app and the network
@@ -83,9 +79,8 @@ Postman:
 
 One-liner: Fiddler = spy on real traffic; Postman = manually test your APIs.
 
-
 MERN STACK
------------
+
 MERN is a full-stack JavaScript development stack:
 
 M = MongoDB      → NoSQL database (stores data as JSON-like documents)
@@ -96,9 +91,8 @@ N = Node.js      → Runtime for executing JavaScript on the server
 All four layers use JavaScript/TypeScript, making MERN a unified, full-JS stack.
 Developers can use the same language across frontend and backend.
 
-
 DJANGO AND DJANGO ORM
-----------------------
+
 Django = Python web framework (equivalent to ASP.NET Core in .NET)
 Django ORM = the built-in ORM inside Django (equivalent to Entity Framework in .NET)
 
@@ -114,9 +108,8 @@ Key difference:
 Important: When people say "Django for Python like EF for C#", they mean Django ORM
 specifically, not the Django framework itself.
 
-
 KEY FACTS TO REMEMBER
-----------------------
+
 - Go = fast, compiled, concurrent language from Google (Docker/Kubernetes are built with Go)
 - Microsoft Graph API = single gateway for all Microsoft 365 services
 - OAuth = protocol for granting access via tokens; JWT = the most common token format

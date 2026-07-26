@@ -1,8 +1,7 @@
 CYBERARK — PRIVILEGED ACCESS MANAGEMENT
-=========================================
 
 WHAT IS CYBERARK?
-------------------
+
 CyberArk is an enterprise security platform for Privileged Access Management (PAM).
 It manages, controls, and audits access to privileged accounts and credentials
 (admin passwords, SSH keys, service account secrets) across any environment.
@@ -17,9 +16,8 @@ Core purpose:
 Used by: large enterprises, banks, insurance companies, government — any organisation
 with strict security and compliance requirements.
 
-
 WHAT CYBERARK DOES
---------------------
+
 1. Secure Vault:
    All privileged credentials stored encrypted in one central vault.
    No passwords scattered across systems, spreadsheets, or shared drives.
@@ -40,9 +38,8 @@ WHAT CYBERARK DOES
    Every credential request and access is logged for compliance reporting.
    Supports SOX, PCI-DSS, ISO 27001, and other regulatory frameworks.
 
-
 CYBERARK vs AZURE KEY VAULT
------------------------------
+
 Both securely store and manage credentials, but they serve different purposes:
 
 Feature                | Azure Key Vault              | CyberArk
@@ -59,9 +56,8 @@ Best for               | Application secrets in Azure | Privileged user access m
 Use Azure Key Vault when: Storing API keys, connection strings, and secrets for applications.
 Use CyberArk when: Managing privileged admin access with strict compliance requirements.
 
-
 SSH AND CYBERARK IN KUBERNETES
----------------------------------
+
 What is SSH?
 SSH (Secure Shell) = a secure protocol for remotely accessing and controlling servers.
 - Uses Port 22
@@ -86,9 +82,8 @@ When someone does need SSH access to a Kubernetes node, CyberArk:
 - Records the SSH session (what commands were run, by whom, when)
 - Maintains compliance audit trails
 
-
 KEY FACTS TO REMEMBER
-----------------------
+
 - CyberArk = enterprise PAM (Privileged Access Management) platform
 - Stores privileged credentials in a secure vault, not scattered across systems
 - Automatically rotates passwords and secrets

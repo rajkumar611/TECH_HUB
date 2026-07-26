@@ -1,9 +1,6 @@
-╔════════════════════════════════════════════════════════════════╗
-║              TRANSFORMER ARCHITECTURE                         ║
-║      The Blueprint for ChatGPT, Claude, and Modern LLMs       ║
-╚════════════════════════════════════════════════════════════════╝
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+﻿
+               TRANSFORMER ARCHITECTURE
+       The Blueprint for ChatGPT, Claude, and Modern LLMs
 
 📖 INTRODUCTION
 
@@ -18,8 +15,6 @@ It's the foundation of:
   └─ And most cutting-edge AI
 
 Introduced in 2017 paper: "Attention Is All You Need"
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🏗️ OVERALL STRUCTURE
 
@@ -51,8 +46,6 @@ Different models use different parts:
   ├─ Encoder-only: BERT (understanding tasks)
   ├─ Decoder-only: GPT, ChatGPT (generation tasks)
   └─ Encoder-Decoder: T5, original Transformer (translation)
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📊 THE ENCODER (Understanding)
 
@@ -94,8 +87,6 @@ Structure:
 
 Repeat steps 3-6 for N layers (usually 6-24 layers)
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🎯 KEY COMPONENTS EXPLAINED
 
 1. EMBEDDING LAYER
@@ -134,8 +125,6 @@ Repeat steps 3-6 for N layers (usually 6-24 layers)
    └─ Stabilizes training
    └─ Helps prevent vanishing gradients
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🎬 THE DECODER (Generation)
 
 The Decoder generates output, one token at a time.
@@ -154,10 +143,8 @@ Generation Process:
   4. Predict next: "cat"
   5. Now have: <START> The cat
   6. Continue until <STOP> or max length
-  
-Result: "The cat sat on the mat"
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Result: "The cat sat on the mat"
 
 🔒 CAUSAL MASKING (For Decoder)
 
@@ -177,8 +164,6 @@ Solution: CAUSAL MASK
   └─ Simulates real inference during training
 
 This ensures the model learns to predict, not peek!
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ⚙️ ENCODER-DECODER INTERACTION (Translation)
 
@@ -203,8 +188,6 @@ Cross-Attention:
   └─ Decoder asks: "What's important in input?"
   └─ Attends to encoder's rich representation
   └─ Combines with own prediction capabilities
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📈 MODEL SIZES (For Context)
 
@@ -233,8 +216,6 @@ Model size = Number of parameters (weights)
 More parameters = Potentially better understanding
 But: Much slower, much more expensive
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🔄 INFERENCE: HOW CHATGPT WORKS
 
 When you talk to ChatGPT:
@@ -250,8 +231,6 @@ When you talk to ChatGPT:
 This happens token-by-token!
 That's why ChatGPT "streams" output—generating one word at a time!
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🎓 KEY TAKEAWAYS
 
 1. Transformer = Architecture based on attention
@@ -265,14 +244,11 @@ That's why ChatGPT "streams" output—generating one word at a time!
 9. Modern LLMs are decoder-only models
 10. Bigger models (more parameters) = better understanding
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🤔 THINK ABOUT IT
 
 - Why do we need positional encoding if attention sees all words?
 - Why generate one token at a time instead of whole sentence?
 - What would happen without residual connections in deep networks?
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 NEXT UP: Module 07 - What are Large Language Models (LLMs)?
+

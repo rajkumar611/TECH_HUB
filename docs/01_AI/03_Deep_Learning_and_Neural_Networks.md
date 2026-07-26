@@ -1,13 +1,10 @@
-╔════════════════════════════════════════════════════════════════╗
-║            DEEP LEARNING AND NEURAL NETWORKS                  ║
-║        How to Handle Complex Problems Like Images & Text      ║
-╚════════════════════════════════════════════════════════════════╝
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+﻿
+             DEEP LEARNING AND NEURAL NETWORKS
+         How to Handle Complex Problems Like Images & Text
 
 📖 INTRODUCTION
 
-Deep Learning (DL) is a type of Machine Learning inspired by how our brains 
+Deep Learning (DL) is a type of Machine Learning inspired by how our brains
 work. It's especially powerful for complex tasks like:
   ├─ Recognizing faces in photos
   ├─ Understanding language (ChatGPT)
@@ -15,10 +12,8 @@ work. It's especially powerful for complex tasks like:
   ├─ Self-driving cars
   └─ Medical image analysis
 
-The key difference: Deep Learning can automatically learn WHAT features 
+The key difference: Deep Learning can automatically learn WHAT features
 to look for, without humans telling it!
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🧠 THE HUMAN BRAIN INSPIRATION
 
@@ -31,22 +26,18 @@ Your brain works like this:
 
 Deep Learning mimics this process!
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🏗️ WHAT IS A NEURAL NETWORK?
 
-A neural network is a system of interconnected nodes (artificial "neurons") 
+A neural network is a system of interconnected nodes (artificial "neurons")
 that process information.
 
 Simple Analogy:
-  
+
   Your Brain Neurons:
     Receive signals → Process → Send signal to next neuron
-  
+
   Artificial Neurons:
     Receive numbers → Math calculation → Send result to next neuron
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📐 STRUCTURE OF A NEURAL NETWORK
 
@@ -70,8 +61,6 @@ Example: Cat or Dog Classifier
 
 Why "Deep"? Because there are MANY hidden layers stacked together.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🔗 HOW NEURONS WORK (SIMPLIFIED)
 
 Each neuron:
@@ -94,8 +83,6 @@ Think of it like a teacher's grade:
   ├─ Student's effort × 0.7 (weight)
   ├─ Plus bonus points (bias)
   └─ Convert to letter grade (activation function)
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ⚙️ THE NEURAL NETWORK TRAINING PROCESS
 
@@ -125,11 +112,9 @@ Think of it like a teacher's grade:
 
 This process is called "TRAINING"
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 📊 ACTIVATION FUNCTIONS (The Secret Sauce)
 
-Without activation functions, neural networks would just be fancy 
+Without activation functions, neural networks would just be fancy
 multiplication. Activation functions add the "intelligence."
 
 Common Activation Functions:
@@ -153,13 +138,11 @@ Common Activation Functions:
    ├─ For multi-class classification
    ├─ Converts outputs to probabilities
    └─ All outputs sum to 1 (100%)
-   
+
 Visualization:
   Linear (no activation): Y = 2X (boring, just a line)
   ReLU: Bent line (interesting!)
   Sigmoid: S-curve (very smooth)
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📉 LOSS FUNCTIONS (Measuring Mistakes)
 
@@ -184,8 +167,6 @@ Common Loss Functions:
 The Goal of Training:
   └─ Make the loss function as SMALL as possible
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🎯 PARAMETERS AND WEIGHTS
 
 Parameters = The numbers that network learns
@@ -202,8 +183,6 @@ Modern LLMs like ChatGPT have BILLIONS of parameters!
 
 These parameters are the "knowledge" the network learned from data.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 💾 TRAINING VS INFERENCE
 
 TRAINING Phase:
@@ -219,8 +198,6 @@ INFERENCE Phase:
   └─ Goal: Make good predictions
 
 When you use ChatGPT, it's in INFERENCE mode!
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🔄 BATCH SIZE, EPOCHS, ITERATIONS
 
@@ -241,8 +218,6 @@ ITERATION: One weight update
   ├─ 1 epoch = 10,000/32 = 312 iterations
   └─ 100 epochs = 31,200 iterations
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🎓 KEY TAKEAWAYS
 
 1. Deep Learning = Neural Networks with many layers
@@ -254,14 +229,11 @@ ITERATION: One weight update
 7. Parameters = The numbers network learned
 8. Training adjusts weights; Inference uses fixed weights
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🤔 THINK ABOUT IT
 
 - Why do we need activation functions? Why not just multiply?
 - What happens if loss function stays high after many epochs?
 - Why are billions of parameters needed for ChatGPT?
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 NEXT UP: Module 04 - Forward and Backward Propagation (The Math)
+

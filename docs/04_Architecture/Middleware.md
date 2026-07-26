@@ -1,8 +1,7 @@
 MIDDLEWARE
-===========
 
 WHAT IS MIDDLEWARE?
---------------------
+
 Middleware is a software layer that sits between two systems, processes a request
 (or response), and then PASSES IT FORWARD to the next layer.
 
@@ -22,9 +21,8 @@ Before you reach the teller:
 - Desk checks your account access (authorization middleware)
 Both layers process and pass you forward — they don't withdraw money.
 
-
 TYPES OF MIDDLEWARE
---------------------
+
 1. Authentication Middleware
    - Checks if the request has a valid token or credentials
    - If valid: adds user identity to the request and passes it forward
@@ -51,9 +49,8 @@ TYPES OF MIDDLEWARE
    - Then routes to the correct backend service
    - The gateway itself is middleware — it doesn't do the business work
 
-
 WHY REGULAR API ENDPOINTS ARE NOT MIDDLEWARE
----------------------------------------------
+
 An API endpoint like GET /customers/5 receives the request, handles it completely,
 and returns the data. The request ENDS there.
 
@@ -63,9 +60,8 @@ Endpoint's defining trait: it handles requests completely.
 Authentication, API Gateways, and logging layers are middleware.
 User endpoints, product endpoints, and business logic handlers are NOT middleware.
 
-
 ASP.NET CORE MIDDLEWARE PIPELINE
-----------------------------------
+
 In ASP.NET Core, middleware is registered in Program.cs and forms a pipeline.
 Each request passes through all middleware layers before reaching the endpoint.
 
@@ -86,9 +82,8 @@ Example in ASP.NET Core Program.cs:
   app.UseAuthorization();
   app.MapControllers();     // Actual endpoints
 
-
 MIDDLEWARE vs API GATEWAY
---------------------------
+
 Both are middleware in the conceptual sense, but at different scales:
 
 Middleware in a single app:
@@ -100,9 +95,8 @@ API Gateway (as system-level middleware):
   - Routes requests to the correct service
   - Centralised auth, logging, rate limiting across all services
 
-
 KEY FACTS TO REMEMBER
-----------------------
+
 - Middleware = processes request and passes it forward (not the final destination)
 - Endpoint = handles the request completely (is the final destination)
 - Authentication, authorization, logging, rate limiting = middleware

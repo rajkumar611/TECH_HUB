@@ -1,9 +1,6 @@
-╔════════════════════════════════════════════════════════════════╗
-║         FORWARD AND BACKWARD PROPAGATION                      ║
-║     Understanding How Neural Networks Learn                    ║
-╚════════════════════════════════════════════════════════════════╝
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+﻿
+          FORWARD AND BACKWARD PROPAGATION
+      Understanding How Neural Networks Learn
 
 📖 INTRODUCTION
 
@@ -14,8 +11,6 @@ Backward Propagation: Output → Calculate Error → Update Weights
 
 These two processes repeat thousands of times during training.
 Understanding them is key to understanding HOW neural networks learn.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🔵 FORWARD PROPAGATION (Making Predictions)
 
@@ -40,8 +35,6 @@ Input Image (pixel values)
   │  2 neurons      │
   └─────────────────┘
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🔢 FORWARD PROPAGATION (STEP-BY-STEP WITH MATH)
 
 Let's trace one neuron:
@@ -59,20 +52,18 @@ Step 1: Weighted Sum
 Step 2: Apply Activation Function (ReLU)
   If z > 0: output = z
   If z ≤ 0: output = 0
-  
+
   Since z = 4.0 > 0:
   output = 4.0
 
 This output becomes input to the next layer!
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🎯 FORWARD PROPAGATION EXAMPLE (Full Network)
 
 Simple 3-layer network:
 
    Input Layer    Hidden Layer      Output Layer
-   
+
    x₁ = 1.0  ──┐
                ├── neuron h₁ ──┐
    x₂ = 0.5  ──┤               ├── output = prediction
@@ -85,8 +76,6 @@ What happens:
   ├─ Each neuron has a bias
   ├─ Each applies activation function
   └─ Final output: 0.92 (92% confident it's a cat)
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ❌ CALCULATING ERROR
 
@@ -102,8 +91,6 @@ Loss = (0.92 - 1.0)² = 0.0064
 
 The goal: Make this loss as SMALL as possible!
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🔴 BACKWARD PROPAGATION (Learning from Mistakes)
 
 Now the network asks: "Which weights caused this error?"
@@ -113,13 +100,11 @@ Backward Propagation = Working backward to find who's responsible
 Visual:
 
    Forward:   Input ──→ Process ──→ Output (prediction)
-   
+
    Backward:  Output ←── Error ←── Calculate Error
-                   
+
               "That weight in layer 1 caused 30% of the error"
               "That weight in layer 2 caused 70% of the error"
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🧮 BACKWARD PROPAGATION (Using Calculus)
 
@@ -139,10 +124,8 @@ Process:
   2. Work backward to hidden layer 2
   3. Work backward to hidden layer 1
   4. Work backward to input
-  
-This is why it's called "back-propagation" — going backward!
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+This is why it's called "back-propagation" — going backward!
 
 🔄 UPDATING WEIGHTS (Learning!)
 
@@ -154,14 +137,12 @@ Example:
   Old weight:      w = 0.8
   Gradient:        ∂Loss/∂w = 0.5 (says: increase weight!)
   Learning rate:   0.01 (step size)
-  
+
   w_new = 0.8 - 0.01 × 0.5
   w_new = 0.8 - 0.005
   w_new = 0.795
 
 The weight changed by a tiny amount (0.005), moved in right direction!
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📊 ONE FULL TRAINING ITERATION
 
@@ -195,8 +176,6 @@ Input: Image of a cat (pixel values)
 
 This repeats 1,000,000+ times during training!
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 ⚡ LEARNING RATE (Super Important!)
 
 Learning Rate = How big are the weight update steps?
@@ -218,8 +197,6 @@ JUST RIGHT (0.001 to 0.01):
 
 Learning rate is typically the MOST IMPORTANT hyperparameter!
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🎯 THE CHAIN RULE (Why Backprop Works)
 
 Backpropagation uses the CHAIN RULE from calculus:
@@ -233,8 +210,6 @@ Chain: Loss ← Output ← Hidden Layer ← Weight
 
 We multiply these partial derivatives together!
 That's exactly what backpropagation does.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🔍 VANISHING GRADIENTS (A Problem)
 
@@ -253,8 +228,6 @@ Solution:
   └─ Use LSTM/GRU for sequences
 
 This is why DEEP networks are hard to train!
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📈 OPTIMIZATION ALGORITHMS
 
@@ -278,8 +251,6 @@ Different ways to update weights:
 
 Most modern deep learning uses ADAM!
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🎓 KEY TAKEAWAYS
 
 1. Forward Propagation = Input → Process → Output
@@ -290,14 +261,11 @@ Most modern deep learning uses ADAM!
 6. Deep networks suffer from vanishing gradients
 7. Adam optimizer is most popular for modern training
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🤔 THINK ABOUT IT
 
 - Why do we need TINY weight updates instead of big changes?
 - What would happen with learning rate = 0?
 - Why does the chain rule matter for backpropagation?
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 NEXT UP: Module 05 - Convolutional Neural Networks (CNNs) for Images
+

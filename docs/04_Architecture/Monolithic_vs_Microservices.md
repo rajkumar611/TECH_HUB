@@ -1,8 +1,7 @@
 MONOLITHIC VS MICROSERVICES ARCHITECTURE
-==========================================
 
 MONOLITHIC ARCHITECTURE
-------------------------
+
 What it is:
 All components of an application are bundled into a single deployable unit — one big DLL
 or one big process.
@@ -24,9 +23,8 @@ Challenges at scale:
 - Hard to scale specific bottlenecks independently
 - Technology lock-in — the whole app must use the same tech stack
 
-
 MICROSERVICES ARCHITECTURE
-----------------------------
+
 What it is:
 The application is split into many small, independent services. Each service owns a
 single business capability and can be deployed, scaled, and updated independently.
@@ -48,9 +46,8 @@ A DLL by itself is NOT a microservice:
 A microservice can have multiple endpoints/classes as long as they all belong to
 the same business capability.
 
-
 COMPARISON
------------
+
 Feature               | Monolithic              | Microservices
 ----------------------|-------------------------|---------------------------
 Deployment            | One big package         | Many independent services
@@ -62,26 +59,23 @@ Development speed     | Fast at start           | Faster at scale
 Complexity            | Low initially           | Higher (networking, observability)
 Best for              | Small/simple apps       | Large, complex, high-scale apps
 
-
 HOW MICROSERVICES COMMUNICATE
--------------------------------
+
 - REST (HTTP/JSON)   → browser-facing or simple service calls
 - gRPC               → high-performance internal service-to-service calls
 - Message queues     → async, decoupled communication (e.g., Azure Service Bus, Kafka)
 - SignalR            → real-time push to browsers
 
-
 API STYLES IN MICROSERVICES
------------------------------
+
 Microservices do NOT define the API style.
 A microservice can expose REST, RPC, or Custom Action endpoints — or a mix.
 
 REST/RPC/Custom Action = how you design your endpoints
 Microservices          = how you structure your system
 
-
 KEY FACTS TO REMEMBER
-----------------------
+
 - Monolithic = one big app deployed together; simple to start, harder at scale
 - Microservices = many small independent services; complex to build, but scalable
 - A DLL is NOT a microservice — it must be hosted and running as an independent process

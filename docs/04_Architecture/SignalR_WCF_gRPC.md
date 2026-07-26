@@ -1,12 +1,10 @@
 SIGNALR, WCF, AND gRPC
-========================
 
 These are three different communication technologies in the .NET ecosystem.
 They serve different purposes and should not be confused with each other.
 
-
 WCF — WINDOWS COMMUNICATION FOUNDATION
------------------------------------------
+
 What it is:
 WCF is a .NET Framework technology for building enterprise service-oriented applications.
 Released in 2006 by Microsoft.
@@ -33,9 +31,8 @@ WCF's successor:
 Microsoft officially says: "If you used WCF, use gRPC now."
 gRPC matches WCF's strengths but is modern, cross-platform, and open source.
 
-
 gRPC — GOOGLE REMOTE PROCEDURE CALL
---------------------------------------
+
 What it is:
 gRPC is a high-performance, open-source Remote Procedure Call (RPC) framework from Google.
 It allows one service to call a method on another service as if it were a local function.
@@ -72,9 +69,8 @@ Browser support| Limited                     | Full
 Streaming      | Yes (native)                | Limited
 Best for       | Microservice-to-microservice| Browser/public APIs
 
-
 SIGNALR — REAL-TIME COMMUNICATION
-------------------------------------
+
 What it is:
 SignalR is a real-time messaging library for ASP.NET Core.
 It enables the SERVER to push messages to clients instantly, without the client polling.
@@ -95,9 +91,8 @@ When to use SignalR:
 - Collaborative tools (e.g., shared document editing)
 - Stock price / sports score feeds
 
-
 MODERN .NET ARCHITECTURE PATTERN
-----------------------------------
+
 Microsoft's recommended pattern for .NET 8+:
 
   Frontend (Blazor / React / Angular)
@@ -111,9 +106,8 @@ Microsoft's recommended pattern for .NET 8+:
 
 Each technology has its own lane — they complement each other.
 
-
 QUICK COMPARISON
------------------
+
 Technology | Category              | Transport         | Best for
 -----------|-----------------------|-------------------|--------------------------
 WCF        | SOAP/RPC framework    | HTTP, TCP, MSMQ   | Legacy enterprise (now replaced by gRPC)
@@ -121,9 +115,8 @@ gRPC       | RPC framework         | HTTP/2 + Protobuf | Microservice-to-microse
 SignalR    | Real-time messaging   | WebSockets        | Live UI updates, chat, notifications
 REST       | API style             | HTTP/1.1 + JSON   | Browser, mobile, public APIs
 
-
 KEY FACTS TO REMEMBER
-----------------------
+
 - WCF = enterprise legacy; use gRPC for new projects
 - gRPC = fast, binary, strongly-typed; ideal for internal microservices
 - SignalR = server pushes updates to browser in real time; not REST, not RPC

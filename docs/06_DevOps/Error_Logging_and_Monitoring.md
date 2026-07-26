@@ -1,8 +1,7 @@
 ERROR LOGGING AND MONITORING
-==============================
 
 TWO DIFFERENT THINGS
----------------------
+
 Logging frameworks and error monitoring platforms serve different purposes and
 complement each other — they don't replace each other.
 
@@ -18,9 +17,8 @@ Error monitoring platform:
 - Automatically captures crashes, stack traces, user context
 - Examples: Raygun, Rollbar, Sentry
 
-
 SERILOG (.NET LOGGING FRAMEWORK)
-----------------------------------
+
 What it is:
 Serilog is a structured logging framework for .NET that writes logs as key-value pairs,
 making them machine-readable and easily searchable.
@@ -42,9 +40,8 @@ Popular Serilog sinks:
 - Serilog.Sinks.Elasticsearch → Elastic stack
 - Serilog.Sinks.ApplicationInsights → Azure Monitor
 
-
 LOG4NET (.NET LOGGING FRAMEWORK)
-----------------------------------
+
 What it is:
 Log4Net is a traditional, text-based logging framework for .NET. A port of the Java
 Log4j library, adapted for .NET Framework apps.
@@ -59,9 +56,8 @@ Difference from Serilog:
   Serilog = structured, modern, cloud-ready (preferred for new projects)
   Log4Net = text-based, legacy, good for .NET Framework apps
 
-
 RAYGUN AND ROLLBAR (ERROR MONITORING PLATFORMS)
--------------------------------------------------
+
 Both are cloud-based error monitoring and crash reporting platforms.
 They automatically capture exceptions, stack traces, and errors from your application
 and present them in a dashboard with smart grouping and alerting.
@@ -87,9 +83,8 @@ Rollbar:
 
 Both have official .NET SDKs for easy ASP.NET Core integration.
 
-
 CRASHLYTICS (MOBILE CRASH REPORTING)
---------------------------------------
+
 What it is:
 Firebase Crashlytics (by Google) is a real-time crash reporting and error monitoring
 tool specifically for mobile apps (iOS and Android).
@@ -100,9 +95,8 @@ and user context from mobile apps.
 Part of the Firebase ecosystem.
 Category equivalent: mobile equivalent of Raygun/Rollbar for web.
 
-
 COMPARISON TABLE
------------------
+
 Tool         | Category              | Best for                | Part of
 -------------|----------------------|-------------------------|----------
 Serilog      | Logging framework    | Modern .NET structured logging | Your app (SDK)
@@ -118,9 +112,8 @@ The clean summary:
   Raygun/Rollbar MONITOR and ALERT on errors.
   They complement each other — use both in production.
 
-
 KEY FACTS TO REMEMBER
-----------------------
+
 - Logging frameworks (Serilog, Log4Net) write log records; they are part of your app
 - Error monitoring (Raygun, Rollbar) capture and analyse errors in the cloud
 - Serilog = structured logging, cloud-ready, preferred for .NET Core

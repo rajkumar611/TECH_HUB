@@ -1,5 +1,4 @@
 INSURANCE TERMS GLOSSARY
-==========================
 
 This file covers key insurance terminology relevant to working in the insurance industry.
 

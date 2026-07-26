@@ -1,8 +1,7 @@
 YAML
-=====
 
 WHAT IS YAML?
---------------
+
 YAML = "YAML Ain't Markup Language" (originally "Yet Another Markup Language").
 The name change emphasises that YAML is for DATA and CONFIGURATION — not for markup.
 
@@ -12,9 +11,8 @@ It is used wherever configuration or structured data needs to be defined clearly
 
 Created in 2001 by Clark Evans, Ingy döt Net, and Oren Ben-Kiki.
 
-
 WHERE YAML IS USED
---------------------
+
 YAML is used across the entire technology stack — everywhere configuration is needed:
 
 - Kubernetes: pod definitions, deployments, services, ingress rules
@@ -27,9 +25,8 @@ YAML is used across the entire technology stack — everywhere configuration is 
 - Terraform / Bicep: infrastructure definitions (some tooling uses YAML)
 - Helm charts: Kubernetes application package definitions
 
-
 YAML SYNTAX BASICS
---------------------
+
 YAML uses indentation (spaces, not tabs) to define structure.
 
 Key-value pairs:
@@ -63,9 +60,7 @@ Multi-line text:
     This is a multi-line
     string in YAML.
 
-
 REAL-WORLD EXAMPLES
---------------------
 
 1. GitHub Actions workflow (.github/workflows/build.yml):
    name: Build and Test
@@ -104,9 +99,8 @@ REAL-WORLD EXAMPLES
        ports:
          - "5000:5000"
 
-
 YAML vs JSON vs XML
---------------------
+
 Feature       | YAML              | JSON              | XML
 --------------|-------------------|-------------------|------------------
 Human-readable| Very easy         | Moderate          | Verbose
@@ -116,9 +110,8 @@ Data types    | Strings, numbers, | Strings, numbers, | Text only
               | booleans, lists   | booleans, arrays  | (attributes help)
 File extension| .yml or .yaml     | .json             | .xml
 
-
 KEY FACTS TO REMEMBER
-----------------------
+
 - YAML is a configuration language, NOT a programming language
 - Used by DevOps, Cloud, Backend, AI/ML engineers everywhere
 - Indentation matters — use spaces, never tabs

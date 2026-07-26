@@ -1,9 +1,6 @@
-╔════════════════════════════════════════════════════════════════╗
-║            EVALS, RESPONSIBLE AI & ADVANCED TOPICS            ║
-║          Testing, Monitoring, Ethics, and Model Context      ║
-╚════════════════════════════════════════════════════════════════╝
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+﻿
+             EVALS, RESPONSIBLE AI & ADVANCED TOPICS
+           Testing, Monitoring, Ethics, and Model Context
 
 📖 INTRODUCTION
 
@@ -15,8 +12,6 @@ This module covers:
   ├─ Responsible AI (Ethics)
   ├─ Model Context Protocol (MCP)
   └─ Other practical considerations
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🧪 EVALUATIONS (Testing AI Systems)
 
@@ -52,8 +47,6 @@ Types of Evaluations:
    └─ Use human on samples for validation
    └─ Most practical for production
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 📊 COMMON EVALUATION METRICS
 
 For Question Answering:
@@ -84,8 +77,6 @@ For Classification:
   ├─ Recall: Of actual positives, how many found?
   └─ F1: Harmonic mean of precision & recall
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🔄 EVALUATION FRAMEWORKS
 
 LangSmith (Anthropic/LangChain):
@@ -112,8 +103,6 @@ Wandb (Weights & Biases):
   ├─ Visualize metrics
   └─ Collaboration tools
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🛡️ RESPONSIBLE AI
 
 Responsible AI = Building AI safely and ethically
@@ -126,7 +115,7 @@ Key Areas:
      ├─ Example: Resume screener biased against women
      ├─ Example: Facial recognition worse for dark skin
      └─ Real harm to real people
-   
+
    Solutions:
      ├─ Audit training data for biases
      ├─ Use balanced datasets
@@ -137,7 +126,7 @@ Key Areas:
 2. TRANSPARENCY
    Problem:
      └─ "Black box" - Why did AI make decision?
-   
+
    Solutions:
      ├─ Explainability: Why did model predict X?
      ├─ Interpretability: Which features matter?
@@ -151,7 +140,7 @@ Key Areas:
      ├─ AI could cause harm
      ├─ AI could be manipulated
      └─ AI could leak private data
-   
+
    Solutions:
      ├─ Red teaming: Try to break it
      ├─ Adversarial testing: Malicious inputs
@@ -165,7 +154,7 @@ Key Areas:
      ├─ User interactions recorded
      ├─ Personal info exposed
      └─ Data breaches
-   
+
    Solutions:
      ├─ Differential privacy: Add noise to data
      ├─ Federated learning: Train locally
@@ -176,15 +165,13 @@ Key Areas:
 5. ACCOUNTABILITY
    Problem:
      └─ If AI does harm, who's responsible?
-   
+
    Solutions:
      ├─ Clear ownership and governance
      ├─ Impact assessments before deployment
      ├─ Incident response plans
      ├─ Human oversight of critical decisions
      └─ Legal frameworks (increasingly)
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🔐 RESPONSIBLE AI CHECKLIST
 
@@ -206,8 +193,6 @@ Before Deploying:
 □ Set up feedback mechanism for users
 □ Plan for AI system updates
 □ Document assumptions and limitations
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📡 MODEL CONTEXT PROTOCOL (MCP)
 
@@ -240,8 +225,6 @@ Bridges:
   ├─ Connect servers to clients
   ├─ Handle communication
   └─ Manage sessions
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📚 CONTEXT WINDOW
 
@@ -282,8 +265,6 @@ Long Context (128K+):
   ├─ Good for: Complex research, long documents
   └─ Bad for: Performance, costs
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🔍 MONITORING AND OBSERVABILITY
 
 In Production, You Need:
@@ -318,8 +299,6 @@ Red Teaming:
   ├─ Try to break the system
   ├─ Find vulnerabilities
   └─ Fix before users find them
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🎯 COST OPTIMIZATION
 
@@ -357,8 +336,6 @@ Optimization Strategies:
    └─ Use powerful models for hard cases
    └─ Balanced cost-quality
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🎓 KEY TAKEAWAYS
 
 1. Evaluations test AI system quality
@@ -372,14 +349,11 @@ Optimization Strategies:
 9. Monitoring in production is essential
 10. Cost optimization needed for scale
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 🤔 THINK ABOUT IT
 
 - Why does bias in AI systems matter more than bias in code?
 - How would you test if your chatbot discriminates?
 - What's the tradeoff between accuracy and cost?
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 CONGRATULATIONS! You've completed the AI Learning Curriculum!
+

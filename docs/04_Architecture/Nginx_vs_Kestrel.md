@@ -1,8 +1,7 @@
 NGINX vs KESTREL
-=================
 
 WHY TWO SERVERS?
------------------
+
 Before .NET Core, one server (IIS) handled everything: hosting, security, routing,
 SSL, and running .NET code. One server was enough.
 
@@ -12,9 +11,8 @@ With .NET Core, Microsoft split the responsibility:
 
 They do DIFFERENT jobs and complement each other.
 
-
 KESTREL
---------
+
 What it is:
 Kestrel is the built-in, cross-platform, lightweight HTTP server included with
 ASP.NET Core. It is the application server that runs your .NET code.
@@ -45,9 +43,8 @@ Why not expose Kestrel directly to the internet?
 Kestrel lacks the hardened, edge-level capabilities needed for production internet traffic.
 In production, Kestrel should always sit behind a reverse proxy.
 
-
 NGINX
-------
+
 What it is:
 Nginx (pronounced "engine-x") is a high-performance, cross-platform web server and
 reverse proxy. It is the front-door server for your application.
@@ -74,9 +71,8 @@ When Nginx receives a request:
 - Kestrel processes the business logic and returns the response
 - Nginx sends the response back to the client
 
-
 IIS vs NGINX
--------------
+
 Feature          | IIS                              | Nginx
 -----------------|----------------------------------|----------------------------------
 Platform         | Windows only                     | Cross-platform (Linux, Windows, Mac)
@@ -89,9 +85,8 @@ Admin interface  | IIS Manager GUI                  | Config files
 IIS can also act as a reverse proxy for ASP.NET Core with the IIS integration module.
 But Nginx is preferred in Linux, cloud, and containerised environments.
 
-
 THE MODERN PRODUCTION ARCHITECTURE
-------------------------------------
+
 Old .NET Framework:
   Client → IIS → ASP.NET Framework App
   (IIS did everything)
@@ -102,9 +97,8 @@ Modern .NET Core / .NET 5+:
   Nginx/IIS: front-door layer (SSL, security, routing, load balancing)
   Kestrel:   application layer (business logic, middleware, .NET code)
 
-
 SUMMARY
---------
+
 Server   | Role                          | Designed for
 ---------|-------------------------------|-----------------------------------
 Kestrel  | Application server            | Running .NET code, async I/O

@@ -1,8 +1,7 @@
 HANGFIRE AND BACKGROUND JOBS IN .NET
-======================================
 
 WHAT IS HANGFIRE?
------------------
+
 Hangfire is a .NET framework for running background jobs.
 It allows apps to run tasks asynchronously, on a schedule, or in the background
 without blocking the main thread.
@@ -13,9 +12,8 @@ to store and process jobs reliably — with retries, logging, and a built-in das
 "Your app enqueues work and immediately continues running.
 Hangfire processes the job independently."
 
-
 TYPES OF HANGFIRE JOBS
------------------------
+
 1. Fire-and-forget    → Run once immediately in the background.
    BackgroundJob.Enqueue(() => SendEmail(userId));
 
@@ -28,9 +26,7 @@ TYPES OF HANGFIRE JOBS
 4. Continuation       → Run after another job completes.
    BackgroundJob.ContinueWith(jobId, () => NotifyUser(id));
 
-
 HANGFIRE vs QUARTZ.NET
------------------------
 
 Feature         | Hangfire                            | Quartz.NET
 ----------------|-------------------------------------|----------------------------------
@@ -46,9 +42,8 @@ Persistence     | SQL Server, Redis                   | SQL Server, PostgreSQL, 
 Use Hangfire when: You need background processing with easy setup, retries, and visibility.
 Use Quartz.NET when: You need precise, complex CRON schedules with enterprise calendar support.
 
-
 WHY USE HANGFIRE vs ASYNC?
----------------------------
+
 - Async/await is for short, non-blocking I/O operations within a request.
 - Hangfire is for long-running, potentially CPU-intensive, or scheduled background work.
 - Hangfire jobs survive application restarts (persisted to DB).
