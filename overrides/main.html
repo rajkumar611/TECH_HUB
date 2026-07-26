@@ -58,14 +58,14 @@
         // Remove .md-nav__title elements
         document.querySelectorAll('.md-nav__title').forEach(el => el.remove());
 
-        // Make image full width by adjusting parent containers
+        // Position image on left side
         var img = document.querySelector('.md-content img:first-of-type');
         if (img) {
-          img.style.margin = '0 !important';
-          img.style.padding = '0 !important';
-          img.style.width = '100vw !important';
-          img.style.marginLeft = 'calc(-50vw + 50%) !important';
-          img.style.marginBottom = '30px !important';
+          img.style.float = 'left';
+          img.style.width = '400px';
+          img.style.marginRight = '30px';
+          img.style.marginBottom = '20px';
+          img.style.marginTop = '0';
         }
       }, 100);
     });
