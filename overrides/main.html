@@ -42,26 +42,32 @@
 {% block scripts %}
   {{ super() }}
 
-  <!-- Remove About Me label on About page -->
+  <!-- Remove About Me label and make image full-width on About page -->
   {% if "about" in page.url %}
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // Remove nav titles on about page
-      var navTitles = document.querySelectorAll('.md-nav__title');
-      navTitles.forEach(function(title) {
-        title.style.display = 'none';
-        title.style.height = '0';
-        title.style.margin = '0';
-      });
-
-      // Alternative: remove the sidebar title that says "About Me"
-      var sidebar = document.querySelector('.md-sidebar--primary');
-      if (sidebar) {
-        var titleElements = sidebar.querySelectorAll('.md-nav__title');
-        titleElements.forEach(function(el) {
-          el.remove();
+      setTimeout(function() {
+        // Find and remove ANY element containing "About Me" text
+        var allElements = document.querySelectorAll('*');
+        allElements.forEach(function(el) {
+          if (el.textContent.trim() === 'About Me' && el.className.includes('nav')) {
+            el.remove();
+          }
         });
-      }
+
+        // Remove .md-nav__title elements
+        document.querySelectorAll('.md-nav__title').forEach(el => el.remove());
+
+        // Make image full width by adjusting parent containers
+        var img = document.querySelector('.md-content img:first-of-type');
+        if (img) {
+          img.style.margin = '0 !important';
+          img.style.padding = '0 !important';
+          img.style.width = '100vw !important';
+          img.style.marginLeft = 'calc(-50vw + 50%) !important';
+          img.style.marginBottom = '30px !important';
+        }
+      }, 100);
     });
   </script>
   {% endif %}
