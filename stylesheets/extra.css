@@ -148,19 +148,19 @@ body {
   border: none !important;
 }
 
-/* Position image at top-left corner - full width */
+/* Position image on left side, below menu */
 .md-content {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
   padding-top: 0 !important;
-  max-width: 100% !important;
 }
 
 .md-content img:first-of-type {
   margin: 0 !important;
   padding: 0 !important;
-  width: 100vw !important;
-  margin-left: calc(-50vw + 50%) !important;
-  margin-bottom: 30px !important;
+  width: 400px !important;
+  max-width: 45% !important;
+  float: left !important;
+  margin-right: 30px !important;
+  margin-bottom: 20px !important;
   display: block !important;
+  margin-top: 0 !important;
 }
