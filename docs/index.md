@@ -39,4 +39,4 @@ hide:
   </div>
 </div>
 
-> **Last updated: 11:11 pm, 26 July 2026 (New Zealand Time)**
+> **Last updated: <span id="last-updated-time">--:-- --, -- ---- (New Zealand Time)</span>**

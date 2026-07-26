@@ -3,6 +3,9 @@
 {% block extrahead %}
   {{ super() }}
 
+  <!-- Store deployment time for display -->
+  <meta id="deployment-time" name="deployment-time" content="{{ now.strftime('%Y-%m-%d %H:%M:%S') }}">
+
   <!-- Hide title and reposition image to top-left on About page -->
   {% if "about" in page.url %}
   <style>
@@ -41,6 +44,48 @@
 
 {% block scripts %}
   {{ super() }}
+
+  <!-- Display last deployment time (static, not ticking) -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const timestampElement = document.getElementById('last-updated-time');
+      if (timestampElement) {
+        // Get the last-modified time from the server
+        fetch(window.location.href, { method: 'HEAD' })
+          .then(response => {
+            const lastModified = response.headers.get('last-modified');
+            if (lastModified) {
+              // Parse and format the time in NZ timezone
+              const date = new Date(lastModified);
+              const nzTime = date.toLocaleString('en-NZ', {
+                timeZone: 'Pacific/Auckland',
+                hour: 'numeric',
+                minute: '2-digit',
+                hour12: true,
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric'
+              });
+              timestampElement.textContent = nzTime + ' (New Zealand Time)';
+            }
+          })
+          .catch(() => {
+            // Fallback: show current time once if headers unavailable
+            const now = new Date();
+            const nzTime = now.toLocaleString('en-NZ', {
+              timeZone: 'Pacific/Auckland',
+              hour: 'numeric',
+              minute: '2-digit',
+              hour12: true,
+              day: 'numeric',
+              month: 'long',
+              year: 'numeric'
+            });
+            timestampElement.textContent = nzTime + ' (New Zealand Time)';
+          });
+      }
+    });
+  </script>
 
   <!-- Remove About Me label and make image full-width on About page -->
   {% if "about" in page.url %}
