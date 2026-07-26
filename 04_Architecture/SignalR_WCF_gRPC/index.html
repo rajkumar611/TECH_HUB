@@ -2619,24 +2619,30 @@ It enables the SERVER to push messages to clients instantly, without the client 
       
     
 
-  <!-- Display deployment time once (static, not ticking) -->
+  <!-- Display deployment time (from page's Last-Modified header) -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
+      // Get the last-modified time from the server
+      const lastModified = document.lastModified;
+
       // Find and update timestamp in blockquote
       const blockquotes = document.querySelectorAll('blockquote');
       blockquotes.forEach(bq => {
         if (bq.textContent.includes('[Timestamp will load]')) {
-          const now = new Date();
-          const nzTime = now.toLocaleString('en-NZ', {
-            timeZone: 'Pacific/Auckland',
-            hour: 'numeric',
-            minute: '2-digit',
-            hour12: true,
-            day: 'numeric',
-            month: 'long',
-            year: 'numeric'
-          });
-          bq.innerHTML = bq.innerHTML.replace('[Timestamp will load]', nzTime + ' (New Zealand Time)');
+          if (lastModified) {
+            // Parse the Last-Modified date and format for NZ timezone
+            const date = new Date(lastModified);
+            const nzTime = date.toLocaleString('en-NZ', {
+              timeZone: 'Pacific/Auckland',
+              hour: 'numeric',
+              minute: '2-digit',
+              hour12: true,
+              day: 'numeric',
+              month: 'long',
+              year: 'numeric'
+            });
+            bq.innerHTML = bq.innerHTML.replace('[Timestamp will load]', nzTime + ' (New Zealand Time)');
+          }
         }
       });
     });
