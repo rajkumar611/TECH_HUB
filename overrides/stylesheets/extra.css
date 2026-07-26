@@ -127,3 +127,15 @@ body {
 .md-main {
   background-color: #1e1e1e;
 }
+
+/* Hide page title on About Me page */
+.md-content__inner > h1 {
+  display: none !important;
+}
+
+/* Move image to top and ensure it displays first */
+.md-content img:first-of-type {
+  margin-top: 0 !important;
+  margin-bottom: 20px !important;
+  display: block !important;
+}
