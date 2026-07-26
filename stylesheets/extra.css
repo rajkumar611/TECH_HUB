@@ -143,14 +143,23 @@ body {
   display: none !important;
 }
 
-/* Position image at the very top */
+/* Position image at top-left corner */
+.md-content {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 .md-content img {
-  margin-top: -40px !important;
-  margin-bottom: 30px !important;
+  margin: 0 !important;
+  padding: 0 !important;
   width: 100% !important;
   max-width: 100% !important;
+  display: block !important;
+  margin-bottom: 30px !important;
 }
 
 .md-content img:first-of-type {
-  margin-top: -40px !important;
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
