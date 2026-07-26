@@ -128,19 +128,19 @@ body {
   background-color: #1e1e1e;
 }
 
-/* Aggressively hide ALL h1 headers */
-.md-typeset h1 {
+/* Hide ALL page titles */
+.md-typeset h1,
+.md-content__inner h1 {
   display: none !important;
+  visibility: hidden !important;
   height: 0 !important;
   margin: 0 !important;
   padding: 0 !important;
-  visibility: hidden !important;
 }
 
-.md-content__inner h1 {
+/* Hide navigation sidebar label for About page */
+.md-nav__title {
   display: none !important;
-  height: 0 !important;
-  visibility: hidden !important;
 }
 
 /* Position image at the very top */
