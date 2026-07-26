@@ -138,9 +138,14 @@ body {
   padding: 0 !important;
 }
 
-/* Hide navigation sidebar label for About page */
+/* Hide navigation sidebar label everywhere as backup */
 .md-nav__title {
   display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
 }
 
 /* Position image at top-left corner */
