@@ -2377,11 +2377,9 @@
 
   <h1>06_Transformer_Architecture</h1>
 
-<p>╔════════════════════════════════════════════════════════════════╗
-║              TRANSFORMER ARCHITECTURE                         ║
-║      The Blueprint for ChatGPT, Claude, and Modern LLMs       ║
-╚════════════════════════════════════════════════════════════════╝</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<div class="highlight"><pre><span></span><code>           TRANSFORMER ARCHITECTURE
+   The Blueprint for ChatGPT, Claude, and Modern LLMs
+</code></pre></div>
 <p>📖 INTRODUCTION</p>
 <p>A Transformer is a neural network architecture that uses attention
 to process sequences (like text or images) efficiently.</p>
@@ -2392,7 +2390,6 @@ to process sequences (like text or images) efficiently.</p>
   ├─ Protein folding (AlphaFold)
   └─ And most cutting-edge AI</p>
 <p>Introduced in 2017 paper: "Attention Is All You Need"</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🏗️ OVERALL STRUCTURE</p>
 <p>A Transformer has THREE main parts:</p>
 <p>┌─────────────────────────────────────────────────────────┐
@@ -2420,7 +2417,6 @@ to process sequences (like text or images) efficiently.</p>
   ├─ Encoder-only: BERT (understanding tasks)
   ├─ Decoder-only: GPT, ChatGPT (generation tasks)
   └─ Encoder-Decoder: T5, original Transformer (translation)</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>📊 THE ENCODER (Understanding)</p>
 <p>The Encoder transforms input into rich representations.</p>
 <p>Structure:</p>
@@ -2456,7 +2452,6 @@ to process sequences (like text or images) efficiently.</p>
         Encoder Output
         (Rich representation)</p>
 <p>Repeat steps 3-6 for N layers (usually 6-24 layers)</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🎯 KEY COMPONENTS EXPLAINED</p>
 <ol>
 <li>
@@ -2502,7 +2497,6 @@ to process sequences (like text or images) efficiently.</p>
    └─ Helps prevent vanishing gradients</p>
 </li>
 </ol>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🎬 THE DECODER (Generation)</p>
 <p>The Decoder generates output, one token at a time.</p>
 <p>For ChatGPT and similar models, it's actually:
@@ -2520,7 +2514,6 @@ to process sequences (like text or images) efficiently.</p>
 <li>Continue until <STOP> or max length</li>
 </ol>
 <p>Result: "The cat sat on the mat"</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🔒 CAUSAL MASKING (For Decoder)</p>
 <p>Problem: During training, decoder could "cheat" by looking ahead!</p>
 <p>Training data: "The cat sat on the mat"</p>
@@ -2534,7 +2527,6 @@ to process sequences (like text or images) efficiently.</p>
   └─ When predicting "sat", can only see "The cat"
   └─ Simulates real inference during training</p>
 <p>This ensures the model learns to predict, not peek!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>⚙️ ENCODER-DECODER INTERACTION (Translation)</p>
 <p>For translation tasks:</p>
 <p>Input: "Hello" (English)
@@ -2555,7 +2547,6 @@ to process sequences (like text or images) efficiently.</p>
   └─ Decoder asks: "What's important in input?"
   └─ Attends to encoder's rich representation
   └─ Combines with own prediction capabilities</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>📈 MODEL SIZES (For Context)</p>
 <p>Small Models:
   ├─ DistilBERT: 66M parameters
@@ -2577,7 +2568,6 @@ to process sequences (like text or images) efficiently.</p>
 <p>Model size = Number of parameters (weights)
 More parameters = Potentially better understanding
 But: Much slower, much more expensive</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🔄 INFERENCE: HOW CHATGPT WORKS</p>
 <p>When you talk to ChatGPT:</p>
 <ol>
@@ -2591,7 +2581,6 @@ But: Much slower, much more expensive</p>
 </ol>
 <p>This happens token-by-token!
 That's why ChatGPT "streams" output—generating one word at a time!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🎓 KEY TAKEAWAYS</p>
 <ol>
 <li>Transformer = Architecture based on attention</li>
@@ -2605,14 +2594,12 @@ That's why ChatGPT "streams" output—generating one word at a time!</p>
 <li>Modern LLMs are decoder-only models</li>
 <li>Bigger models (more parameters) = better understanding</li>
 </ol>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🤔 THINK ABOUT IT</p>
 <ul>
 <li>Why do we need positional encoding if attention sees all words?</li>
 <li>Why generate one token at a time instead of whole sentence?</li>
 <li>What would happen without residual connections in deep networks?</li>
 </ul>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>NEXT UP: Module 07 - What are Large Language Models (LLMs)?</p>
 
 

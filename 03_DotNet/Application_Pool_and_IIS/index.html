@@ -105,11 +105,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#application-pool-iis-and-web-hosting" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -1126,26 +1121,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Application_Pool_and_IIS
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1163,80 +1138,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#iis-architecture" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        IIS ARCHITECTURE
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#application-pool" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        APPLICATION POOL
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#web-garden-vs-web-farm" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        WEB GARDEN vs WEB FARM
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#iis-express-vs-iis-server" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        IIS EXPRESS vs IIS SERVER
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#async-in-iis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ASYNC IN IIS
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -2458,71 +2359,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#iis-architecture" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        IIS ARCHITECTURE
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#application-pool" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        APPLICATION POOL
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#web-garden-vs-web-farm" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        WEB GARDEN vs WEB FARM
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#iis-express-vs-iis-server" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        IIS EXPRESS vs IIS SERVER
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#async-in-iis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ASYNC IN IIS
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -2539,8 +2375,10 @@
 
 
 
-<h1 id="application-pool-iis-and-web-hosting">APPLICATION POOL, IIS, AND WEB HOSTING<a class="headerlink" href="#application-pool-iis-and-web-hosting" title="Permanent link">&para;</a></h1>
-<h2 id="iis-architecture">IIS ARCHITECTURE<a class="headerlink" href="#iis-architecture" title="Permanent link">&para;</a></h2>
+  <h1>Application_Pool_and_IIS</h1>
+
+<p>APPLICATION POOL, IIS, AND WEB HOSTING</p>
+<p>IIS ARCHITECTURE</p>
 <p>Windows Server (the machine)
    └── IIS (the web server software)
          └── Application Pools
@@ -2548,14 +2386,14 @@
 <p>Each App Pool gets its own worker process (w3wp.exe).
 Each worker process loads its own .NET runtime.
 This is how different apps can run different .NET versions on the same server.</p>
-<h2 id="application-pool">APPLICATION POOL<a class="headerlink" href="#application-pool" title="Permanent link">&para;</a></h2>
+<p>APPLICATION POOL</p>
 <p>An Application Pool is a logical container in IIS that isolates web apps.
 - Each app runs in its own worker process (w3wp.exe).
 - If one app crashes or leaks memory, others are NOT affected.
 - Benefits: Isolation, security, independent configuration, independent recycling.</p>
 <p>Request flow:
 Client → IIS → Application Pool → w3wp.exe → .NET Runtime → ThreadPool → Thread executes → Response</p>
-<h2 id="web-garden-vs-web-farm">WEB GARDEN vs WEB FARM<a class="headerlink" href="#web-garden-vs-web-farm" title="Permanent link">&para;</a></h2>
+<p>WEB GARDEN vs WEB FARM</p>
 <p>Web Garden = Multiple worker processes on ONE server.
   - One machine → One IIS → One App Pool → Multiple w3wp.exe processes
   - Scales UP (uses more CPU cores on one machine)
@@ -2567,7 +2405,7 @@ Client → IIS → Application Pool → w3wp.exe → .NET Runtime → ThreadPool
   - Scales OUT (more machines for load + redundancy)
   - The production standard in enterprise</p>
 <p>One-liner: Web Garden = scale up on one machine. Web Farm = scale out across machines.</p>
-<h2 id="iis-express-vs-iis-server">IIS EXPRESS vs IIS SERVER<a class="headerlink" href="#iis-express-vs-iis-server" title="Permanent link">&para;</a></h2>
+<p>IIS EXPRESS vs IIS SERVER</p>
 <table>
 <thead>
 <tr>
@@ -2623,7 +2461,7 @@ Client → IIS → Application Pool → w3wp.exe → .NET Runtime → ThreadPool
 In production: Code deployed → w3wp.exe runs 24/7 → Handles real user traffic.</p>
 <p>w3wp.exe is installed once. IIS launches multiple instances (one per App Pool).
 Each instance loads its own .NET runtime version.</p>
-<h2 id="async-in-iis">ASYNC IN IIS<a class="headerlink" href="#async-in-iis" title="Permanent link">&para;</a></h2>
+<p>ASYNC IN IIS</p>
 <p>Each request normally uses one ThreadPool thread.
 With async, the thread is released at await, allowing the server to handle more requests.
 The key to ASP.NET scalability.</p>

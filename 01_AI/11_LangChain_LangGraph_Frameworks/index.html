@@ -2377,11 +2377,9 @@
 
   <h1>11_LangChain_LangGraph_Frameworks</h1>
 
-<p>╔════════════════════════════════════════════════════════════════╗
-║        LANGCHAIN AND LANGGRAPH FRAMEWORKS                     ║
-║      Building Production AI Applications with Python          ║
-╚════════════════════════════════════════════════════════════════╝</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<div class="highlight"><pre><span></span><code>     LANGCHAIN AND LANGGRAPH FRAMEWORKS
+   Building Production AI Applications with Python
+</code></pre></div>
 <p>📖 INTRODUCTION</p>
 <p>Building an AI app from scratch is complex:
   ├─ Call LLM APIs
@@ -2396,7 +2394,6 @@
   └─ Flask for web (simplifies building web apps)
   └─ LangChain simplifies building LLM apps</p>
 <p>Used by: Startups, enterprises, researchers building AI apps</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🎯 WHAT IS LANGCHAIN?</p>
 <p>LangChain is a Python library that provides:</p>
 <ol>
@@ -2442,7 +2439,6 @@
    └─ Combine with generation</p>
 </li>
 </ol>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🔗 LANGCHAIN ARCHITECTURE</p>
 <p>Components:</p>
 <p>┌─────────────────────────────────────────────────┐
@@ -2468,7 +2464,6 @@
 │ ├─ Database                                     │
 │ └─ Business logic                               │
 └──────────────────────────────────────────────────┘</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>💻 SIMPLE LANGCHAIN EXAMPLE</p>
 <p>Without LangChain (Tedious):</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">openai</span>
@@ -2497,7 +2492,6 @@
 <a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
 </code></pre></div>
 <p>Much cleaner! Uses pipe operator (|) to chain.</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🔄 CHAINS (Connecting Multiple Steps)</p>
 <p>Sequential Chain:
   └─ Step 1 → Step 2 → Step 3
@@ -2532,7 +2526,6 @@
 <a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="nb">print</span><span class="p">(</span><span class="n">expanded</span><span class="p">)</span>
 </code></pre></div>
 <p>Simple pipeline!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>💾 MEMORY (Remembering Conversations)</p>
 <p>Types of Memory:</p>
 <p>Buffer Memory (Short-term):
@@ -2566,7 +2559,6 @@
 <a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="n">conversation</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="s2">&quot;Hi, my name is Alice&quot;</span><span class="p">)</span>
 <a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="n">conversation</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="s2">&quot;What&#39;s my name?&quot;</span><span class="p">)</span>  <span class="c1"># AI remembers!</span>
 </code></pre></div>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🛠️ TOOLS AND AGENTS</p>
 <p>Build agents with LangChain:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">langchain.agents</span><span class="w"> </span><span class="kn">import</span> <span class="n">AgentType</span><span class="p">,</span> <span class="n">initialize_agent</span><span class="p">,</span> <span class="n">load_tools</span>
@@ -2593,7 +2585,6 @@
   ├─ Uses them correctly
   ├─ Combines results
   └─ Provides answer</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>📚 RAG WITH LANGCHAIN</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">langchain.document_loaders</span><span class="w"> </span><span class="kn">import</span> <span class="n">PDFLoader</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">langchain.text_splitter</span><span class="w"> </span><span class="kn">import</span> <span class="n">CharacterTextSplitter</span>
@@ -2630,7 +2621,6 @@
 <a id="__codelineno-5-33" name="__codelineno-5-33" href="#__codelineno-5-33"></a><span class="n">result</span> <span class="o">=</span> <span class="n">qa</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="s2">&quot;What is covered in this document?&quot;</span><span class="p">)</span>
 </code></pre></div>
 <p>Complete RAG pipeline in ~20 lines!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🌳 LANGGRAPH (Advanced Workflows)</p>
 <p>LangGraph = Successor to LangChain for complex workflows</p>
 <p>Key Differences:</p>
@@ -2673,7 +2663,6 @@
 <a id="__codelineno-6-27" name="__codelineno-6-27" href="#__codelineno-6-27"></a><span class="n">result</span> <span class="o">=</span> <span class="n">compiled_graph</span><span class="o">.</span><span class="n">invoke</span><span class="p">({</span><span class="s2">&quot;query&quot;</span><span class="p">:</span> <span class="s2">&quot;Find papers about AI&quot;</span><span class="p">})</span>
 </code></pre></div>
 <p>More powerful for complex workflows!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>⚙️ OTHER AI FRAMEWORKS</p>
 <p>Semantic Kernel (Microsoft):
   ├─ .NET, Python, TypeScript
@@ -2695,7 +2684,6 @@
   ├─ Lightweight LLM wrapper
   ├─ Unified interface
   ├─ Good for: Cost optimization</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>📊 LANGCHAIN ECOSYSTEM</p>
 <p>LangChain Core:
   └─ Base classes, interfaces</p>
@@ -2706,7 +2694,6 @@
 <p>LangSmith:
   └─ Debugging, testing, monitoring</p>
 <p>Together = Complete platform for building LLM apps!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🎓 KEY TAKEAWAYS</p>
 <ol>
 <li>LangChain simplifies building LLM applications</li>
@@ -2720,14 +2707,12 @@
 <li>LangSmith debugs and monitors</li>
 <li>Python-first, great ecosystem</li>
 </ol>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🤔 THINK ABOUT IT</p>
 <ul>
 <li>Why is chains better than calling LLM API directly?</li>
 <li>How does memory prevent losing conversation context?</li>
 <li>When would you use LangGraph instead of LangChain?</li>
 </ul>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>NEXT UP: Module 12 - Advanced Topics (Evals, Responsible AI)</p>
 
 

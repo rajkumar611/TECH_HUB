@@ -105,11 +105,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#nginx-vs-kestrel" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -1577,26 +1572,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Nginx_vs_Kestrel
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1614,91 +1589,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#why-two-servers" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        WHY TWO SERVERS?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kestrel" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        KESTREL
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nginx" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        NGINX
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#iis-vs-nginx" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        IIS vs NGINX
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#the-modern-production-architecture" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        THE MODERN PRODUCTION ARCHITECTURE
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SUMMARY
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -2469,82 +2359,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#why-two-servers" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        WHY TWO SERVERS?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kestrel" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        KESTREL
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nginx" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        NGINX
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#iis-vs-nginx" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        IIS vs NGINX
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#the-modern-production-architecture" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        THE MODERN PRODUCTION ARCHITECTURE
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SUMMARY
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -2561,15 +2375,17 @@
 
 
 
-<h1 id="nginx-vs-kestrel">NGINX vs KESTREL<a class="headerlink" href="#nginx-vs-kestrel" title="Permanent link">&para;</a></h1>
-<h2 id="why-two-servers">WHY TWO SERVERS?<a class="headerlink" href="#why-two-servers" title="Permanent link">&para;</a></h2>
+  <h1>Nginx_vs_Kestrel</h1>
+
+<p>NGINX vs KESTREL</p>
+<p>WHY TWO SERVERS?</p>
 <p>Before .NET Core, one server (IIS) handled everything: hosting, security, routing,
 SSL, and running .NET code. One server was enough.</p>
 <p>With .NET Core, Microsoft split the responsibility:
 - Kestrel = application server (runs your .NET code)
 - Nginx/IIS = front-door server (handles the internet)</p>
 <p>They do DIFFERENT jobs and complement each other.</p>
-<h2 id="kestrel">KESTREL<a class="headerlink" href="#kestrel" title="Permanent link">&para;</a></h2>
+<p>KESTREL</p>
 <p>What it is:
 Kestrel is the built-in, cross-platform, lightweight HTTP server included with
 ASP.NET Core. It is the application server that runs your .NET code.</p>
@@ -2595,7 +2411,7 @@ ASP.NET Core. It is the application server that runs your .NET code.</p>
 <p>Why not expose Kestrel directly to the internet?
 Kestrel lacks the hardened, edge-level capabilities needed for production internet traffic.
 In production, Kestrel should always sit behind a reverse proxy.</p>
-<h2 id="nginx">NGINX<a class="headerlink" href="#nginx" title="Permanent link">&para;</a></h2>
+<p>NGINX</p>
 <p>What it is:
 Nginx (pronounced "engine-x") is a high-performance, cross-platform web server and
 reverse proxy. It is the front-door server for your application.</p>
@@ -2618,7 +2434,7 @@ reverse proxy. It is the front-door server for your application.</p>
 - Then forwards the request to Kestrel (your .NET app)
 - Kestrel processes the business logic and returns the response
 - Nginx sends the response back to the client</p>
-<h2 id="iis-vs-nginx">IIS vs NGINX<a class="headerlink" href="#iis-vs-nginx" title="Permanent link">&para;</a></h2>
+<p>IIS vs NGINX</p>
 <table>
 <thead>
 <tr>
@@ -2662,7 +2478,7 @@ reverse proxy. It is the front-door server for your application.</p>
 </table>
 <p>IIS can also act as a reverse proxy for ASP.NET Core with the IIS integration module.
 But Nginx is preferred in Linux, cloud, and containerised environments.</p>
-<h2 id="the-modern-production-architecture">THE MODERN PRODUCTION ARCHITECTURE<a class="headerlink" href="#the-modern-production-architecture" title="Permanent link">&para;</a></h2>
+<p>THE MODERN PRODUCTION ARCHITECTURE</p>
 <p>Old .NET Framework:
   Client → IIS → ASP.NET Framework App
   (IIS did everything)</p>
@@ -2670,7 +2486,7 @@ But Nginx is preferred in Linux, cloud, and containerised environments.</p>
   Client → Nginx (or IIS) → Kestrel → ASP.NET Core App</p>
 <p>Nginx/IIS: front-door layer (SSL, security, routing, load balancing)
   Kestrel:   application layer (business logic, middleware, .NET code)</p>
-<h2 id="summary">SUMMARY<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<p>SUMMARY</p>
 <table>
 <thead>
 <tr>

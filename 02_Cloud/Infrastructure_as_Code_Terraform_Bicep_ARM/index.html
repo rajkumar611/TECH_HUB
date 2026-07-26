@@ -105,11 +105,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#infrastructure-as-code-iac-terraform-bicep-arm" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -1039,26 +1034,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Infrastructure_as_Code_Terraform_Bicep_ARM
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1076,91 +1051,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-iac" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        WHAT IS IaC?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-arm-templates-azure-resource-manager" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. ARM TEMPLATES (Azure Resource Manager)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-bicep" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. BICEP
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-terraform" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. TERRAFORM
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#comparison-table" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        COMPARISON TABLE
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cloud-specific-iac-equivalents" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        CLOUD-SPECIFIC IaC EQUIVALENTS
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -2469,82 +2359,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-iac" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        WHAT IS IaC?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-arm-templates-azure-resource-manager" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. ARM TEMPLATES (Azure Resource Manager)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-bicep" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. BICEP
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-terraform" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. TERRAFORM
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#comparison-table" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        COMPARISON TABLE
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cloud-specific-iac-equivalents" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        CLOUD-SPECIFIC IaC EQUIVALENTS
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -2561,20 +2375,26 @@
 
 
 
-<h1 id="infrastructure-as-code-iac-terraform-bicep-arm">INFRASTRUCTURE AS CODE (IaC) — TERRAFORM, BICEP, ARM<a class="headerlink" href="#infrastructure-as-code-iac-terraform-bicep-arm" title="Permanent link">&para;</a></h1>
-<h2 id="what-is-iac">WHAT IS IaC?<a class="headerlink" href="#what-is-iac" title="Permanent link">&para;</a></h2>
+  <h1>Infrastructure_as_Code_Terraform_Bicep_ARM</h1>
+
+<p>INFRASTRUCTURE AS CODE (IaC) — TERRAFORM, BICEP, ARM</p>
+<p>WHAT IS IaC?</p>
 <p>Instead of manually clicking in the Azure portal to create cloud resources,
 you write code (files) that describe your infrastructure.
 The tool then creates, updates, or deletes resources automatically.</p>
 <p>Benefits: Consistency, repeatability, version control, automation, no human error.</p>
-<h2 id="1-arm-templates-azure-resource-manager">1. ARM TEMPLATES (Azure Resource Manager)<a class="headerlink" href="#1-arm-templates-azure-resource-manager" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Azure's native provisioning engine.</li>
+<ol>
+<li>
+<p>ARM TEMPLATES (Azure Resource Manager)</p>
+</li>
+<li>
+<p>Azure's native provisioning engine.</p>
+</li>
 <li>Every Azure management tool (Portal, CLI, PowerShell, Terraform, Bicep) ultimately sends
   requests to the ARM REST API at https://management.azure.com/</li>
 <li>Uses declarative JSON to describe desired infrastructure state.</li>
 <li>ARM validates the request, checks RBAC permissions, and provisions resources.</li>
-</ul>
+</ol>
 <p>Example ARM JSON (storage account):
 {
   "type": "Microsoft.Storage/storageAccounts",
@@ -2585,15 +2405,19 @@ The tool then creates, updates, or deletes resources automatically.</p>
   "kind": "StorageV2"
 }</p>
 <p>ARM is the underlying engine. It processes all deployments regardless of the tool used.</p>
-<h2 id="2-bicep">2. BICEP<a class="headerlink" href="#2-bicep" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Microsoft's Azure-native IaC DSL (Domain-Specific Language).</li>
+<ol>
+<li>
+<p>BICEP</p>
+</li>
+<li>
+<p>Microsoft's Azure-native IaC DSL (Domain-Specific Language).</p>
+</li>
 <li>Simpler, cleaner syntax than ARM JSON.</li>
 <li>Compiles directly into ARM JSON (Bicep is just a better way to write ARM templates).</li>
 <li>Azure-only — no multi-cloud support.</li>
 <li>No state file, no provider plugins.</li>
 <li>New Azure resource types are immediately available (ARM schemas).</li>
-</ul>
+</ol>
 <p>Example Bicep:
 resource sa 'Microsoft.Storage/storageAccounts@2022-09-01' = {
   name: 'mystorage123'
@@ -2602,17 +2426,21 @@ resource sa 'Microsoft.Storage/storageAccounts@2022-09-01' = {
   kind: 'StorageV2'
 }</p>
 <p>Best for: Azure-only projects that want simpler IaC without Terraform complexity.</p>
-<h2 id="3-terraform">3. TERRAFORM<a class="headerlink" href="#3-terraform" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Cloud-agnostic IaC tool by HashiCorp.</li>
+<ol>
+<li>
+<p>TERRAFORM</p>
+</li>
+<li>
+<p>Cloud-agnostic IaC tool by HashiCorp.</p>
+</li>
 <li>Works with Azure, AWS, GCP, Kubernetes, VMware, and 100s of other platforms.</li>
 <li>Uses HCL (HashiCorp Configuration Language).</li>
 <li>Maintains its own state file to track deployed vs desired infrastructure.</li>
 <li>Uses provider plugins to interact with each cloud.</li>
 <li>You run it from CLI: terraform init → terraform plan → terraform apply.</li>
-</ul>
+</ol>
 <p>Best for: Multi-cloud environments, teams that want one tool across platforms.</p>
-<h2 id="comparison-table">COMPARISON TABLE<a class="headerlink" href="#comparison-table" title="Permanent link">&para;</a></h2>
+<p>COMPARISON TABLE</p>
 <table>
 <thead>
 <tr>
@@ -2667,7 +2495,7 @@ resource sa 'Microsoft.Storage/storageAccounts@2022-09-01' = {
 </tr>
 </tbody>
 </table>
-<h2 id="cloud-specific-iac-equivalents">CLOUD-SPECIFIC IaC EQUIVALENTS<a class="headerlink" href="#cloud-specific-iac-equivalents" title="Permanent link">&para;</a></h2>
+<p>CLOUD-SPECIFIC IaC EQUIVALENTS</p>
 <p>Azure  → ARM Templates / Bicep
 AWS    → CloudFormation (JSON/YAML) or CDK (TypeScript, Python, Java, C#)
 GCP    → Deployment Manager (YAML + Jinja2/Python) or Config Connector</p>

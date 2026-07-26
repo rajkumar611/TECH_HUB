@@ -105,11 +105,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#azure-functions-vs-azure-app-service" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -955,26 +950,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Azure_Functions_vs_App_Service
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -992,69 +967,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#azure-functions-serverless" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        AZURE FUNCTIONS (Serverless)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#azure-app-service" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        AZURE APP SERVICE
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#when-to-use-which" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        WHEN TO USE WHICH?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#analogy" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ANALOGY
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -2447,60 +2359,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#azure-functions-serverless" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        AZURE FUNCTIONS (Serverless)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#azure-app-service" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        AZURE APP SERVICE
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#when-to-use-which" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        WHEN TO USE WHICH?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#analogy" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ANALOGY
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -2517,8 +2375,10 @@
 
 
 
-<h1 id="azure-functions-vs-azure-app-service">AZURE FUNCTIONS vs AZURE APP SERVICE<a class="headerlink" href="#azure-functions-vs-azure-app-service" title="Permanent link">&para;</a></h1>
-<h2 id="azure-functions-serverless">AZURE FUNCTIONS (Serverless)<a class="headerlink" href="#azure-functions-serverless" title="Permanent link">&para;</a></h2>
+  <h1>Azure_Functions_vs_App_Service</h1>
+
+<p>AZURE FUNCTIONS vs AZURE APP SERVICE</p>
+<p>AZURE FUNCTIONS (Serverless)</p>
 <ul>
 <li>Serverless: You don't manage servers, scaling, or maintenance. Azure handles everything.</li>
 <li>You write small, focused functions for specific tasks.</li>
@@ -2539,7 +2399,7 @@ Azure Storage event → Triggers function automatically
         ↓
 Function extracts text from invoice</p>
 <p>Note: The main app can be written in one language; Azure Functions can be in another.</p>
-<h2 id="azure-app-service">AZURE APP SERVICE<a class="headerlink" href="#azure-app-service" title="Permanent link">&para;</a></h2>
+<p>AZURE APP SERVICE</p>
 <ul>
 <li>Fully managed platform to host web apps, APIs, and mobile backends.</li>
 <li>Runs continuously 24/7 (unlike Azure Functions which run on-demand).</li>
@@ -2548,7 +2408,7 @@ Function extracts text from invoice</p>
 <li>You just deploy your code.</li>
 </ul>
 <p>Use for: Traditional web apps, REST APIs, always-on backend services.</p>
-<h2 id="when-to-use-which">WHEN TO USE WHICH?<a class="headerlink" href="#when-to-use-which" title="Permanent link">&para;</a></h2>
+<p>WHEN TO USE WHICH?</p>
 <p>Use Azure Functions when:
 - The task is short, event-driven, or happens occasionally.
 - You want to react to events (file upload, queue message, timer).
@@ -2557,7 +2417,7 @@ Function extracts text from invoice</p>
 - The app needs to run 24/7 (web apps, APIs).
 - You want predictable hosting with fixed cost.
 - You need more control over runtime and config.</p>
-<h2 id="analogy">ANALOGY<a class="headerlink" href="#analogy" title="Permanent link">&para;</a></h2>
+<p>ANALOGY</p>
 <p>Azure Functions = A freelancer you call for a specific job. They work, then go home.
 Azure App Service = A full-time employee who stays in the office all day.</p>
 

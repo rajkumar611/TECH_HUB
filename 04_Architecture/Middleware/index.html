@@ -105,11 +105,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#middleware" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -1521,26 +1516,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Middleware
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1558,91 +1533,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-middleware" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        WHAT IS MIDDLEWARE?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#types-of-middleware" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        TYPES OF MIDDLEWARE
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why-regular-api-endpoints-are-not-middleware" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        WHY REGULAR API ENDPOINTS ARE NOT MIDDLEWARE
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#aspnet-core-middleware-pipeline" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ASP.NET CORE MIDDLEWARE PIPELINE
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#middleware-vs-api-gateway" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        MIDDLEWARE vs API GATEWAY
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-facts-to-remember" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        KEY FACTS TO REMEMBER
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -2469,82 +2359,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-middleware" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        WHAT IS MIDDLEWARE?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#types-of-middleware" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        TYPES OF MIDDLEWARE
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why-regular-api-endpoints-are-not-middleware" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        WHY REGULAR API ENDPOINTS ARE NOT MIDDLEWARE
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#aspnet-core-middleware-pipeline" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ASP.NET CORE MIDDLEWARE PIPELINE
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#middleware-vs-api-gateway" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        MIDDLEWARE vs API GATEWAY
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-facts-to-remember" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        KEY FACTS TO REMEMBER
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -2561,8 +2375,10 @@
 
 
 
-<h1 id="middleware">MIDDLEWARE<a class="headerlink" href="#middleware" title="Permanent link">&para;</a></h1>
-<h2 id="what-is-middleware">WHAT IS MIDDLEWARE?<a class="headerlink" href="#what-is-middleware" title="Permanent link">&para;</a></h2>
+  <h1>Middleware</h1>
+
+<p>MIDDLEWARE</p>
+<p>WHAT IS MIDDLEWARE?</p>
 <p>Middleware is a software layer that sits between two systems, processes a request
 (or response), and then PASSES IT FORWARD to the next layer.</p>
 <p>Key distinction:
@@ -2578,7 +2394,7 @@ Before you reach the teller:
 - Security guard checks your ID (authentication middleware)
 - Desk checks your account access (authorization middleware)
 Both layers process and pass you forward — they don't withdraw money.</p>
-<h2 id="types-of-middleware">TYPES OF MIDDLEWARE<a class="headerlink" href="#types-of-middleware" title="Permanent link">&para;</a></h2>
+<p>TYPES OF MIDDLEWARE</p>
 <ol>
 <li>Authentication Middleware</li>
 <li>Checks if the request has a valid token or credentials</li>
@@ -2618,14 +2434,14 @@ Both layers process and pass you forward — they don't withdraw money.</p>
 <li>Then routes to the correct backend service</li>
 <li>The gateway itself is middleware — it doesn't do the business work</li>
 </ol>
-<h2 id="why-regular-api-endpoints-are-not-middleware">WHY REGULAR API ENDPOINTS ARE NOT MIDDLEWARE<a class="headerlink" href="#why-regular-api-endpoints-are-not-middleware" title="Permanent link">&para;</a></h2>
+<p>WHY REGULAR API ENDPOINTS ARE NOT MIDDLEWARE</p>
 <p>An API endpoint like GET /customers/5 receives the request, handles it completely,
 and returns the data. The request ENDS there.</p>
 <p>Middleware's defining trait: it passes requests forward.
 Endpoint's defining trait: it handles requests completely.</p>
 <p>Authentication, API Gateways, and logging layers are middleware.
 User endpoints, product endpoints, and business logic handlers are NOT middleware.</p>
-<h2 id="aspnet-core-middleware-pipeline">ASP.NET CORE MIDDLEWARE PIPELINE<a class="headerlink" href="#aspnet-core-middleware-pipeline" title="Permanent link">&para;</a></h2>
+<p>ASP.NET CORE MIDDLEWARE PIPELINE</p>
 <p>In ASP.NET Core, middleware is registered in Program.cs and forms a pipeline.
 Each request passes through all middleware layers before reaching the endpoint.</p>
 <p>Request arrives
@@ -2642,7 +2458,7 @@ Logging should come first to capture all requests.</p>
   app.UseAuthentication();  // Must come before UseAuthorization
   app.UseAuthorization();
   app.MapControllers();     // Actual endpoints</p>
-<h2 id="middleware-vs-api-gateway">MIDDLEWARE vs API GATEWAY<a class="headerlink" href="#middleware-vs-api-gateway" title="Permanent link">&para;</a></h2>
+<p>MIDDLEWARE vs API GATEWAY</p>
 <p>Both are middleware in the conceptual sense, but at different scales:</p>
 <p>Middleware in a single app:
   - Layers within one application's request pipeline
@@ -2651,7 +2467,7 @@ Logging should come first to capture all requests.</p>
   - Sits between clients and multiple backend services
   - Routes requests to the correct service
   - Centralised auth, logging, rate limiting across all services</p>
-<h2 id="key-facts-to-remember">KEY FACTS TO REMEMBER<a class="headerlink" href="#key-facts-to-remember" title="Permanent link">&para;</a></h2>
+<p>KEY FACTS TO REMEMBER</p>
 <ul>
 <li>Middleware = processes request and passes it forward (not the final destination)</li>
 <li>Endpoint = handles the request completely (is the final destination)</li>

@@ -105,11 +105,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#sqlite-and-prisma" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -1378,26 +1373,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    SQLite_and_Prisma
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1415,69 +1390,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#sqlite" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SQLITE
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prisma" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        PRISMA
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sqlite-prisma-together" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SQLITE + PRISMA TOGETHER
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SUMMARY
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -2447,60 +2359,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#sqlite" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SQLITE
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prisma" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        PRISMA
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sqlite-prisma-together" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SQLITE + PRISMA TOGETHER
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SUMMARY
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -2517,8 +2375,10 @@
 
 
 
-<h1 id="sqlite-and-prisma">SQLITE AND PRISMA<a class="headerlink" href="#sqlite-and-prisma" title="Permanent link">&para;</a></h1>
-<h2 id="sqlite">SQLITE<a class="headerlink" href="#sqlite" title="Permanent link">&para;</a></h2>
+  <h1>SQLite_and_Prisma</h1>
+
+<p>SQLITE AND PRISMA</p>
+<p>SQLITE</p>
 <p>What it is:
 SQLite is a lightweight, file-based relational database that lives inside your
 application itself. It does NOT need a separate database server.</p>
@@ -2542,7 +2402,7 @@ SQLite is supported via Entity Framework Core with the Microsoft.EntityFramework
 package. You write the same EF code — EF just targets a .db file instead of SQL Server.</p>
 <p>// EF Core with SQLite
    optionsBuilder.UseSqlite("Data Source=myapp.db");</p>
-<h2 id="prisma">PRISMA<a class="headerlink" href="#prisma" title="Permanent link">&para;</a></h2>
+<p>PRISMA</p>
 <p>What it is:
 Prisma is a modern, strongly-typed ORM for Node.js and TypeScript.
 Think of it as the equivalent of Entity Framework Core — but for the JavaScript/
@@ -2576,7 +2436,7 @@ TypeScript world.</p>
    Query style        | LINQ                  | prisma.model.findMany()
    Type safety        | Yes                   | Yes
    Supported DBs      | SQL Server, PG, MySQL, SQLite | PG, MySQL, SQLite, SQL Server, MongoDB</p>
-<h2 id="sqlite-prisma-together">SQLITE + PRISMA TOGETHER<a class="headerlink" href="#sqlite-prisma-together" title="Permanent link">&para;</a></h2>
+<p>SQLITE + PRISMA TOGETHER</p>
 <p>SQLite is commonly used with Prisma in:
 - Local development (fast, no server setup)
 - Prototypes
@@ -2586,7 +2446,7 @@ TypeScript world.</p>
      provider = "sqlite"
      url      = "file:./dev.db"
    }</p>
-<h2 id="summary">SUMMARY<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<p>SUMMARY</p>
 <ul>
 <li>SQLite = file-based database, no server needed, great for local/small-scale apps</li>
 <li>Prisma = modern ORM for Node.js/TypeScript, equivalent to EF Core in .NET</li>

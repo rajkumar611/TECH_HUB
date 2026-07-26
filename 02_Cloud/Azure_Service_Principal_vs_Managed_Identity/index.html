@@ -105,11 +105,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#azure-service-principal-vs-managed-identity" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -983,26 +978,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Azure_Service_Principal_vs_Managed_Identity
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1020,91 +995,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#simple-analogy" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SIMPLE ANALOGY
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#service-principal" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SERVICE PRINCIPAL
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#managed-identity" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        MANAGED IDENTITY
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#technical-comparison" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        TECHNICAL COMPARISON
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-authentication-works" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        HOW AUTHENTICATION WORKS
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#one-sentence-summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ONE-SENTENCE SUMMARY
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -2469,82 +2359,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#simple-analogy" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SIMPLE ANALOGY
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#service-principal" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SERVICE PRINCIPAL
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#managed-identity" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        MANAGED IDENTITY
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#technical-comparison" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        TECHNICAL COMPARISON
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-authentication-works" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        HOW AUTHENTICATION WORKS
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#one-sentence-summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ONE-SENTENCE SUMMARY
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -2561,14 +2375,16 @@
 
 
 
-<h1 id="azure-service-principal-vs-managed-identity">AZURE SERVICE PRINCIPAL vs MANAGED IDENTITY<a class="headerlink" href="#azure-service-principal-vs-managed-identity" title="Permanent link">&para;</a></h1>
-<h2 id="simple-analogy">SIMPLE ANALOGY<a class="headerlink" href="#simple-analogy" title="Permanent link">&para;</a></h2>
+  <h1>Azure_Service_Principal_vs_Managed_Identity</h1>
+
+<p>AZURE SERVICE PRINCIPAL vs MANAGED IDENTITY</p>
+<p>SIMPLE ANALOGY</p>
 <p>Service Principal = giving someone a spare key to your house.
   You create the key, store it, and must protect it. If stolen, your house is at risk.</p>
 <p>Managed Identity = living in a smart building that automatically recognizes you.
   No key needed. The building (Azure) authenticates you automatically.
   Nothing to lose, nothing to steal.</p>
-<h2 id="service-principal">SERVICE PRINCIPAL<a class="headerlink" href="#service-principal" title="Permanent link">&para;</a></h2>
+<p>SERVICE PRINCIPAL</p>
 <ul>
 <li>An identity created manually inside Microsoft Entra ID (Azure AD) for an application.</li>
 <li>Authenticates using: Client ID + Client Secret (or Certificate).</li>
@@ -2577,7 +2393,7 @@
 <li>Risk: If the secret is leaked, anyone can impersonate the app.</li>
 </ul>
 <p>Use when: Your app runs OUTSIDE Azure (on-prem, GitHub Actions, developer laptop, other clouds).</p>
-<h2 id="managed-identity">MANAGED IDENTITY<a class="headerlink" href="#managed-identity" title="Permanent link">&para;</a></h2>
+<p>MANAGED IDENTITY</p>
 <ul>
 <li>An identity automatically created and managed by Azure for a specific Azure resource.</li>
 <li>Resources: VM, App Service, Function App, Logic App, Container App.</li>
@@ -2587,7 +2403,7 @@
 <li>Works ONLY inside Azure.</li>
 </ul>
 <p>Use when: Your app runs INSIDE Azure and needs to access other Azure services (e.g., App Service → Key Vault, Azure SQL, Blob Storage).</p>
-<h2 id="technical-comparison">TECHNICAL COMPARISON<a class="headerlink" href="#technical-comparison" title="Permanent link">&para;</a></h2>
+<p>TECHNICAL COMPARISON</p>
 <table>
 <thead>
 <tr>
@@ -2634,13 +2450,13 @@
 </tr>
 </tbody>
 </table>
-<h2 id="how-authentication-works">HOW AUTHENTICATION WORKS<a class="headerlink" href="#how-authentication-works" title="Permanent link">&para;</a></h2>
+<p>HOW AUTHENTICATION WORKS</p>
 <p>Service Principal:
 App → sends Client ID + Secret to Azure AD → receives access token → calls Azure resource.</p>
 <p>Managed Identity:
 App → asks Azure Instance Metadata Service for a token → Azure AD issues token automatically → calls Azure resource.
 (No secrets involved at any step.)</p>
-<h2 id="one-sentence-summary">ONE-SENTENCE SUMMARY<a class="headerlink" href="#one-sentence-summary" title="Permanent link">&para;</a></h2>
+<p>ONE-SENTENCE SUMMARY</p>
 <p>Service Principal = manually managed identity with secrets you must protect.
 Managed Identity = Azure-managed identity with no secrets, recommended for Azure-to-Azure communication.</p>
 

@@ -2377,18 +2377,15 @@
 
   <h1>04_Forward_and_Backward_Propagation</h1>
 
-<p>╔════════════════════════════════════════════════════════════════╗
-║         FORWARD AND BACKWARD PROPAGATION                      ║
-║     Understanding How Neural Networks Learn                    ║
-╚════════════════════════════════════════════════════════════════╝</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<div class="highlight"><pre><span></span><code>      FORWARD AND BACKWARD PROPAGATION
+  Understanding How Neural Networks Learn
+</code></pre></div>
 <p>📖 INTRODUCTION</p>
 <p>Propagation = Moving information through the network</p>
 <p>Forward Propagation:  Input → Process → Output (making a prediction)
 Backward Propagation: Output → Calculate Error → Update Weights</p>
 <p>These two processes repeat thousands of times during training.
 Understanding them is key to understanding HOW neural networks learn.</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🔵 FORWARD PROPAGATION (Making Predictions)</p>
 <p>Forward Propagation = Feeding data through the network</p>
 <p>Visual Example: Cat Classifier</p>
@@ -2408,7 +2405,6 @@ Understanding them is key to understanding HOW neural networks learn.</p>
   │  Output Layer   │  (Cat: 92%, Dog: 8%)
   │  2 neurons      │
   └─────────────────┘</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🔢 FORWARD PROPAGATION (STEP-BY-STEP WITH MATH)</p>
 <p>Let's trace one neuron:</p>
 <p>Input Values:        x₁ = 2, x₂ = 3, x₃ = 0.5
@@ -2425,7 +2421,6 @@ Bias (learned):      b = 0.5</p>
 <p>Since z = 4.0 &gt; 0:
   output = 4.0</p>
 <p>This output becomes input to the next layer!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🎯 FORWARD PROPAGATION EXAMPLE (Full Network)</p>
 <p>Simple 3-layer network:</p>
 <p>Input Layer    Hidden Layer      Output Layer</p>
@@ -2440,7 +2435,6 @@ Bias (learned):      b = 0.5</p>
   ├─ Each neuron has a bias
   ├─ Each applies activation function
   └─ Final output: 0.92 (92% confident it's a cat)</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>❌ CALCULATING ERROR</p>
 <p>After forward pass, we check: "How wrong were we?"</p>
 <p>Prediction: 0.92 (92% cat)
@@ -2449,7 +2443,6 @@ Actual:     1.0  (definitely cat)</p>
 <p>Or using squared error:
 Loss = (0.92 - 1.0)² = 0.0064</p>
 <p>The goal: Make this loss as SMALL as possible!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🔴 BACKWARD PROPAGATION (Learning from Mistakes)</p>
 <p>Now the network asks: "Which weights caused this error?"</p>
 <p>Backward Propagation = Working backward to find who's responsible</p>
@@ -2459,7 +2452,6 @@ Loss = (0.92 - 1.0)² = 0.0064</p>
 <div class="highlight"><pre><span></span><code>          &quot;That weight in layer 1 caused 30% of the error&quot;
           &quot;That weight in layer 2 caused 70% of the error&quot;
 </code></pre></div>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🧮 BACKWARD PROPAGATION (Using Calculus)</p>
 <p>The math behind backward propagation uses DERIVATIVES
 (calculus concept from math class!)</p>
@@ -2474,7 +2466,6 @@ Loss = (0.92 - 1.0)² = 0.0064</p>
   3. Work backward to hidden layer 1
   4. Work backward to input</p>
 <p>This is why it's called "back-propagation" — going backward!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🔄 UPDATING WEIGHTS (Learning!)</p>
 <p>Once we know the gradient, we update:</p>
 <p>w_new = w_old - learning_rate × gradient</p>
@@ -2486,7 +2477,6 @@ Loss = (0.92 - 1.0)² = 0.0064</p>
   w_new = 0.8 - 0.005
   w_new = 0.795</p>
 <p>The weight changed by a tiny amount (0.005), moved in right direction!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>📊 ONE FULL TRAINING ITERATION</p>
 <p>Input: Image of a cat (pixel values)</p>
 <p>┌─────────────────────────────────────────────────────────┐
@@ -2515,7 +2505,6 @@ Loss = (0.92 - 1.0)² = 0.0064</p>
 │ Loss should be slightly smaller next time               │
 └─────────────────────────────────────────────────────────┘</p>
 <p>This repeats 1,000,000+ times during training!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>⚡ LEARNING RATE (Super Important!)</p>
 <p>Learning Rate = How big are the weight update steps?</p>
 <p>TOO SMALL (0.00001):
@@ -2531,7 +2520,6 @@ Loss = (0.92 - 1.0)² = 0.0064</p>
   ├─ Converges reasonably fast
   └─ Most networks use 0.001 by default</p>
 <p>Learning rate is typically the MOST IMPORTANT hyperparameter!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🎯 THE CHAIN RULE (Why Backprop Works)</p>
 <p>Backpropagation uses the CHAIN RULE from calculus:</p>
 <p>If Loss depends on output, and output depends on weight...
@@ -2540,7 +2528,6 @@ Then Loss depends on weight!</p>
 <p>∂Loss/∂w = (∂Loss/∂output) × (∂output/∂hidden) × (∂hidden/∂w)</p>
 <p>We multiply these partial derivatives together!
 That's exactly what backpropagation does.</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🔍 VANISHING GRADIENTS (A Problem)</p>
 <p>In very deep networks, gradients can become TINY</p>
 <p>∂Loss/∂w = 0.0000001 × 0.0000001 × 0.0000001
@@ -2553,7 +2540,6 @@ Earlier layers in deep networks learn very slowly!</p>
   ├─ Use residual connections (skip connections)
   └─ Use LSTM/GRU for sequences</p>
 <p>This is why DEEP networks are hard to train!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>📈 OPTIMIZATION ALGORITHMS</p>
 <p>Different ways to update weights:</p>
 <ol>
@@ -2579,7 +2565,6 @@ Earlier layers in deep networks learn very slowly!</p>
 </li>
 </ol>
 <p>Most modern deep learning uses ADAM!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🎓 KEY TAKEAWAYS</p>
 <ol>
 <li>Forward Propagation = Input → Process → Output</li>
@@ -2590,14 +2575,12 @@ Earlier layers in deep networks learn very slowly!</p>
 <li>Deep networks suffer from vanishing gradients</li>
 <li>Adam optimizer is most popular for modern training</li>
 </ol>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🤔 THINK ABOUT IT</p>
 <ul>
 <li>Why do we need TINY weight updates instead of big changes?</li>
 <li>What would happen with learning rate = 0?</li>
 <li>Why does the chain rule matter for backpropagation?</li>
 </ul>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>NEXT UP: Module 05 - Convolutional Neural Networks (CNNs) for Images</p>
 
 

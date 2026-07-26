@@ -106,7 +106,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dotnet-history-dll-hell-gac-roslyn-and-gc" class="md-skip">
+        <a href="#nas" class="md-skip">
           Skip to content
         </a>
       
@@ -1266,8 +1266,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -1310,91 +1308,12 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#dll-hell" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        DLL HELL
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#solution-1-gac-global-assembly-cache-net-framework" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SOLUTION 1: GAC (Global Assembly Cache) — .NET Framework
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#solution-2-per-app-isolation-net-core" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SOLUTION 2: Per-App Isolation — .NET Core
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#roslyn-compiler" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ROSLYN COMPILER
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#garbage-collector-gc" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        GARBAGE COLLECTOR (GC)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modular-architecture-net-core" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        MODULAR ARCHITECTURE (.NET Core)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#latency" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        LATENCY
-      
-    </span>
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#nas" class="md-nav__link">
@@ -2491,91 +2410,12 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#dll-hell" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        DLL HELL
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#solution-1-gac-global-assembly-cache-net-framework" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SOLUTION 1: GAC (Global Assembly Cache) — .NET Framework
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#solution-2-per-app-isolation-net-core" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SOLUTION 2: Per-App Isolation — .NET Core
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#roslyn-compiler" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ROSLYN COMPILER
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#garbage-collector-gc" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        GARBAGE COLLECTOR (GC)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modular-architecture-net-core" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        MODULAR ARCHITECTURE (.NET Core)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#latency" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        LATENCY
-      
-    </span>
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#nas" class="md-nav__link">
@@ -2605,8 +2445,10 @@
 
 
 
-<h1 id="dotnet-history-dll-hell-gac-roslyn-and-gc">DOTNET HISTORY — DLL HELL, GAC, ROSLYN, AND GC<a class="headerlink" href="#dotnet-history-dll-hell-gac-roslyn-and-gc" title="Permanent link">&para;</a></h1>
-<h2 id="dll-hell">DLL HELL<a class="headerlink" href="#dll-hell" title="Permanent link">&para;</a></h2>
+  <h1>DotNet_History_DLL_GAC_Roslyn</h1>
+
+<p>DOTNET HISTORY — DLL HELL, GAC, ROSLYN, AND GC</p>
+<p>DLL HELL</p>
 <p>In the VB6/COM era, DLLs were stored in System32 and shared by ALL applications.
 Installers could overwrite a shared DLL with a different version.
 Result: Installing App A could break App B. This was "DLL Hell."</p>
@@ -2614,7 +2456,7 @@ Result: Installing App A could break App B. This was "DLL Hell."</p>
 - Microsoft's pre-.NET component model.
 - COM DLLs lived in System32 with no versioning.
 - One app could overwrite a DLL used by another = the origin of DLL Hell.</p>
-<h2 id="solution-1-gac-global-assembly-cache-net-framework">SOLUTION 1: GAC (Global Assembly Cache) — .NET Framework<a class="headerlink" href="#solution-1-gac-global-assembly-cache-net-framework" title="Permanent link">&para;</a></h2>
+<p>SOLUTION 1: GAC (Global Assembly Cache) — .NET Framework</p>
 <p>.NET Framework solved DLL Hell with the GAC:
 - Strong-named assemblies (signed with a cryptographic key).
 - Multiple versions of the same DLL could live side-by-side in the GAC.
@@ -2623,7 +2465,7 @@ Result: Installing App A could break App B. This was "DLL Hell."</p>
 - Complex deployment (required admin rights to install to GAC).
 - Not cross-platform.
 - Still machine-wide — shared between all apps.</p>
-<h2 id="solution-2-per-app-isolation-net-core">SOLUTION 2: Per-App Isolation — .NET Core<a class="headerlink" href="#solution-2-per-app-isolation-net-core" title="Permanent link">&para;</a></h2>
+<p>SOLUTION 2: Per-App Isolation — .NET Core</p>
 <p>.NET Core removed the GAC entirely.
 Each app now carries its OWN copy of all DLLs inside its own folder.
 No shared DLLs = no conflicts = DLL Hell eliminated.</p>
@@ -2632,7 +2474,7 @@ No shared DLLs = no conflicts = DLL Hell eliminated.</p>
 - Multiple versions of the same app can run side-by-side.
 - Cross-platform (Windows, Linux, Mac).
 - Fully isolated per application.</p>
-<h2 id="roslyn-compiler">ROSLYN COMPILER<a class="headerlink" href="#roslyn-compiler" title="Permanent link">&para;</a></h2>
+<p>ROSLYN COMPILER</p>
 <p>Roslyn is the modern, open-source C# and VB.NET compiler.</p>
 <p>The old compiler was a closed black box that:
 - Couldn't support modern IDE tooling.
@@ -2645,7 +2487,7 @@ No shared DLLs = no conflicts = DLL Hell eliminated.</p>
 <p>Roslyn converts C# → Intermediate Language (IL).
 IL can be executed by CLR (.NET Framework) or CoreCLR (.NET Core/5+).
 The IL is runtime-agnostic.</p>
-<h2 id="garbage-collector-gc">GARBAGE COLLECTOR (GC)<a class="headerlink" href="#garbage-collector-gc" title="Permanent link">&para;</a></h2>
+<p>GARBAGE COLLECTOR (GC)</p>
 <p>.NET's Garbage Collector automatically manages memory.
 - Allocates memory for objects.
 - Frees memory when objects are no longer referenced.
@@ -2655,12 +2497,12 @@ The IL is runtime-agnostic.</p>
 - Server GC mode for high-performance apps.
 - Generation-based collection (Gen 0, 1, 2).</p>
 <p>Developer benefit: No manual memory management (unlike C or C++).</p>
-<h2 id="modular-architecture-net-core">MODULAR ARCHITECTURE (.NET Core)<a class="headerlink" href="#modular-architecture-net-core" title="Permanent link">&para;</a></h2>
+<p>MODULAR ARCHITECTURE (.NET Core)</p>
 <p>Old .NET Framework: Loads ALL assemblies at startup = heavy.
 .NET Core onwards: Load only what you need via NuGet packages = lightweight.</p>
 <p>Think of it like a buffet: take only what you need.
 This makes .NET Core apps smaller and faster.</p>
-<h2 id="latency">LATENCY<a class="headerlink" href="#latency" title="Permanent link">&para;</a></h2>
+<p>LATENCY</p>
 <p>Latency = delay before something starts.
 - Low latency = fast, responsive (what we want).
 - High latency = slow, laggy.</p>

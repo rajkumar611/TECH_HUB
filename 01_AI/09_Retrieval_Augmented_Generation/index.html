@@ -2377,11 +2377,9 @@
 
   <h1>09_Retrieval_Augmented_Generation</h1>
 
-<p>╔════════════════════════════════════════════════════════════════╗
-║      RETRIEVAL-AUGMENTED GENERATION (RAG)                     ║
-║   Giving LLMs Access to Real Knowledge Beyond Training Data   ║
-╚════════════════════════════════════════════════════════════════╝</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<div class="highlight"><pre><span></span><code>   RETRIEVAL-AUGMENTED GENERATION (RAG)
+Giving LLMs Access to Real Knowledge Beyond Training Data
+</code></pre></div>
 <p>📖 INTRODUCTION</p>
 <p>The Problem:
   └─ LLMs have knowledge cutoff (GPT-3.5: April 2023)
@@ -2398,7 +2396,6 @@
   ├─ Legal research: Access to case law database
   ├─ Medical diagnosis: Access to latest research papers
   └─ Company assistant: Access to internal documents</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🔄 HOW RAG WORKS (Step-by-Step)</p>
 <p>User asks:
   "What are the latest safety features in the 2024 Tesla Model 3?"</p>
@@ -2422,7 +2419,6 @@
   └─ Won't hallucinate because it has real data!
   └─ Can cite sources</p>
 <p>Output: "Based on the 2024 Tesla Model 3 documentation..."</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>💾 VECTOR DATABASES (The Engine of RAG)</p>
 <p>Vector Database = Specialized database for semantic search</p>
 <p>Traditional Database:
@@ -2457,7 +2453,6 @@
      └─ Generates answer from actual sources!</p>
 </li>
 </ol>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🔢 EMBEDDINGS (The Magic)</p>
 <p>An embedding is a vector representation of text.</p>
 <p>Simple Example (3-dimensional for illustration):</p>
@@ -2473,7 +2468,6 @@
   ├─ Sentence-Transformers (open-source)
   ├─ Google PaLM Embeddings
   └─ Each model embeds differently, but principle is same</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>📚 RAG PIPELINE (Complete)</p>
 <ol>
 <li>
@@ -2523,7 +2517,6 @@
    └─ Can include citations (which documents were used)</p>
 </li>
 </ol>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🛠️ POPULAR VECTOR DATABASES</p>
 <p>Pinecone:
   ├─ Cloud-hosted, managed service
@@ -2555,7 +2548,6 @@
   ├─ Self-hosted
   ├─ Simple if you know SQL
   └─ Good for: Integrated systems</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🎯 ADVANCED RAG TECHNIQUES</p>
 <p>Hybrid Search:
   ├─ Combine vector search (semantic) + keyword search (exact)
@@ -2581,7 +2573,6 @@
   ├─ Second retrieval: Find other movies with actor
   ├─ Combine results
   └─ More sophisticated answering</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>⚠️ RAG CHALLENGES</p>
 <p>Relevance:
   └─ Retrieve irrelevant documents → Wrong answer
@@ -2601,7 +2592,6 @@
 <p>Cost:
   └─ Embedding API calls add up
   └─ Solution: Embed once, not per query</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>📊 EXAMPLE: DOCUMENT QA SYSTEM</p>
 <p>Input Documents:
   ├─ Company handbook (50 pages)
@@ -2620,7 +2610,6 @@
   4. LLM generates answer
   5. Return: "According to our policy, you get 20 days..."</p>
 <p>Perfect answer, no hallucination!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🎓 KEY TAKEAWAYS</p>
 <ol>
 <li>RAG solves knowledge cutoff problem</li>
@@ -2634,14 +2623,12 @@
 <li>Challenges: Relevance, latency, privacy, cost</li>
 <li>RAG powers many modern AI applications</li>
 </ol>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🤔 THINK ABOUT IT</p>
 <ul>
 <li>Why is semantic search better than keyword search?</li>
 <li>What would happen if vector DB stored irrelevant chunks?</li>
 <li>How would you prevent retrieval hallucinations?</li>
 </ul>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>NEXT UP: Module 10 - Agents and Agentic AI</p>
 
 

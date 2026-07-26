@@ -2377,11 +2377,9 @@
 
   <h1>13_Model_Context_Protocol_MCP</h1>
 
-<p>╔════════════════════════════════════════════════════════════════╗
-║          MODEL CONTEXT PROTOCOL (MCP)                         ║
-║   The Standard for AI Models to Access Tools and Resources    ║
-╚════════════════════════════════════════════════════════════════╝</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<div class="highlight"><pre><span></span><code>       MODEL CONTEXT PROTOCOL (MCP)
+The Standard for AI Models to Access Tools and Resources
+</code></pre></div>
 <p>📖 INTRODUCTION</p>
 <p>The Problem Today:
   ├─ ChatGPT has its own tools
@@ -2398,7 +2396,6 @@
 <p>Think of it like:
   └─ HTTP for the web (universal standard)
   └─ MCP for AI-tool communication (universal standard)</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🎯 WHAT PROBLEM DOES MCP SOLVE?</p>
 <p>Without MCP (Current Chaos):</p>
 <p>ChatGPT wants to use Email Tool:
@@ -2418,7 +2415,6 @@
   Any Tool/Service with MCP Server</p>
 <p>Same protocol works for everything!
   Email service implements MCP once, works with all models.</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🏗️ MCP ARCHITECTURE</p>
 <p>Three Key Components:</p>
 <ol>
@@ -2464,7 +2460,6 @@
   Email      Calendar    Database    Web Search
   Server      Server      Server      Server
   (MCP)       (MCP)       (MCP)       (MCP)</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>📡 HOW MCP COMMUNICATION WORKS</p>
 <p>Step 1: Client Discovers Tools</p>
 <p>Client (Claude): "Hello, what tools do you have?"</p>
@@ -2489,7 +2484,6 @@
 <p>Step 4: Client Gets Result</p>
 <p>Client (Claude): "Told user I sent the email"</p>
 <p>This happens behind the scenes automatically!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>📋 MCP RESOURCES</p>
 <p>MCP supports two types of interactions:</p>
 <ol>
@@ -2526,7 +2520,6 @@
      "description": "Quarterly financial report",
      "mimeType": "application/pdf"
    }</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🛠️ IMPLEMENTING AN MCP SERVER</p>
 <p>Simple Example: Calculator Server</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">mcp.server</span><span class="w"> </span><span class="kn">import</span> <span class="n">Server</span><span class="p">,</span> <span class="n">Tool</span>
@@ -2564,7 +2557,6 @@
   ├─ Any AI model can use them
   ├─ No custom integration needed
   └─ Works with Claude, ChatGPT, etc.</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🌐 REAL-WORLD MCP SERVERS</p>
 <p>What Exists Now:</p>
 <p>Database Servers:
@@ -2594,7 +2586,6 @@
   ├─ AWS resources
   ├─ Data analysis
   └─ And more being built constantly!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>💡 MCP USE CASES</p>
 <p>Use Case 1: Personal AI Assistant</p>
 <p>Your Claude Setup:
@@ -2626,7 +2617,6 @@
     └─ File Storage MCP server</p>
 <p>AI can access all sources automatically
   Result: Comprehensive research in minutes!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🔐 SECURITY IN MCP</p>
 <p>MCP Includes Security Features:</p>
 <p>Authentication:
@@ -2651,7 +2641,6 @@
   ├─ Monitor access patterns
   ├─ Regular security updates
   └─ Principle of least privilege</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>📊 MCP TRANSPORT OPTIONS</p>
 <p>MCP Works Over Multiple Transports:</p>
 <ol>
@@ -2686,7 +2675,6 @@
 </ol>
 <p>The protocol is transport-agnostic!
 Same MCP server can run via stdio or HTTP.</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🧠 MCP VS OTHER STANDARDS</p>
 <p>OpenAI Function Calling:
   ├─ Proprietary to OpenAI
@@ -2706,7 +2694,6 @@ Same MCP server can run via stdio or HTTP.</p>
   ├─ Language-agnostic
   └─ Future-proof</p>
 <p>MCP is the only truly open standard for this!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🚀 MCP ECOSYSTEM</p>
 <p>Growing Fast (2024):</p>
 <p>Official Servers:
@@ -2725,7 +2712,6 @@ Same MCP server can run via stdio or HTTP.</p>
   ├─ Monitoring dashboards
   └─ Development environments</p>
 <p>The ecosystem is exploding with possibilities!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>💻 BUILDING WITH MCP</p>
 <p>Step 1: Choose Your Server Type
   └─ What tool/service are you exposing?</p>
@@ -2743,7 +2729,6 @@ Same MCP server can run via stdio or HTTP.</p>
   └─ Configure Claude or other models to use it</p>
 <p>Step 8: Monitor
   └─ Track usage and performance</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🔮 FUTURE OF MCP</p>
 <p>Predictions:</p>
 <p>Standardization:
@@ -2771,7 +2756,6 @@ Same MCP server can run via stdio or HTTP.</p>
   ├─ Competition drives quality
   ├─ No single company controls standard
   └─ Innovation accelerates</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>⚙️ MCP VS AGENTS (Quick Comparison)</p>
 <p>Agents (from Module 10):
   ├─ AI decides WHEN to use tools
@@ -2790,7 +2774,6 @@ Same MCP server can run via stdio or HTTP.</p>
   └─ Agent calls via MCP protocol
   └─ MCP handles communication
   └─ Agent gets result</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🎓 KEY TAKEAWAYS</p>
 <ol>
 <li>MCP solves fragmentation: One standard for all</li>
@@ -2804,7 +2787,6 @@ Same MCP server can run via stdio or HTTP.</p>
 <li>Perfect for enterprises: Internal integrations</li>
 <li>Future standard: Like HTTP for the web</li>
 </ol>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>📚 LEARNING MCP</p>
 <p>Getting Started:</p>
 <ol>
@@ -2829,14 +2811,12 @@ Same MCP server can run via stdio or HTTP.</p>
   ├─ MCP Inspector (debugging)
   ├─ Claude Desktop (testing)
   └─ Example servers (learning)</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🤔 THINK ABOUT IT</p>
 <ul>
 <li>Why is a standard better than each service building custom integrations?</li>
 <li>How would you build an MCP server for your school?</li>
 <li>What tools would you expose to AI models?</li>
 </ul>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🎯 REAL-WORLD IMPACT</p>
 <p>Scenario: Without MCP (2023)</p>
 <p>Company has:
@@ -2861,7 +2841,6 @@ Same MCP server can run via stdio or HTTP.</p>
     ├─ All models automatically have it
     └─ Total: 2 days per tool</p>
 <p>Savings: Months of engineering time! 🎉</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>✅ CONCLUSION</p>
 <p>MCP is a game-changer for AI integration.</p>
 <p>It's the missing piece that was needed for:
@@ -2873,7 +2852,6 @@ Same MCP server can run via stdio or HTTP.</p>
 <p>If you're building with AI, understanding MCP is crucial.</p>
 <p>Future AI systems will be built on MCP.
 This is the standard you should learn!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🏁 YOU'VE COMPLETED THE FULL CURRICULUM!</p>
 <p>Modules 01-13 cover the complete AI landscape:
   ├─ 01-02: Foundations (AI, ML)

@@ -105,11 +105,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#serialization-and-deserialization" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -1350,26 +1345,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Serialization_Deserialization
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1387,69 +1362,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-it" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        WHAT IS IT?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why-is-it-needed" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        WHY IS IT NEEDED?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#common-formats" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        COMMON FORMATS
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#net-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        .NET EXAMPLE
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -2447,60 +2359,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-it" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        WHAT IS IT?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why-is-it-needed" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        WHY IS IT NEEDED?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#common-formats" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        COMMON FORMATS
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#net-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        .NET EXAMPLE
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -2517,14 +2375,16 @@
 
 
 
-<h1 id="serialization-and-deserialization">SERIALIZATION AND DESERIALIZATION<a class="headerlink" href="#serialization-and-deserialization" title="Permanent link">&para;</a></h1>
-<h2 id="what-is-it">WHAT IS IT?<a class="headerlink" href="#what-is-it" title="Permanent link">&para;</a></h2>
+  <h1>Serialization_Deserialization</h1>
+
+<p>SERIALIZATION AND DESERIALIZATION</p>
+<p>WHAT IS IT?</p>
 <p>Serialization   = Converting an object into a transferable/storable format (like JSON or XML).
 Deserialization = Reconstructing the original object back from that format.</p>
 <p>Simple analogy:
 - Serialization   = packing your belongings into boxes for moving.
 - Deserialization = unpacking the boxes and putting everything back.</p>
-<h2 id="why-is-it-needed">WHY IS IT NEEDED?<a class="headerlink" href="#why-is-it-needed" title="Permanent link">&para;</a></h2>
+<p>WHY IS IT NEEDED?</p>
 <p>Objects in memory cannot be sent over a network or stored to disk directly.
 They need to be converted to a portable format first.</p>
 <p>Without serialization, these things don't work:
@@ -2535,13 +2395,13 @@ They need to be converted to a portable format first.</p>
 - Cross-platform communication (e.g., .NET talking to Python)</p>
 <p>"Serialization turns objects into transferable formats like JSON;
 deserialization rebuilds them. Without it, APIs and microservices simply don't work."</p>
-<h2 id="common-formats">COMMON FORMATS<a class="headerlink" href="#common-formats" title="Permanent link">&para;</a></h2>
+<p>COMMON FORMATS</p>
 <ul>
 <li>JSON  → Most common for REST APIs and web. Human-readable.</li>
 <li>XML   → Older, verbose. Used in SOAP, WCF, legacy systems.</li>
 <li>Binary → Compact, fast. Used in gRPC (Protobuf), performance-critical systems.</li>
 </ul>
-<h2 id="net-example">.NET EXAMPLE<a class="headerlink" href="#net-example" title="Permanent link">&para;</a></h2>
+<p>.NET EXAMPLE</p>
 <p>// Object to JSON (Serialization)
 string json = JsonSerializer.Serialize(customer);</p>
 <p>// JSON to Object (Deserialization)

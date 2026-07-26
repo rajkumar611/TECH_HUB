@@ -105,11 +105,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#hangfire-and-background-jobs-in-net" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -1322,26 +1317,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Hangfire_Background_Jobs
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1359,69 +1334,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-hangfire" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        WHAT IS HANGFIRE?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#types-of-hangfire-jobs" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        TYPES OF HANGFIRE JOBS
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hangfire-vs-quartznet" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        HANGFIRE vs QUARTZ.NET
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why-use-hangfire-vs-async" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        WHY USE HANGFIRE vs ASYNC?
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -2447,60 +2359,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-hangfire" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        WHAT IS HANGFIRE?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#types-of-hangfire-jobs" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        TYPES OF HANGFIRE JOBS
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hangfire-vs-quartznet" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        HANGFIRE vs QUARTZ.NET
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why-use-hangfire-vs-async" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        WHY USE HANGFIRE vs ASYNC?
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -2517,8 +2375,10 @@
 
 
 
-<h1 id="hangfire-and-background-jobs-in-net">HANGFIRE AND BACKGROUND JOBS IN .NET<a class="headerlink" href="#hangfire-and-background-jobs-in-net" title="Permanent link">&para;</a></h1>
-<h2 id="what-is-hangfire">WHAT IS HANGFIRE?<a class="headerlink" href="#what-is-hangfire" title="Permanent link">&para;</a></h2>
+  <h1>Hangfire_Background_Jobs</h1>
+
+<p>HANGFIRE AND BACKGROUND JOBS IN .NET</p>
+<p>WHAT IS HANGFIRE?</p>
 <p>Hangfire is a .NET framework for running background jobs.
 It allows apps to run tasks asynchronously, on a schedule, or in the background
 without blocking the main thread.</p>
@@ -2526,7 +2386,7 @@ without blocking the main thread.</p>
 to store and process jobs reliably — with retries, logging, and a built-in dashboard.</p>
 <p>"Your app enqueues work and immediately continues running.
 Hangfire processes the job independently."</p>
-<h2 id="types-of-hangfire-jobs">TYPES OF HANGFIRE JOBS<a class="headerlink" href="#types-of-hangfire-jobs" title="Permanent link">&para;</a></h2>
+<p>TYPES OF HANGFIRE JOBS</p>
 <ol>
 <li>
 <p>Fire-and-forget    → Run once immediately in the background.
@@ -2545,7 +2405,7 @@ Hangfire processes the job independently."</p>
    BackgroundJob.ContinueWith(jobId, () =&gt; NotifyUser(id));</p>
 </li>
 </ol>
-<h2 id="hangfire-vs-quartznet">HANGFIRE vs QUARTZ.NET<a class="headerlink" href="#hangfire-vs-quartznet" title="Permanent link">&para;</a></h2>
+<p>HANGFIRE vs QUARTZ.NET</p>
 <table>
 <thead>
 <tr>
@@ -2599,7 +2459,7 @@ Hangfire processes the job independently."</p>
 </table>
 <p>Use Hangfire when: You need background processing with easy setup, retries, and visibility.
 Use Quartz.NET when: You need precise, complex CRON schedules with enterprise calendar support.</p>
-<h2 id="why-use-hangfire-vs-async">WHY USE HANGFIRE vs ASYNC?<a class="headerlink" href="#why-use-hangfire-vs-async" title="Permanent link">&para;</a></h2>
+<p>WHY USE HANGFIRE vs ASYNC?</p>
 <ul>
 <li>Async/await is for short, non-blocking I/O operations within a request.</li>
 <li>Hangfire is for long-running, potentially CPU-intensive, or scheduled background work.</li>

@@ -2377,22 +2377,19 @@
 
   <h1>03_Deep_Learning_and_Neural_Networks</h1>
 
-<p>╔════════════════════════════════════════════════════════════════╗
-║            DEEP LEARNING AND NEURAL NETWORKS                  ║
-║        How to Handle Complex Problems Like Images &amp; Text      ║
-╚════════════════════════════════════════════════════════════════╝</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<div class="highlight"><pre><span></span><code>         DEEP LEARNING AND NEURAL NETWORKS
+     How to Handle Complex Problems Like Images &amp; Text
+</code></pre></div>
 <p>📖 INTRODUCTION</p>
-<p>Deep Learning (DL) is a type of Machine Learning inspired by how our brains 
+<p>Deep Learning (DL) is a type of Machine Learning inspired by how our brains
 work. It's especially powerful for complex tasks like:
   ├─ Recognizing faces in photos
   ├─ Understanding language (ChatGPT)
   ├─ Translating languages
   ├─ Self-driving cars
   └─ Medical image analysis</p>
-<p>The key difference: Deep Learning can automatically learn WHAT features 
+<p>The key difference: Deep Learning can automatically learn WHAT features
 to look for, without humans telling it!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🧠 THE HUMAN BRAIN INSPIRATION</p>
 <p>Your brain works like this:
   ├─ Input (eyes see an image)
@@ -2401,16 +2398,14 @@ to look for, without humans telling it!</p>
   ├─ Third layer: Recognizes patterns (nose, eyes)
   └─ Output: "That's a cat!"</p>
 <p>Deep Learning mimics this process!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🏗️ WHAT IS A NEURAL NETWORK?</p>
-<p>A neural network is a system of interconnected nodes (artificial "neurons") 
+<p>A neural network is a system of interconnected nodes (artificial "neurons")
 that process information.</p>
 <p>Simple Analogy:</p>
 <p>Your Brain Neurons:
     Receive signals → Process → Send signal to next neuron</p>
 <p>Artificial Neurons:
     Receive numbers → Math calculation → Send result to next neuron</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>📐 STRUCTURE OF A NEURAL NETWORK</p>
 <p>Layers:</p>
 <p>INPUT LAYER
@@ -2427,7 +2422,6 @@ that process information.</p>
   Hidden 3:  [Facial features]
   Output:    [Cat (92%) or Dog (8%)]</p>
 <p>Why "Deep"? Because there are MANY hidden layers stacked together.</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🔗 HOW NEURONS WORK (SIMPLIFIED)</p>
 <p>Each neuron:</p>
 <p>Input 1 (x₁) ─┐
@@ -2446,7 +2440,6 @@ that process information.</p>
   ├─ Student's effort × 0.7 (weight)
   ├─ Plus bonus points (bias)
   └─ Convert to letter grade (activation function)</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>⚙️ THE NEURAL NETWORK TRAINING PROCESS</p>
 <ol>
 <li>
@@ -2481,9 +2474,8 @@ that process information.</p>
 </li>
 </ol>
 <p>This process is called "TRAINING"</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>📊 ACTIVATION FUNCTIONS (The Secret Sauce)</p>
-<p>Without activation functions, neural networks would just be fancy 
+<p>Without activation functions, neural networks would just be fancy
 multiplication. Activation functions add the "intelligence."</p>
 <p>Common Activation Functions:</p>
 <ol>
@@ -2516,7 +2508,6 @@ multiplication. Activation functions add the "intelligence."</p>
   Linear (no activation): Y = 2X (boring, just a line)
   ReLU: Bent line (interesting!)
   Sigmoid: S-curve (very smooth)</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>📉 LOSS FUNCTIONS (Measuring Mistakes)</p>
 <p>A Loss Function measures: "How wrong was our prediction?"</p>
 <p>Common Loss Functions:</p>
@@ -2541,7 +2532,6 @@ multiplication. Activation functions add the "intelligence."</p>
 </ol>
 <p>The Goal of Training:
   └─ Make the loss function as SMALL as possible</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🎯 PARAMETERS AND WEIGHTS</p>
 <p>Parameters = The numbers that network learns</p>
 <p>A network with:
@@ -2552,7 +2542,6 @@ multiplication. Activation functions add the "intelligence."</p>
 <p>Total Parameters ≈ (100×50) + (50×50) + (50×10) + biases ≈ 8,000+</p>
 <p>Modern LLMs like ChatGPT have BILLIONS of parameters!</p>
 <p>These parameters are the "knowledge" the network learned from data.</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>💾 TRAINING VS INFERENCE</p>
 <p>TRAINING Phase:
   ├─ Adjust weights to minimize loss
@@ -2565,7 +2554,6 @@ multiplication. Activation functions add the "intelligence."</p>
   ├─ Fast (milliseconds!)
   └─ Goal: Make good predictions</p>
 <p>When you use ChatGPT, it's in INFERENCE mode!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🔄 BATCH SIZE, EPOCHS, ITERATIONS</p>
 <p>Understanding Training Parameters:</p>
 <p>BATCH SIZE: How many examples at once?
@@ -2580,7 +2568,6 @@ multiplication. Activation functions add the "intelligence."</p>
   ├─ Batch size = 32, Dataset = 10,000
   ├─ 1 epoch = 10,000/32 = 312 iterations
   └─ 100 epochs = 31,200 iterations</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🎓 KEY TAKEAWAYS</p>
 <ol>
 <li>Deep Learning = Neural Networks with many layers</li>
@@ -2592,14 +2579,12 @@ multiplication. Activation functions add the "intelligence."</p>
 <li>Parameters = The numbers network learned</li>
 <li>Training adjusts weights; Inference uses fixed weights</li>
 </ol>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🤔 THINK ABOUT IT</p>
 <ul>
 <li>Why do we need activation functions? Why not just multiply?</li>
 <li>What happens if loss function stays high after many epochs?</li>
 <li>Why are billions of parameters needed for ChatGPT?</li>
 </ul>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>NEXT UP: Module 04 - Forward and Backward Propagation (The Math)</p>
 
 

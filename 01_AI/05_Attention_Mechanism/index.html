@@ -2377,11 +2377,9 @@
 
   <h1>05_Attention_Mechanism</h1>
 
-<p>╔════════════════════════════════════════════════════════════════╗
-║              ATTENTION MECHANISM                              ║
-║   "All You Need Is Attention" - The Revolution in AI           ║
-╚════════════════════════════════════════════════════════════════╝</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<div class="highlight"><pre><span></span><code>           ATTENTION MECHANISM
+&quot;All You Need Is Attention&quot; - The Revolution in AI
+</code></pre></div>
 <p>📖 INTRODUCTION</p>
 <p>"Attention Is All You Need" is a famous 2017 paper that changed AI forever.
 It introduced the ATTENTION MECHANISM, which powers:
@@ -2390,7 +2388,6 @@ It introduced the ATTENTION MECHANISM, which powers:
   ├─ Image recognition
   └─ Almost all cutting-edge AI today</p>
 <p>This mechanism is the KEY to understanding modern AI!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🧠 REAL-WORLD ANALOGY: YOUR ATTENTION</p>
 <p>Imagine reading a book:
   ├─ There's LOTS of text on the page
@@ -2400,13 +2397,12 @@ It introduced the ATTENTION MECHANISM, which powers:
   ├─ You focus on key concepts
   └─ Your attention is SELECTIVE</p>
 <p>That's exactly how the Attention Mechanism works!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🔍 ATTENTION IN LANGUAGE</p>
 <p>Example: Translating a sentence</p>
 <p>English: "The cat sat on the mat"</p>
 <p>Without Attention:
   Translator processes left-to-right:
-  "The" → "cat" → "sat" → ... 
+  "The" → "cat" → "sat" → ...
   Can't look back at important words!</p>
 <p>With Attention:
   Translator focuses on relevant words:
@@ -2415,7 +2411,6 @@ It introduced the ATTENTION MECHANISM, which powers:
     ├─ Look at "cat" (50% attention) ← MOST IMPORTANT
     ├─ Look at "mat" (10% attention)</p>
 <p>"sat" is about the CAT! Focus there!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>⚙️ HOW ATTENTION WORKS (Simplified)</p>
 <p>Three Key Players:</p>
 <ol>
@@ -2454,7 +2449,6 @@ Use these scores as ATTENTION WEIGHTS:
 Combine values weighted by attention:
   Result = (0.1 × The_value) + (0.8 × cat_value) + ...</p>
 <p>Output: Rich understanding of "sat" focused on "cat"</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🔢 ATTENTION MATH (The Formula)</p>
 <p>Attention(Q, K, V) = softmax(Q × K^T / √d_k) × V</p>
 <p>Breaking it down:</p>
@@ -2481,7 +2475,6 @@ Combine values weighted by attention:
 </li>
 </ol>
 <p>Result: Attention output (rich, focused information)</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🎯 MULTI-HEAD ATTENTION</p>
 <p>One attention head looks at ONE aspect.
 Multiple heads look at DIFFERENT aspects!</p>
@@ -2499,7 +2492,6 @@ then brain combines them into one understanding.</p>
   └─ Understands: financial meaning</p>
 <p>Then ALL heads combined give complete understanding!</p>
 <p>Multi-Head Attention = 8, 12, or 16 heads working in parallel</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🏗️ SELF-ATTENTION VS CROSS-ATTENTION</p>
 <p>SELF-ATTENTION:
   ├─ Word attends to OTHER WORDS in same sequence
@@ -2511,7 +2503,6 @@ then brain combines them into one understanding.</p>
   ├─ Example: Query from one language, keys from another
   └─ Used in: Some vision-language models</p>
 <p>Self-Attention is the foundation of modern LLMs!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>⏱️ CONTEXT WINDOW AND ATTENTION</p>
 <p>Context Window = How many previous words can you attend to?</p>
 <p>ChatGPT (GPT-4): 128,000 tokens
@@ -2524,7 +2515,6 @@ then brain combines them into one understanding.</p>
   ├─ Better understanding of long documents
   ├─ More expensive to compute (attention is O(n²))
   └─ But: Modern techniques making it more efficient</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🚀 WHY ATTENTION CHANGED EVERYTHING</p>
 <p>Before Attention (RNNs):
   ├─ Process words one at a time sequentially
@@ -2538,7 +2528,6 @@ then brain combines them into one understanding.</p>
   ├─ Can handle longer texts
   └─ Can scale to billions of parameters</p>
 <p>This parallelization is why modern AI is so powerful!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>📊 VISUALIZING ATTENTION WEIGHTS</p>
 <p>Example: "The cat sat on the mat"</p>
 <p>When processing "sat", attention weights:</p>
@@ -2550,7 +2539,6 @@ then brain combines them into one understanding.</p>
   "mat"  [█████░░░░░░░░░░░░░░░░░░░░] 10%</p>
 <p>Model "knows" that "cat" is the subject of "sat"!
 No human told it this rule—it learned from data!</p>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🎓 KEY TAKEAWAYS</p>
 <ol>
 <li>Attention = Focus on relevant information</li>
@@ -2562,14 +2550,12 @@ No human told it this rule—it learned from data!</p>
 <li>Attention is differentiable = Can train with backprop</li>
 <li>This is WHY modern AI (ChatGPT) works!</li>
 </ol>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🤔 THINK ABOUT IT</p>
 <ul>
 <li>Why is attention better than processing words one-by-one?</li>
 <li>How would multi-head attention help understand puns?</li>
 <li>What would happen with context window of only 10 words?</li>
 </ul>
-<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>NEXT UP: Module 06 - Transformer Architecture</p>
 
 
