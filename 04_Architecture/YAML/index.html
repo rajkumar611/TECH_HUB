@@ -2640,34 +2640,6 @@ It is used wherever configuration or structured data needs to be defined clearly
       
     
 
-  <!-- Live timestamp on homepage -->
-  <script>
-    function updateTimestamp() {
-      const timestamp = document.getElementById('last-updated-time');
-      if (timestamp) {
-        // Get current time in New Zealand timezone
-        const nzTime = new Date().toLocaleString('en-NZ', {
-          timeZone: 'Pacific/Auckland',
-          hour: 'numeric',
-          minute: '2-digit',
-          second: '2-digit',
-          hour12: true,
-          day: 'numeric',
-          month: 'long',
-          year: 'numeric'
-        });
-
-        timestamp.textContent = nzTime + ' (New Zealand Time)';
-      }
-    }
-
-    // Update timestamp on page load
-    document.addEventListener('DOMContentLoaded', updateTimestamp);
-
-    // Update timestamp every second
-    setInterval(updateTimestamp, 1000);
-  </script>
-
   <!-- Remove About Me label and make image full-width on About page -->
   
 
