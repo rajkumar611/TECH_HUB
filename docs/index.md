@@ -39,4 +39,4 @@ hide:
   </div>
 </div>
 
-> **Last updated: <span id="last-updated-time">--:-- --, -- ---- (New Zealand Time)</span>**
+> **Last updated: [Timestamp will load]**
