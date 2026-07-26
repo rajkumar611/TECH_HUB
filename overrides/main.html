@@ -41,4 +41,28 @@
 
 {% block scripts %}
   {{ super() }}
+
+  <!-- Remove About Me label on About page -->
+  {% if "about" in page.url %}
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Remove nav titles on about page
+      var navTitles = document.querySelectorAll('.md-nav__title');
+      navTitles.forEach(function(title) {
+        title.style.display = 'none';
+        title.style.height = '0';
+        title.style.margin = '0';
+      });
+
+      // Alternative: remove the sidebar title that says "About Me"
+      var sidebar = document.querySelector('.md-sidebar--primary');
+      if (sidebar) {
+        var titleElements = sidebar.querySelectorAll('.md-nav__title');
+        titleElements.forEach(function(el) {
+          el.remove();
+        });
+      }
+    });
+  </script>
+  {% endif %}
 {% endblock %}
