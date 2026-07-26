@@ -1,13 +1,4 @@
----
-hide:
-  - navigation
----
-
-<div style="text-align: center; margin-bottom: 40px;">
-
-![Raj Kumar](images/profile.png)
-
-</div>
+![Raj Kumar](../images/profile.png)
 
 ---
 
