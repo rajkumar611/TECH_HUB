@@ -2845,6 +2845,29 @@
       
     
 
+  <!-- Display deployment time once (static, not ticking) -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Find and update timestamp in blockquote
+      const blockquotes = document.querySelectorAll('blockquote');
+      blockquotes.forEach(bq => {
+        if (bq.textContent.includes('[Timestamp will load]')) {
+          const now = new Date();
+          const nzTime = now.toLocaleString('en-NZ', {
+            timeZone: 'Pacific/Auckland',
+            hour: 'numeric',
+            minute: '2-digit',
+            hour12: true,
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+          });
+          bq.innerHTML = bq.innerHTML.replace('[Timestamp will load]', nzTime + ' (New Zealand Time)');
+        }
+      });
+    });
+  </script>
+
   <!-- Remove About Me label and make image full-width on About page -->
   
   <script>
