@@ -2639,16 +2639,13 @@ Node.js     = the land where the house sits (the platform/foundation)</p>
 
   <!-- Display deployment time (from page's Last-Modified header) -->
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Get the last-modified time from the server
+    function updateTimestamp() {
       const lastModified = document.lastModified;
-
-      // Find and update timestamp in blockquote
       const blockquotes = document.querySelectorAll('blockquote');
+
       blockquotes.forEach(bq => {
         if (bq.textContent.includes('[Timestamp will load]')) {
           if (lastModified) {
-            // Parse the Last-Modified date and format for NZ timezone
             const date = new Date(lastModified);
             const nzTime = date.toLocaleString('en-NZ', {
               timeZone: 'Pacific/Auckland',
@@ -2663,7 +2660,10 @@ Node.js     = the land where the house sits (the platform/foundation)</p>
           }
         }
       });
-    });
+    }
+
+    document.addEventListener('DOMContentLoaded', updateTimestamp);
+    setTimeout(updateTimestamp, 100);
   </script>
 
   <!-- Remove About Me label and make image full-width on About page -->
