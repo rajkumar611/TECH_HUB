@@ -4,11 +4,11 @@ hide:
   - navigation
 ---
 
-## Hi, I'm Raj
+Hello, I am Raj. Welcome to my Tech Blog!
 
-**Solution Architect | GenAI & Enterprise Cloud Expert | 20+ Years Building Scalable Solutions**
+I am excited to share some of my learnings and experience on the following subjects: AI, Gen AI, LLM, Cloud, .NET and Enterprise Architecture.
 
-Comprehensive technical knowledge on Generative AI, LLMs, Enterprise Cloud Architecture, .NET, Insurance Platforms, and Modern Software Engineering.
+Have a happy reading.
 
 ---
 
