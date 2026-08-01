@@ -1,3 +1,62 @@
+/* Homepage Container - Light Modern Design */
+.homepage-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.homepage-container h2 {
+  font-size: 2.5em;
+  color: #0f172a;
+  margin-bottom: 16px;
+  font-weight: 800;
+}
+
+.homepage-container > strong {
+  display: block;
+  font-size: 1.3em;
+  color: #0369a1;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.homepage-container > p {
+  font-size: 1.05em;
+  line-height: 1.7;
+  color: #475569;
+  margin-bottom: 30px;
+}
+
+.homepage-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.homepage-container li {
+  margin-bottom: 12px;
+  padding-left: 28px;
+  position: relative;
+  font-size: 1em;
+  color: #334155;
+}
+
+.homepage-container li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #0369a1;
+  font-weight: bold;
+}
+
+.homepage-container strong {
+  color: #0f172a;
+  font-weight: 600;
+}
+
 /* Center-align navigation tabs */
 .md-tabs__list {
   margin: 0 auto;
@@ -219,47 +278,58 @@
   margin-left: 0 !important;
 }
 
-/* Enterprise Professional Theme */
+/* Light, Modern Professional Theme */
 body {
-  background-color: #0f172a;
-  color: #e2e8f0;
+  background-color: #f8fafc;
+  color: #1e293b;
 }
 
 .md-main {
-  background-color: #0f172a;
+  background-color: #f8fafc;
 }
 
 .md-content {
-  color: #e2e8f0;
+  color: #334155;
 }
 
 .md-typeset {
-  color: #e2e8f0;
+  color: #334155;
 }
 
+.md-typeset h1,
 .md-typeset h2,
 .md-typeset h3,
 .md-typeset h4 {
-  color: #e0e7ff;
-  font-weight: 600;
+  color: #0f172a;
+  font-weight: 700;
 }
 
 .md-header {
-  background-color: #1e293b;
-  border-bottom: 2px solid #1e40af;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .md-tabs {
-  background-color: #1e293b;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .md-tabs__link {
-  color: #cbd5e1;
+  color: #64748b;
 }
 
 .md-tabs__link--active {
-  color: #60a5fa;
-  border-bottom: 3px solid #60a5fa;
+  color: #0369a1;
+  border-bottom: 3px solid #0369a1;
+}
+
+.md-typeset a {
+  color: #0369a1;
+}
+
+.md-typeset a:hover {
+  color: #0284c7;
 }
 
 /* Hide ALL page titles */
