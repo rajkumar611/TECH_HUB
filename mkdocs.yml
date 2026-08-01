@@ -26,7 +26,6 @@ extra_javascript:
   - javascripts/credit.js
 
 nav:
-  - About Me: about.md
   - AI:
     - 00_INDEX_AND_LEARNING_PATH: 01_AI/00_INDEX_AND_LEARNING_PATH.md
     - 01_What_is_AI: 01_AI/01_What_is_AI.md

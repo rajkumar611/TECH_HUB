@@ -12,4 +12,12 @@ Have a happy reading.
 
 ---
 
+## Connect
+
+**LinkedIn Profile:** [Raj Chellababu](https://www.linkedin.com/in/raj-chellababu/)
+
+I am open to discussing enterprise technology strategy, AI architecture initiatives, consulting opportunities, and collaborative partnerships.
+
+---
+
 > **Last updated: [Timestamp will load]**
