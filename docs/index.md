@@ -4,19 +4,9 @@ hide:
   - navigation
 ---
 
-Hello, I am Raj. Welcome to my Tech Blog!
+## Professional Introduction
 
-I am excited to share some of my learnings and experience on the following subjects: AI, Gen AI, LLM, Cloud, .NET and Enterprise Architecture.
-
-Have a happy reading.
-
----
-
-## Connect
-
-**LinkedIn Profile:** [Raj Chellababu](https://www.linkedin.com/in/raj-chellababu/)
-
-I am open to discussing enterprise technology strategy, AI architecture initiatives, consulting opportunities, and collaborative partnerships.
+I am **Raj Kumar**, a results-driven **Solution Architect** and **Enterprise Technology Leader** with a distinguished track record of architecting and delivering transformative enterprise solutions. My professional passion centers on **Artificial Intelligence** and **Generative AI**, with deep specialization in **Insurance Platform Architecture** and enterprise-scale technology modernization.
 
 ---
 
