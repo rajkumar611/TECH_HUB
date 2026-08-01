@@ -24,20 +24,6 @@ Throughout my career, I have successfully designed, architected, and delivered m
 
 ---
 
-## Current Leadership Role — QBE
-
-**Title:** Senior Solutions Architect
-
-**Responsibility:** Architecture-led technology leadership driving strategic solution direction across:
-
-- **Critical Insurance Platforms** — Design and governance of core insurance systems
-- **Financial Reporting Systems** — Enterprise-scale financial reporting architecture
-- **Enterprise Integration** — Cross-platform connectivity and data orchestration
-- **Cloud-Native Modernization** — Legacy-to-cloud transformation initiatives
-- **AI Architecture & Governance** — Responsible AI delivery at enterprise scale
-
----
-
 ## Leadership & Team Management
 
 - **25+ Direct and Indirect Team Members** — Managing globally distributed teams across onshore and offshore delivery models
