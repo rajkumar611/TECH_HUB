@@ -22,43 +22,48 @@
   cursor: pointer;
 }
 
-/* Hero Section Styling */
+/* Hero Section Styling - Enterprise Professional */
 .hero-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(135deg, #6a1b9a 0%, #4a148c 100%);
-  border-radius: 12px;
-  padding: 60px 40px;
+  background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+  border-radius: 8px;
+  padding: 80px 60px;
   margin: 40px 0;
   color: white;
-  gap: 40px;
+  gap: 60px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .hero-content {
   flex: 1;
-  max-width: 500px;
+  max-width: 550px;
 }
 
 .hero-content h1 {
-  font-size: 3.5em;
+  font-size: 3.2em;
   margin: 0 0 20px 0;
-  color: #fff;
+  color: #ffffff;
   font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
 }
 
 .hero-subtitle {
-  font-size: 1.5em;
-  color: #b39ddb;
-  margin: 0 0 15px 0;
-  font-weight: 600;
+  font-size: 1.4em;
+  color: #e0e7ff;
+  margin: 0 0 20px 0;
+  font-weight: 500;
+  letter-spacing: 0.3px;
 }
 
 .hero-description {
   font-size: 1.1em;
-  color: #e1bee7;
-  line-height: 1.6;
+  color: #c7d2fe;
+  line-height: 1.8;
   margin: 0;
+  font-weight: 400;
 }
 
 .hero-illustration {
@@ -66,15 +71,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 300px;
+  min-height: 350px;
 }
 
 .robot-svg {
   width: 100%;
-  max-width: 300px;
+  max-width: 350px;
   height: auto;
-  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.4));
   animation: float 3s ease-in-out infinite;
+  opacity: 0.95;
 }
 
 @keyframes float {
@@ -119,13 +125,47 @@
   margin-left: 0 !important;
 }
 
-/* Improve overall page background */
+/* Enterprise Professional Theme */
 body {
-  background-color: #121212;
+  background-color: #0f172a;
+  color: #e2e8f0;
 }
 
 .md-main {
-  background-color: #1e1e1e;
+  background-color: #0f172a;
+}
+
+.md-content {
+  color: #e2e8f0;
+}
+
+.md-typeset {
+  color: #e2e8f0;
+}
+
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  color: #e0e7ff;
+  font-weight: 600;
+}
+
+.md-header {
+  background-color: #1e293b;
+  border-bottom: 2px solid #1e40af;
+}
+
+.md-tabs {
+  background-color: #1e293b;
+}
+
+.md-tabs__link {
+  color: #cbd5e1;
+}
+
+.md-tabs__link--active {
+  color: #60a5fa;
+  border-bottom: 3px solid #60a5fa;
 }
 
 /* Hide ALL page titles */
