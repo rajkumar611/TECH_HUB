@@ -176,31 +176,6 @@
   margin: 0 0 24px 0;
 }
 
-.article-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 16px;
-  border-top: 1px solid #334155;
-}
-
-.article-date {
-  color: #94a3b8;
-  font-size: 0.85em;
-  font-weight: 500;
-}
-
-.article-link {
-  color: #60a5fa;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.1em;
-  transition: color 0.3s ease;
-}
-
-.article-link:hover {
-  color: #93c5fd;
-}
 
 @keyframes float {
   0%, 100% {
