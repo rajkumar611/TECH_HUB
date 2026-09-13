@@ -1,6 +1,9 @@
-﻿
-      AI TUTORIAL CURRICULUM - COMPLETE INDEX & LEARNING PATH
-           For 12th Grade Students (Ages 17-18)
+╔════════════════════════════════════════════════════════════════╗
+║     AI TUTORIAL CURRICULUM - COMPLETE INDEX & LEARNING PATH   ║
+║          For 12th Grade Students (Ages 17-18)                ║
+╚════════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📖 HOW TO USE THIS CURRICULUM
 
@@ -22,6 +25,8 @@ Prerequisites:
   └─ No AI/ML background needed
   └─ High school math helpful (but not required)
   └─ Curiosity is everything!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📚 COMPLETE MODULE LIST
 
@@ -159,6 +164,8 @@ Module 12: Evals, Responsible AI & Advanced Topics
   ├─ Cost optimization strategies
   └─ Monitoring in production
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 🎯 LEARNING PATHS BY INTEREST
 
 Path 1: "I Want to Understand AI" (Theoretical)
@@ -182,6 +189,8 @@ Path 4: "Complete Understanding" (Recommended!)
   Spend: 4-6 weeks
   Reward: Comprehensive AI literacy
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 🔗 CONCEPT DEPENDENCIES
 
 If you understand...          Then you can learn...
@@ -195,6 +204,8 @@ Transformer Arch        →     LLMs
 LLMs                    →     Prompt Engineering
 LLMs + RAG              →     Agents
 Everything              →     Production (Evals + Safety)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📊 VOCABULARY SUMMARY
 
@@ -269,6 +280,8 @@ Backpropagation
 Activation Function
   └─ Non-linear function applied to neuron output
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 🧠 KEY INSIGHTS TO REMEMBER
 
 1. AI = Pattern Recognition at Scale
@@ -320,6 +333,8 @@ Activation Function
     └─ Bias, privacy, safety matter
     └─ Always think about impact
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 🎓 NEXT STEPS AFTER COMPLETING
 
 Option 1: Go Deeper on Theory
@@ -349,10 +364,12 @@ Option 4: Career Path
   ├─ AI Product Manager
   └─ AI Ethicist
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 📚 RECOMMENDED RESOURCES
 
 Books:
-  ├─ "Artificial Intelligence: A Guide for Thinking Humans"
+  ├─ "Artificial Intelligence: A Guide for Thinking Humans" 
      (Melanie Mitchell) - Accessible introduction
   ├─ "Deep Learning" (Goodfellow, Bengio, Courville)
      - Heavy but comprehensive
@@ -379,6 +396,8 @@ Tools to Try:
   ├─ LangChain (build AI apps)
   └─ Pinecone/Weaviate (vector databases)
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 💡 FINAL THOUGHTS
 
 AI is the most transformative technology of our time.
@@ -399,6 +418,8 @@ Build projects. Experiment. Have fun.
 
 The future belongs to those who understand AI.
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 📧 QUESTIONS?
 
 If concepts are unclear:
@@ -411,9 +432,10 @@ If concepts are unclear:
 Remember: Everyone struggles with hard concepts.
 Persistence pays off!
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 ✅ HAPPY LEARNING!
 
 You now have a complete AI curriculum.
 Start with Module 01 and progress through.
 Enjoy the journey! 🚀
-

@@ -1,7 +1,8 @@
 DEVOPS AND DEVSECOPS
+=====================
 
 WHAT IS DEVOPS?
-
+----------------
 DevOps is a cultural and technical approach that integrates Development and Operations
 teams through automation, CI/CD, and collaboration to deliver software faster and
 more reliably.
@@ -20,8 +21,9 @@ Microsoft's cloud platform for implementing DevOps practices. It includes:
 - Test Plans (manual and automated testing)
 - Artifacts (package management: NuGet, npm)
 
-WHAT IS DEVSECOPS?
 
+WHAT IS DEVSECOPS?
+-------------------
 DevSecOps = DevOps + Security integrated at every stage.
 Security is no longer a last-minute gate at the end. It becomes everyone's responsibility,
 embedded into every phase: plan → code → build → test → deploy → run.
@@ -29,8 +31,9 @@ embedded into every phase: plan → code → build → test → deploy → run.
 Note: "Azure DevSecOps" is not a product name. It describes the practice of implementing
 DevSecOps using Azure tools (Azure DevOps, Azure Key Vault, Defender for Cloud, etc.).
 
-DEVSECOPS SECURITY STAGES
 
+DEVSECOPS SECURITY STAGES
+---------------------------
 Each stage of the pipeline has its own security practice:
 
 Stage    | Security Practice | What it does
@@ -41,8 +44,9 @@ Test     | DAST              | Tests the running application
 Deploy   | IaC Scanning      | Scans infrastructure templates
 Run      | Runtime Security  | Monitors running workloads in production
 
-1. SAST — STATIC APPLICATION SECURITY TESTING
 
+1. SAST — STATIC APPLICATION SECURITY TESTING
+-----------------------------------------------
 What it is:
 Scans source code WITHOUT running it to detect security vulnerabilities early.
 Runs during coding and build stages.
@@ -57,8 +61,9 @@ Common SAST tools:
 - Veracode SAST
 - GitHub CodeQL
 
-2. DAST — DYNAMIC APPLICATION SECURITY TESTING
 
+2. DAST — DYNAMIC APPLICATION SECURITY TESTING
+------------------------------------------------
 What it is:
 Tests a RUNNING application from the outside to find vulnerabilities.
 Does not need source code. Runs later in the pipeline (testing stage).
@@ -73,8 +78,9 @@ Common DAST tools:
 - Netsparker
 - IBM AppScan
 
-3. SCA — SOFTWARE COMPOSITION ANALYSIS
 
+3. SCA — SOFTWARE COMPOSITION ANALYSIS
+-----------------------------------------
 What it is:
 Scans all open-source libraries and third-party dependencies for known vulnerabilities,
 outdated packages, and license risks.
@@ -89,8 +95,9 @@ Common SCA tools:
 - OWASP Dependency-Check
 - JFrog Xray
 
-4. IaC SCANNING — INFRASTRUCTURE-AS-CODE SCANNING
 
+4. IaC SCANNING — INFRASTRUCTURE-AS-CODE SCANNING
+----------------------------------------------------
 What it is:
 Security scanning of Infrastructure-as-Code templates (Terraform, Bicep, ARM,
 CloudFormation) to detect misconfigurations BEFORE deployment.
@@ -112,8 +119,9 @@ Common IaC scanning tools:
 - Kics
 - OPA (Open Policy Agent)
 
-5. RUNTIME SECURITY
 
+5. RUNTIME SECURITY
+---------------------
 What it is:
 Monitoring and protecting applications, containers, and cloud resources while they
 are RUNNING in production.
@@ -137,8 +145,9 @@ Common runtime security tools:
 - Aqua Security
 - Palo Alto Prisma Cloud
 
-DEVSECOPS PIPELINE OVERVIEW
 
+DEVSECOPS PIPELINE OVERVIEW
+-----------------------------
 Plan → Code → Build → Test → Deploy → Run
                ↓       ↓       ↓        ↓        ↓       ↓
             SAST     SCA    DAST   IaC Scan  Runtime Security
@@ -146,8 +155,9 @@ Plan → Code → Build → Test → Deploy → Run
 "No single tool finds all vulnerabilities.
 SAST, DAST, SCA, and IaC scanning complement each other by covering different layers."
 
-KEY FACTS TO REMEMBER
 
+KEY FACTS TO REMEMBER
+----------------------
 - DevOps = integrate Dev + Ops through automation and CI/CD
 - DevSecOps = embed security into every stage of the DevOps pipeline
 - SAST = scan source code (no running required, catches issues early)

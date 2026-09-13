@@ -1,7 +1,8 @@
 JETBRAINS .NET CODE QUALITY TOOLS
+===================================
 
 OVERVIEW
-
+---------
 JetBrains provides four specialised tools for .NET developers that work with Visual Studio
 (as extensions) or as standalone tools:
 
@@ -14,8 +15,9 @@ One-liner summary:
 "ReSharper improves code quality, dotCover measures test coverage, dotPeek decompiles
 assemblies, and dotMemory analyses memory usage."
 
-RESHARPER
 
+RESHARPER
+----------
 What it is:
 ReSharper is a Visual Studio productivity extension for .NET developers.
 It provides advanced code analysis, refactoring, navigation, and code generation.
@@ -32,8 +34,9 @@ When to use:
 Any .NET project where code quality and developer productivity matter.
 Especially valuable in large teams to maintain consistent code standards.
 
-DOTCOVER
 
+DOTCOVER
+---------
 What it is:
 dotCover is a .NET code coverage tool that measures how much of your source code
 is executed by your unit tests.
@@ -53,8 +56,9 @@ Coverage percentages:
 When to use:
 Any project with unit tests where you want to measure and enforce test quality.
 
-DOTPEEK
 
+DOTPEEK
+--------
 What it is:
 dotPeek is a .NET decompiler that converts compiled DLLs and EXEs back into readable
 C# code.
@@ -79,8 +83,9 @@ dotPeek vs .NET Reflector:
   Both decompile .NET binaries. .NET Reflector is a third-party commercial tool (by Red Gate).
   dotPeek is free, made by JetBrains.
 
-DOTMEMORY
 
+DOTMEMORY
+----------
 What it is:
 dotMemory is a .NET memory profiler that analyses memory usage and detects memory leaks.
 
@@ -100,8 +105,9 @@ When to use:
 Any time an application consumes more memory than expected, or when you need to
 verify that objects are being properly released.
 
-COMPARISON SUMMARY
 
+COMPARISON SUMMARY
+-------------------
 Tool        | What it analyses       | When to use
 ------------|------------------------|----------------------------------
 ReSharper   | Source code quality    | During development — improve code
@@ -109,8 +115,9 @@ dotCover    | Test coverage          | During CI — ensure tests are thorough
 dotPeek     | Compiled binaries      | When you need to read DLLs without source
 dotMemory   | Memory usage and leaks | When app uses too much memory
 
-KEY FACTS TO REMEMBER
 
+KEY FACTS TO REMEMBER
+----------------------
 - All four are built by JetBrains for the .NET ecosystem
 - ReSharper = code analysis and refactoring (Visual Studio extension)
 - dotCover = unit test coverage measurement and enforcement

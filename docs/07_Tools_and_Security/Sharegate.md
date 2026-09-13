@@ -1,7 +1,8 @@
 SHAREGATE
+==========
 
 WHAT IS SHAREGATE?
-
+-------------------
 Sharegate is a specialised tool for managing, migrating, and governing SharePoint
 and Microsoft 365 environments.
 
@@ -10,8 +11,9 @@ on-premises → SharePoint Online / Microsoft 365).
 
 Made by: Sharegate (a Quest Software company)
 
-WHAT SHAREGATE DOES
 
+WHAT SHAREGATE DOES
+---------------------
 1. Content Migration:
    - Moves SharePoint content from one location to another reliably and efficiently
    - Preserves structure, permissions, metadata, and version history
@@ -33,8 +35,9 @@ WHAT SHAREGATE DOES
    - Permission and access reports
    - Storage consumption reports
 
-SHAREGATE IN A MIGRATION PROJECT
 
+SHAREGATE IN A MIGRATION PROJECT
+----------------------------------
 Example scenario: Migrating from SharePoint 2013 (on-premises) to SharePoint Online.
 
 What Sharegate handles:
@@ -53,8 +56,9 @@ What Sharegate does NOT do:
 Benefit: Dramatically simplifies the complex, risky task of migrating SharePoint content
 while maintaining data integrity throughout the process.
 
-SHAREGATE vs MANUAL MIGRATION
 
+SHAREGATE vs MANUAL MIGRATION
+--------------------------------
 Manual migration:
 - Scripting with PowerShell or PnP.PowerShell
 - High risk of missing metadata, breaking permissions, or losing version history
@@ -67,8 +71,9 @@ Sharegate:
 - Migration reports and success confirmation
 - Much faster for large content volumes
 
-KEY FACTS TO REMEMBER
 
+KEY FACTS TO REMEMBER
+----------------------
 - Sharegate = SharePoint and Microsoft 365 migration, management, and governance tool
 - Best known for SharePoint to SharePoint Online migrations
 - Preserves content structure, permissions, and metadata during migration

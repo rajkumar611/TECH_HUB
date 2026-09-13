@@ -1,7 +1,8 @@
 AKAMAI — GLOBAL EDGE NETWORK (CDN)
+====================================
 
 WHAT IS AKAMAI?
-
+---------------
 Akamai is a global company that operates one of the largest distributed edge networks.
 It provides CDN (Content Delivery Network), WAF, DDoS protection, and security services.
 
@@ -14,7 +15,9 @@ Your app stays in Azure. You rent Akamai's global edge servers so:
 
 Flow: User → Nearest Akamai Edge → Azure Origin Server → Akamai Edge → User
 
+
 WHY BIG COMPANIES USE AKAMAI
+-----------------------------
 
 1. Global Speed (Latency Reduction)
    - Azure has ~60 regions. Akamai has 1000s of edge servers in 130+ countries.
@@ -37,7 +40,9 @@ WHY BIG COMPANIES USE AKAMAI
 5. Physically Closer to Users
    - Akamai > Azure/AWS/GCP in terms of edge proximity to end users.
 
+
 AKAMAI vs COMPETITORS
+----------------------
 
 Company            | Analogy          | Strength
 -------------------|------------------|----------------------------------
@@ -50,14 +55,16 @@ Imperva            | Bank vault        | Strong WAF and security
 
 Akamai is cloud-agnostic — works with Azure, AWS, GCP, on-prem, hybrid.
 
-ORIGIN STORY
 
+ORIGIN STORY
+------------
 Akamai was founded in 1998 at MIT.
 Tim Berners-Lee (inventor of the Web) gave MIT a challenge: "Fix internet congestion."
 MIT professors Tom Leighton and Danny Lewin invented the CDN concept and founded Akamai.
 They literally invented modern content delivery networks.
 
-ONE-LINE SUMMARY
 
+ONE-LINE SUMMARY
+----------------
 Akamai is a global edge network that sits in front of your cloud server,
 making your app faster, safer, and more reliable for users worldwide.

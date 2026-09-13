@@ -1,6 +1,9 @@
-﻿
-               AGENTS AND AGENTIC AI
-         AI Systems That Can Take Actions and Make Decisions
+╔════════════════════════════════════════════════════════════════╗
+║              AGENTS AND AGENTIC AI                            ║
+║        AI Systems That Can Take Actions and Make Decisions    ║
+╚════════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📖 INTRODUCTION
 
@@ -17,6 +20,8 @@ An Agent:
 
 "Agentic AI" = AI systems that act autonomously
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 🤖 WHAT IS AN AGENT?
 
 An Agent is an autonomous system that:
@@ -29,7 +34,7 @@ An Agent is an autonomous system that:
 6. REPEATS: Continues until goal achieved
 
 Real-world analogy:
-
+  
   Researcher finding information:
   ├─ Perceive: "I need to find a paper about climate change"
   ├─ Reason: "I should search Google Scholar"
@@ -41,6 +46,8 @@ Real-world analogy:
   ├─ Repeat until finding the right paper
 
 Agents do this automatically!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🛠️ TOOLS (What Agents Can Use)
 
@@ -79,6 +86,8 @@ Calendar:
 File Operations:
   └─ Reads/writes: Files
   └─ Example: "Save this report as PDF"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🔄 AGENT LOOP (Step-by-Step)
 
@@ -128,6 +137,8 @@ User: "Find cheapest flight from NYC to LA next week"
         "The cheapest flight is United Airlines,
          $185 per person, departing Monday 9am."
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 📋 TYPES OF AGENTS
 
 Reactive Agent:
@@ -160,6 +171,8 @@ Multi-Agent Systems:
   ├─ Can collaborate
   └─ Good for: Complex distributed tasks
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 ⚙️ HOW LLMs DECIDE WHICH TOOL TO USE
 
 Tool Specification:
@@ -167,15 +180,15 @@ Tool Specification:
 The system tells LLM about tools:
 
 "Available Tools:
-
+  
   1. search_web(query: str) -> str
      Searches internet and returns results
      Use when: Need current information
-
+  
   2. calculate(expression: str) -> number
      Evaluates math expressions
      Use when: Need calculation results
-
+  
   3. get_time() -> str
      Returns current time
      Use when: Need to know time"
@@ -185,7 +198,7 @@ LLM Response Format:
 When LLM wants to use a tool, it outputs:
 
   "I need to search for current information.
-
+   
    Action: search_web
    Input: \"latest AI breakthroughs 2024\""
 
@@ -194,8 +207,10 @@ System parses this, executes tool, returns result:
   "Result: Recent breakthroughs in multimodal AI..."
 
 LLM continues:
-
+  
   "Based on search results, the latest breakthrough is..."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🚫 AGENT CHALLENGES
 
@@ -222,6 +237,8 @@ Cost:
 Security:
   └─ Agent could access sensitive tools incorrectly
   └─ Solution: Permission control, rate limiting
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📊 EXAMPLES OF AGENTS
 
@@ -265,6 +282,8 @@ Code Generation Agent:
       ├─ Optimize
       └─ Provide final solution
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 🎓 KEY TAKEAWAYS
 
 1. Agents iterate: Think → Act → Observe → Repeat
@@ -278,11 +297,14 @@ Code Generation Agent:
 9. Agents power modern AI assistants
 10. Careful design needed for security and reliability
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 🤔 THINK ABOUT IT
 
 - Why must you limit agent iterations?
 - What could go wrong if agent has access to all tools?
 - How would you make agent more reliable?
 
-NEXT UP: Module 11 - Practical Tools and Frameworks
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+NEXT UP: Module 11 - Practical Tools and Frameworks

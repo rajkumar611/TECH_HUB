@@ -1,7 +1,8 @@
 FIREBASE, KAFKA, REDIS, AND MORE
+==================================
 
 FIREBASE — BACKEND AS A SERVICE (BaaS)
-
+----------------------------------------
 What it is:
 Firebase is Google's Backend-as-a-Service (BaaS) platform that provides
 ready-made backend features for building mobile and web applications.
@@ -29,8 +30,9 @@ Firebase ecosystem:
 
 Best for: Startups, mobile apps, prototypes, small-to-medium projects.
 
-KAFKA — EVENT STREAMING PLATFORM
 
+KAFKA — EVENT STREAMING PLATFORM
+-----------------------------------
 What it is:
 Apache Kafka is a distributed event-streaming platform for storing and processing
 high-volume, real-time data at scale.
@@ -57,8 +59,9 @@ One-liner:
 "Kafka is a distributed event-streaming platform that stores and processes
 high-volume, real-time data using partitioned logs that consumers can replay at any time."
 
-REDIS — IN-MEMORY DATA STORE
 
+REDIS — IN-MEMORY DATA STORE
+------------------------------
 What it is:
 Redis is an in-memory key-value data store used for ultra-fast caching, session
 storage, real-time operations, and lightweight messaging.
@@ -82,8 +85,9 @@ One-liner:
 "Redis is an in-memory key-value store that achieves microsecond latency by
 keeping all data in RAM, used for caching, sessions, and real-time operations."
 
-MSMQ — MICROSOFT MESSAGE QUEUING (LEGACY)
 
+MSMQ — MICROSOFT MESSAGE QUEUING (LEGACY)
+-------------------------------------------
 What it is:
 MSMQ is a Windows-based, legacy message-queuing system for reliable asynchronous
 communication between applications.
@@ -98,8 +102,9 @@ One-liner:
 "MSMQ is a Windows-based message queue that guarantees delivery between
 applications, but is considered legacy and has been replaced by modern alternatives."
 
-OCTOPUS DEPLOY — DEPLOYMENT AUTOMATION
 
+OCTOPUS DEPLOY — DEPLOYMENT AUTOMATION
+-----------------------------------------
 What it is:
 Octopus Deploy is a deployment automation and release management platform.
 
@@ -114,8 +119,9 @@ One-liner:
 "Octopus Deploy orchestrates multi-environment deployments using versioned releases
 and variable management, integrating with CI pipelines for consistent delivery."
 
-QUICK REFERENCE
 
+QUICK REFERENCE
+----------------
 Technology      | Category           | Key use
 ----------------|--------------------|---------------------------------
 Firebase        | BaaS               | Mobile/web backend, no server management

@@ -1,7 +1,8 @@
 AZURE FUNCTIONS vs AZURE APP SERVICE
+======================================
 
 AZURE FUNCTIONS (Serverless)
-
+------------------------------
 - Serverless: You don't manage servers, scaling, or maintenance. Azure handles everything.
 - You write small, focused functions for specific tasks.
 - Runs on-demand (triggered), not 24/7.
@@ -25,8 +26,9 @@ Function extracts text from invoice
 
 Note: The main app can be written in one language; Azure Functions can be in another.
 
-AZURE APP SERVICE
 
+AZURE APP SERVICE
+------------------
 - Fully managed platform to host web apps, APIs, and mobile backends.
 - Runs continuously 24/7 (unlike Azure Functions which run on-demand).
 - You pay a fixed hourly rate based on the tier, regardless of usage.
@@ -35,7 +37,9 @@ AZURE APP SERVICE
 
 Use for: Traditional web apps, REST APIs, always-on backend services.
 
+
 WHEN TO USE WHICH?
+-------------------
 
 Use Azure Functions when:
 - The task is short, event-driven, or happens occasionally.
@@ -47,7 +51,8 @@ Use Azure App Service when:
 - You want predictable hosting with fixed cost.
 - You need more control over runtime and config.
 
-ANALOGY
 
+ANALOGY
+--------
 Azure Functions = A freelancer you call for a specific job. They work, then go home.
 Azure App Service = A full-time employee who stays in the office all day.

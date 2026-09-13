@@ -3,7 +3,7 @@ echo ========================================
 echo   Tech Hub - Sync Learnings to Blog
 echo ========================================
 
-set LEARNINGS=C:\Users\QBE\OneDrive\Desktop\Learnings
+set LEARNINGS=C:\Users\QBE\Downloads\Learnings
 set DOCS=%~dp0docs
 
 echo.

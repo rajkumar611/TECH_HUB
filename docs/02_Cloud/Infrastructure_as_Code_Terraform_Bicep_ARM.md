@@ -1,15 +1,17 @@
 INFRASTRUCTURE AS CODE (IaC) — TERRAFORM, BICEP, ARM
+======================================================
 
 WHAT IS IaC?
-
+------------
 Instead of manually clicking in the Azure portal to create cloud resources,
 you write code (files) that describe your infrastructure.
 The tool then creates, updates, or deletes resources automatically.
 
 Benefits: Consistency, repeatability, version control, automation, no human error.
 
-1. ARM TEMPLATES (Azure Resource Manager)
 
+1. ARM TEMPLATES (Azure Resource Manager)
+------------------------------------------
 - Azure's native provisioning engine.
 - Every Azure management tool (Portal, CLI, PowerShell, Terraform, Bicep) ultimately sends
   requests to the ARM REST API at https://management.azure.com/
@@ -28,8 +30,9 @@ Example ARM JSON (storage account):
 
 ARM is the underlying engine. It processes all deployments regardless of the tool used.
 
-2. BICEP
 
+2. BICEP
+---------
 - Microsoft's Azure-native IaC DSL (Domain-Specific Language).
 - Simpler, cleaner syntax than ARM JSON.
 - Compiles directly into ARM JSON (Bicep is just a better way to write ARM templates).
@@ -47,8 +50,9 @@ resource sa 'Microsoft.Storage/storageAccounts@2022-09-01' = {
 
 Best for: Azure-only projects that want simpler IaC without Terraform complexity.
 
-3. TERRAFORM
 
+3. TERRAFORM
+-------------
 - Cloud-agnostic IaC tool by HashiCorp.
 - Works with Azure, AWS, GCP, Kubernetes, VMware, and 100s of other platforms.
 - Uses HCL (HashiCorp Configuration Language).
@@ -58,7 +62,9 @@ Best for: Azure-only projects that want simpler IaC without Terraform complexity
 
 Best for: Multi-cloud environments, teams that want one tool across platforms.
 
+
 COMPARISON TABLE
+-----------------
 
 Feature           | ARM Templates  | Bicep              | Terraform
 ------------------|----------------|--------------------|-------------------
@@ -70,8 +76,9 @@ New Azure support | Immediate      | Immediate          | Depends on provider up
 Complexity        | High (verbose) | Low (clean syntax) | Medium
 Best for          | Legacy/native  | Azure-only IaC     | Multi-cloud IaC
 
-CLOUD-SPECIFIC IaC EQUIVALENTS
 
+CLOUD-SPECIFIC IaC EQUIVALENTS
+--------------------------------
 Azure  → ARM Templates / Bicep
 AWS    → CloudFormation (JSON/YAML) or CDK (TypeScript, Python, Java, C#)
 GCP    → Deployment Manager (YAML + Jinja2/Python) or Config Connector

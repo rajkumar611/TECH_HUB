@@ -1,10 +1,12 @@
 DESIGN PATTERNS IN C# / .NET
+==============================
 
 Design patterns are proven, reusable solutions to common software problems.
 They are not code — they are blueprints for how to structure code well.
 
-SINGLETON PATTERN
 
+SINGLETON PATTERN
+-----------------
 What it is:
 A class that allows only ONE instance for the entire application.
 
@@ -28,8 +30,9 @@ Interview answer:
 "Singleton ensures only one instance of a class exists and provides global
 access to it. I use it for shared resources like logging and configuration."
 
-DEPENDENCY INJECTION (DI)
 
+DEPENDENCY INJECTION (DI)
+--------------------------
 What it is:
 Instead of a class creating its own dependencies, it receives them from outside.
 
@@ -73,8 +76,9 @@ Interview answer:
 injection — it's the most testable and recommended. I also know property,
 method, and interface injection for specific scenarios."
 
-FACTORY PATTERN
 
+FACTORY PATTERN
+----------------
 What it is:
 A pattern that centralises object creation logic and hides complexity.
 
@@ -108,8 +112,9 @@ Interview answer:
 implementations based on input. It removes scattered 'new' statements and
 makes the system extensible."
 
-ADAPTER PATTERN
 
+ADAPTER PATTERN
+----------------
 What it is:
 Converts one interface into another so incompatible systems can work together.
 
@@ -148,8 +153,9 @@ them."
 Adapter = Make things COMPATIBLE
 Facade  = Make things SIMPLE
 
-REPOSITORY PATTERN
 
+REPOSITORY PATTERN
+-------------------
 What it is:
 Abstracts database operations behind a clean interface so business logic
 never talks directly to EF Core or SQL.
@@ -194,8 +200,9 @@ Interview answer:
 "Repository abstracts data access behind an interface so business logic stays
 clean and testable. It hides EF Core/SQL and supports loose coupling."
 
-FACADE PATTERN
 
+FACADE PATTERN
+---------------
 What it is:
 Provides one simple interface to a complex subsystem.
 
@@ -233,8 +240,9 @@ Interview answer:
 multiple service calls behind one clean method, improving readability and
 reducing coupling."
 
-STRATEGY PATTERN
 
+STRATEGY PATTERN
+-----------------
 What it is:
 Defines a family of algorithms and lets you swap between them at runtime.
 
@@ -272,8 +280,9 @@ Interview answer:
 "Strategy lets me swap algorithms at runtime. Instead of big if-else blocks, I
 define multiple strategies and let the context choose one dynamically."
 
-QUICK REFERENCE
 
+QUICK REFERENCE
+----------------
 Pattern     | What it does                          | Key benefit
 ------------|---------------------------------------|----------------------------
 Singleton   | One instance for the whole app        | Shared resource management

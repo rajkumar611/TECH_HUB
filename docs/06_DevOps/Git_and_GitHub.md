@@ -1,7 +1,8 @@
 GIT AND GITHUB
+===============
 
 WHAT IS GIT?
-
+-------------
 Git is a distributed version control system that tracks changes in source code.
 It runs locally on your computer and works offline.
 
@@ -16,8 +17,9 @@ Git lets you:
 Analogy: Git = Microsoft Word (with full edit history and undo)
 You write, edit, save — all locally on your machine.
 
-WHAT IS GITHUB?
 
+WHAT IS GITHUB?
+----------------
 GitHub is a cloud platform for hosting Git repositories online.
 Owned by Microsoft (acquired 2018).
 
@@ -35,8 +37,9 @@ You upload your documents to the cloud to share, backup, and collaborate.
 Key distinction: Git is the tool/protocol. GitHub is the service/platform.
 GitLab, Bitbucket, and Azure Repos are alternative platforms — they all host Git repos.
 
-HOW GIT AND GITHUB WORK TOGETHER
 
+HOW GIT AND GITHUB WORK TOGETHER
+----------------------------------
 1. You write code locally
 2. Git tracks your changes (commits)
 3. You push the code to GitHub
@@ -46,8 +49,9 @@ HOW GIT AND GITHUB WORK TOGETHER
 Local (Git):  write → commit → push
 Remote (GitHub): store → review → merge
 
-GIT vs GITHUB COMPARISON
 
+GIT vs GITHUB COMPARISON
+--------------------------
 Feature         | Git                      | GitHub
 ----------------|--------------------------|----------------------------------
 What it is      | Version control system   | Cloud platform for Git repos
@@ -61,8 +65,9 @@ Issue Tracking  | No                       | Yes
 CI/CD           | No                       | Yes (GitHub Actions)
 Creator         | Linus Torvalds           | Microsoft
 
-GIT'S KEY ADVANTAGE: LOCAL BRANCHES
 
+GIT'S KEY ADVANTAGE: LOCAL BRANCHES
+--------------------------------------
 Git is DISTRIBUTED — every developer has a complete copy of the entire repository,
 including all history and branches, on their local machine.
 
@@ -87,8 +92,9 @@ Git workflow in Visual Studio:
 - Make commits locally (team sees nothing)
 - Git menu → Push → Publish Branch (now the team can see it)
 
-DEVSECOPS AGENTS (SIDE NOTE)
 
+DEVSECOPS AGENTS (SIDE NOTE)
+------------------------------
 An Agent = software installed on a machine that performs automated tasks.
 Examples:
 - Azure DevOps agent: runs CI/CD pipeline builds
@@ -99,8 +105,9 @@ Examples:
 Multiple agents can run on the same machine. Each is just a separate background service
 that connects to a central platform and executes tasks.
 
-GITHUB vs GITLAB vs BITBUCKET
 
+GITHUB vs GITLAB vs BITBUCKET
+-------------------------------
 Platform    | Best for                          | Owner
 ------------|-----------------------------------|---------
 GitHub      | Open source, collaboration, community | Microsoft
@@ -110,8 +117,9 @@ Azure Repos | Teams using Azure DevOps           | Microsoft
 
 All four host Git repositories — the difference is in features and ecosystem fit.
 
-KEY FACTS TO REMEMBER
 
+KEY FACTS TO REMEMBER
+----------------------
 - Git = version control tool (runs locally, works offline)
 - GitHub = cloud platform for storing and collaborating on Git repos
 - Git was created by Linus Torvalds; GitHub is owned by Microsoft
