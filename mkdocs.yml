@@ -86,7 +86,7 @@ nav:
     - General_Concepts: 08_General/General_Concepts.md
     - Hardware_and_Storage: 08_General/Hardware_and_Storage.md
     - Insurance_Terms: 08_General/Insurance_Terms.md
-  - images:
+
 plugins:
   - search
 
