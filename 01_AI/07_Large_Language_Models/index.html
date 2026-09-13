@@ -2380,9 +2380,11 @@
 
   <h1>07_Large_Language_Models</h1>
 
-<div class="highlight"><pre><span></span><code>        LARGE LANGUAGE MODELS (LLMs)
-      ChatGPT, Claude, Gemini and their Friends
-</code></pre></div>
+<p>╔════════════════════════════════════════════════════════════════╗
+║           LARGE LANGUAGE MODELS (LLMs)                        ║
+║         ChatGPT, Claude, Gemini and their Friends            ║
+╚════════════════════════════════════════════════════════════════╝</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>📖 INTRODUCTION</p>
 <p>A Large Language Model (LLM) is a transformer-based neural network
 trained on MASSIVE amounts of text data.</p>
@@ -2396,6 +2398,7 @@ trained on MASSIVE amounts of text data.</p>
   ├─ Gemini (Google) - 100B+ parameters
   ├─ LLaMA (Meta) - 7B, 13B, 70B versions
   └─ Mistral (Open-source) - 7B, 8x7B versions</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🎯 WHAT MAKES A MODEL "LARGE"?</p>
 <p>It's all about SCALE:</p>
 <p>Data Size:
@@ -2412,6 +2415,7 @@ trained on MASSIVE amounts of text data.</p>
   ├─ Medium: Needs GPU
   ├─ Large: Needs 1000s of GPUs, costs millions</p>
 <p>The "Large" in LLM means all three are huge!</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>📚 TRAINING DATA SOURCES</p>
 <p>Where do LLMs learn from?</p>
 <p>Internet Text:
@@ -2429,6 +2433,7 @@ trained on MASSIVE amounts of text data.</p>
 <p>Quality Matters:
   └─ Not just quantity, but QUALITY of data
   └─ That's why models are fine-tuned after initial training</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🔄 THREE TRAINING PHASES</p>
 <p>Phase 1: PRE-TRAINING (Learning from text)
   ├─ Feed model billions of text documents
@@ -2453,6 +2458,7 @@ trained on MASSIVE amounts of text data.</p>
   ├─ Time: Days to weeks
   └─ Cost: Millions (paying human raters)</p>
 <p>Result: ChatGPT!</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🧠 WHAT CAN LLMs DO?</p>
 <p>Text Completion:
   └─ Input: "Once upon a time..."
@@ -2478,6 +2484,7 @@ trained on MASSIVE amounts of text data.</p>
 <p>Knowledge Retrieval:
   └─ Input: "Who won Nobel Prize in 2023?"
   └─ Output: "Jon Kabat-Zinn for Medicine"</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>⚠️ LLM LIMITATIONS</p>
 <p>Hallucinations (Making stuff up):
   ├─ Model confidently states false information
@@ -2518,6 +2525,7 @@ trained on MASSIVE amounts of text data.</p>
 ✅ "LLMs only know what was in training data (+ context)"</p>
 <p>❌ "LLMs are conscious"
 ✅ "LLMs are mathematical models doing matrix multiplication"</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>📊 COMPARISON OF POPULAR LLMs</p>
 <div class="highlight"><pre><span></span><code>                Params  Context   Strength
 </code></pre></div>
@@ -2530,6 +2538,7 @@ Mistral 8x7B        56B     32K       Speed, efficient
 ────────────────────────────────────────────────────
 Smaller = Faster + Cheaper (but less capable)
 Larger = Smarter + Slower (but more expensive)</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🎯 USING LLMs IN PRACTICE</p>
 <p>API Usage:
   ├─ Call via API (easiest)
@@ -2548,6 +2557,7 @@ Larger = Smarter + Slower (but more expensive)</p>
   ├─ Example: Fine-tune for legal documents
   ├─ Better results for your use case
   └─ Less cost than training from scratch</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🎓 KEY TAKEAWAYS</p>
 <ol>
 <li>LLMs predict next token based on previous tokens</li>
@@ -2559,12 +2569,14 @@ Larger = Smarter + Slower (but more expensive)</p>
 <li>Three ways to use: API, self-hosted, fine-tuned</li>
 <li>Understand limitations before using in critical apps</li>
 </ol>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🤔 THINK ABOUT IT</p>
 <ul>
 <li>Why do LLMs sometimes make confident mistakes?</li>
 <li>How would you prevent hallucinations?</li>
 <li>What's the difference between "understanding" and "pattern matching"?</li>
 </ul>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>NEXT UP: Module 08 - Prompt Engineering</p>
 
 

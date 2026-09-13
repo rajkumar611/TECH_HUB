@@ -2380,9 +2380,11 @@
 
   <h1>08_Prompt_Engineering</h1>
 
-<div class="highlight"><pre><span></span><code>           PROMPT ENGINEERING
-   The Art of Talking to AI Models Effectively
-</code></pre></div>
+<p>╔════════════════════════════════════════════════════════════════╗
+║              PROMPT ENGINEERING                              ║
+║      The Art of Talking to AI Models Effectively              ║
+╚════════════════════════════════════════════════════════════════╝</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>📖 INTRODUCTION</p>
 <p>A "prompt" is what you send to an LLM.
 "Prompt Engineering" is the skill of crafting prompts to get better results.</p>
@@ -2394,6 +2396,7 @@
   ├─ "Include one example with cats and dogs"
   └─ Much better output!</p>
 <p>Small differences in prompts = HUGE differences in output quality!</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🎯 PRINCIPLES OF GOOD PROMPTS</p>
 <ol>
 <li>BE CLEAR AND SPECIFIC</li>
@@ -2419,18 +2422,19 @@
 </ol>
 <p>Give examples of what you want:</p>
 <p>"Classify sentiment as positive or negative:</p>
-<div class="highlight"><pre><span></span><code>Example 1: &#39;This movie was amazing!&#39; → Positive
-Example 2: &#39;Worst day ever&#39; → Negative
-Example 3: &#39;I like pizza&#39; → ?&quot;
+<div class="highlight"><pre><span></span><code>Example 1: 'This movie was amazing!' → Positive
+Example 2: 'Worst day ever' → Negative
+Example 3: 'I like pizza' → ?"
 </code></pre></div>
 <p>Model learns from examples and applies to new data.</p>
 <ol>
 <li>BREAK DOWN COMPLEX TASKS</li>
 </ol>
 <p>Bad: "Write me a 1000-word essay about climate change"
-   Better: "First, list 5 key causes of climate change.
+   Better: "First, list 5 key causes of climate change. 
             Then write 2 paragraphs about each."</p>
 <p>Simpler steps = Better results!</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>💡 TECHNIQUES FOR BETTER PROMPTS</p>
 <p>A) CHAIN-OF-THOUGHT (CoT)</p>
 <p>Ask model to explain its thinking:</p>
@@ -2461,6 +2465,7 @@ Example 3: &#39;I like pizza&#39; → ?&quot;
     - Rhymes AABB
     - Uses only 5-letter words"</p>
 <p>Constraints improve quality!</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🔄 ITERATIVE IMPROVEMENT</p>
 <p>Prompts aren't perfect first try:</p>
 <p>Version 1:
@@ -2470,10 +2475,11 @@ Example 3: &#39;I like pizza&#39; → ?&quot;
   "Explain AI to a 12th grade student using examples"
   Result: Better, but not formatted well</p>
 <p>Version 3:
-  "Explain AI to a 12th grade student. Use 2-3 real-world
+  "Explain AI to a 12th grade student. Use 2-3 real-world 
    examples. Format with clear sections and bullet points."
   Result: Much better!</p>
 <p>Iterative refinement is KEY!</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🛡️ PROMPT INJECTION (The Dark Side)</p>
 <p>Prompt Injection = Malicious user input that hijacks the prompt</p>
 <p>Example:</p>
@@ -2492,6 +2498,7 @@ Example 3: &#39;I like pizza&#39; → ?&quot;
   ├─ System message ≠ User message (different channels)
   ├─ Much harder to inject (but not impossible)
   └─ Always assume users MIGHT try to inject</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🎬 SYSTEM PROMPTS vs USER PROMPTS</p>
 <p>SYSTEM PROMPT:
   ├─ Set by developer/company
@@ -2510,6 +2517,7 @@ Example 3: &#39;I like pizza&#39; → ?&quot;
   │   "What's the capital of France?"
   └─ Specific to that conversation</p>
 <p>Both combined = Final behavior</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>📊 EXAMPLES OF PROMPT ENGINEERING</p>
 <p>Example 1: Customer Service</p>
 <p>Bad:    "Answer customer questions"
@@ -2532,6 +2540,7 @@ Better: "Write blog post introduction about climate change.
 Better: "Translate to Spanish Spanish (not Latin American):
          [text]
          Keep formal tone. Preserve formatting."</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🎓 PROMPT ENGINEERING FRAMEWORKS</p>
 <p>1-STEP PROMPT:
   └─ Simple, direct request
@@ -2552,6 +2561,7 @@ Better: "Translate to Spanish Spanish (not Latin American):
   ├─ Generate multiple outputs
   ├─ Take majority vote/consensus
   ├─ More reliable than single output</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🔧 PRACTICAL TIPS</p>
 <ol>
 <li>Use clear language (not vague)</li>
@@ -2565,6 +2575,7 @@ Better: "Translate to Spanish Spanish (not Latin American):
 <li>Give context when needed</li>
 <li>Specify tone/style</li>
 </ol>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🎓 KEY TAKEAWAYS</p>
 <ol>
 <li>Prompt quality hugely affects output quality</li>
@@ -2578,12 +2589,14 @@ Better: "Translate to Spanish Spanish (not Latin American):
 <li>Different techniques for different tasks</li>
 <li>Good prompt engineering is a skill!</li>
 </ol>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🤔 THINK ABOUT IT</p>
 <ul>
 <li>Why do examples help LLMs understand better?</li>
 <li>How would you prevent prompt injection?</li>
 <li>Why is "think step by step" so effective?</li>
 </ul>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>NEXT UP: Module 09 - Retrieval-Augmented Generation (RAG)</p>
 
 

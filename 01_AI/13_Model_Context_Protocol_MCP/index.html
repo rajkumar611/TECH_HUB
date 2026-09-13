@@ -2380,9 +2380,11 @@
 
   <h1>13_Model_Context_Protocol_MCP</h1>
 
-<div class="highlight"><pre><span></span><code>       MODEL CONTEXT PROTOCOL (MCP)
-The Standard for AI Models to Access Tools and Resources
-</code></pre></div>
+<p>╔════════════════════════════════════════════════════════════════╗
+║          MODEL CONTEXT PROTOCOL (MCP)                         ║
+║   The Standard for AI Models to Access Tools and Resources    ║
+╚════════════════════════════════════════════════════════════════╝</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>📖 INTRODUCTION</p>
 <p>The Problem Today:
   ├─ ChatGPT has its own tools
@@ -2399,6 +2401,7 @@ The Standard for AI Models to Access Tools and Resources
 <p>Think of it like:
   └─ HTTP for the web (universal standard)
   └─ MCP for AI-tool communication (universal standard)</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🎯 WHAT PROBLEM DOES MCP SOLVE?</p>
 <p>Without MCP (Current Chaos):</p>
 <p>ChatGPT wants to use Email Tool:
@@ -2418,6 +2421,7 @@ The Standard for AI Models to Access Tools and Resources
   Any Tool/Service with MCP Server</p>
 <p>Same protocol works for everything!
   Email service implements MCP once, works with all models.</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🏗️ MCP ARCHITECTURE</p>
 <p>Three Key Components:</p>
 <ol>
@@ -2463,6 +2467,7 @@ The Standard for AI Models to Access Tools and Resources
   Email      Calendar    Database    Web Search
   Server      Server      Server      Server
   (MCP)       (MCP)       (MCP)       (MCP)</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>📡 HOW MCP COMMUNICATION WORKS</p>
 <p>Step 1: Client Discovers Tools</p>
 <p>Client (Claude): "Hello, what tools do you have?"</p>
@@ -2487,6 +2492,7 @@ The Standard for AI Models to Access Tools and Resources
 <p>Step 4: Client Gets Result</p>
 <p>Client (Claude): "Told user I sent the email"</p>
 <p>This happens behind the scenes automatically!</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>📋 MCP RESOURCES</p>
 <p>MCP supports two types of interactions:</p>
 <ol>
@@ -2523,36 +2529,37 @@ The Standard for AI Models to Access Tools and Resources
      "description": "Quarterly financial report",
      "mimeType": "application/pdf"
    }</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🛠️ IMPLEMENTING AN MCP SERVER</p>
 <p>Simple Example: Calculator Server</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">mcp.server</span><span class="w"> </span><span class="kn">import</span> <span class="n">Server</span><span class="p">,</span> <span class="n">Tool</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">server</span> <span class="o">=</span> <span class="n">Server</span><span class="p">(</span><span class="s2">&quot;Calculator&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">server</span> <span class="o">=</span> <span class="n">Server</span><span class="p">(</span><span class="s2">"Calculator"</span><span class="p">)</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nd">@server</span><span class="o">.</span><span class="n">tool</span><span class="p">()</span>
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="k">def</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Add two numbers&quot;&quot;&quot;</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="sd">"""Add two numbers"""</span>
 <a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
 <a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="nd">@server</span><span class="o">.</span><span class="n">tool</span><span class="p">()</span>
 <a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="k">def</span><span class="w"> </span><span class="nf">subtract</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Subtract two numbers&quot;&quot;&quot;</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="sd">"""Subtract two numbers"""</span>
 <a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
 <a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
 <a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="nd">@server</span><span class="o">.</span><span class="n">tool</span><span class="p">()</span>
 <a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="k">def</span><span class="w"> </span><span class="nf">multiply</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Multiply two numbers&quot;&quot;&quot;</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">    </span><span class="sd">"""Multiply two numbers"""</span>
 <a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
 <a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>
 <a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="nd">@server</span><span class="o">.</span><span class="n">tool</span><span class="p">()</span>
 <a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="k">def</span><span class="w"> </span><span class="nf">divide</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Divide two numbers&quot;&quot;&quot;</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">    </span><span class="sd">"""Divide two numbers"""</span>
 <a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>    <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Cannot divide by zero&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"Cannot divide by zero"</span><span class="p">)</span>
 <a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
 <a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>
-<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
 <a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>    <span class="n">server</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
 </code></pre></div>
 <p>That's it! Now:
@@ -2560,6 +2567,7 @@ The Standard for AI Models to Access Tools and Resources
   ├─ Any AI model can use them
   ├─ No custom integration needed
   └─ Works with Claude, ChatGPT, etc.</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🌐 REAL-WORLD MCP SERVERS</p>
 <p>What Exists Now:</p>
 <p>Database Servers:
@@ -2589,6 +2597,7 @@ The Standard for AI Models to Access Tools and Resources
   ├─ AWS resources
   ├─ Data analysis
   └─ And more being built constantly!</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>💡 MCP USE CASES</p>
 <p>Use Case 1: Personal AI Assistant</p>
 <p>Your Claude Setup:
@@ -2620,6 +2629,7 @@ The Standard for AI Models to Access Tools and Resources
     └─ File Storage MCP server</p>
 <p>AI can access all sources automatically
   Result: Comprehensive research in minutes!</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🔐 SECURITY IN MCP</p>
 <p>MCP Includes Security Features:</p>
 <p>Authentication:
@@ -2644,6 +2654,7 @@ The Standard for AI Models to Access Tools and Resources
   ├─ Monitor access patterns
   ├─ Regular security updates
   └─ Principle of least privilege</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>📊 MCP TRANSPORT OPTIONS</p>
 <p>MCP Works Over Multiple Transports:</p>
 <ol>
@@ -2678,6 +2689,7 @@ The Standard for AI Models to Access Tools and Resources
 </ol>
 <p>The protocol is transport-agnostic!
 Same MCP server can run via stdio or HTTP.</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🧠 MCP VS OTHER STANDARDS</p>
 <p>OpenAI Function Calling:
   ├─ Proprietary to OpenAI
@@ -2697,6 +2709,7 @@ Same MCP server can run via stdio or HTTP.</p>
   ├─ Language-agnostic
   └─ Future-proof</p>
 <p>MCP is the only truly open standard for this!</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🚀 MCP ECOSYSTEM</p>
 <p>Growing Fast (2024):</p>
 <p>Official Servers:
@@ -2715,6 +2728,7 @@ Same MCP server can run via stdio or HTTP.</p>
   ├─ Monitoring dashboards
   └─ Development environments</p>
 <p>The ecosystem is exploding with possibilities!</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>💻 BUILDING WITH MCP</p>
 <p>Step 1: Choose Your Server Type
   └─ What tool/service are you exposing?</p>
@@ -2732,6 +2746,7 @@ Same MCP server can run via stdio or HTTP.</p>
   └─ Configure Claude or other models to use it</p>
 <p>Step 8: Monitor
   └─ Track usage and performance</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🔮 FUTURE OF MCP</p>
 <p>Predictions:</p>
 <p>Standardization:
@@ -2759,6 +2774,7 @@ Same MCP server can run via stdio or HTTP.</p>
   ├─ Competition drives quality
   ├─ No single company controls standard
   └─ Innovation accelerates</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>⚙️ MCP VS AGENTS (Quick Comparison)</p>
 <p>Agents (from Module 10):
   ├─ AI decides WHEN to use tools
@@ -2777,6 +2793,7 @@ Same MCP server can run via stdio or HTTP.</p>
   └─ Agent calls via MCP protocol
   └─ MCP handles communication
   └─ Agent gets result</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🎓 KEY TAKEAWAYS</p>
 <ol>
 <li>MCP solves fragmentation: One standard for all</li>
@@ -2790,6 +2807,7 @@ Same MCP server can run via stdio or HTTP.</p>
 <li>Perfect for enterprises: Internal integrations</li>
 <li>Future standard: Like HTTP for the web</li>
 </ol>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>📚 LEARNING MCP</p>
 <p>Getting Started:</p>
 <ol>
@@ -2814,12 +2832,14 @@ Same MCP server can run via stdio or HTTP.</p>
   ├─ MCP Inspector (debugging)
   ├─ Claude Desktop (testing)
   └─ Example servers (learning)</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🤔 THINK ABOUT IT</p>
 <ul>
 <li>Why is a standard better than each service building custom integrations?</li>
 <li>How would you build an MCP server for your school?</li>
 <li>What tools would you expose to AI models?</li>
 </ul>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🎯 REAL-WORLD IMPACT</p>
 <p>Scenario: Without MCP (2023)</p>
 <p>Company has:
@@ -2844,6 +2864,7 @@ Same MCP server can run via stdio or HTTP.</p>
     ├─ All models automatically have it
     └─ Total: 2 days per tool</p>
 <p>Savings: Months of engineering time! 🎉</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>✅ CONCLUSION</p>
 <p>MCP is a game-changer for AI integration.</p>
 <p>It's the missing piece that was needed for:
@@ -2855,6 +2876,7 @@ Same MCP server can run via stdio or HTTP.</p>
 <p>If you're building with AI, understanding MCP is crucial.</p>
 <p>Future AI systems will be built on MCP.
 This is the standard you should learn!</p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>🏁 YOU'VE COMPLETED THE FULL CURRICULUM!</p>
 <p>Modules 01-13 cover the complete AI landscape:
   ├─ 01-02: Foundations (AI, ML)
