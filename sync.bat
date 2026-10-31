@@ -56,8 +56,8 @@ if not exist "%DOCS%\index.md" (
 )
 
 echo.
-echo Step 3: Stamping last-updated time (New Zealand Time)...
-powershell -Command "$nz=[System.TimeZoneInfo]::ConvertTimeBySystemTimeZoneId([DateTime]::UtcNow,'New Zealand Standard Time'); $ts=$nz.ToString('h:mm tt, d MMMM yyyy'); $f='%DOCS%\index.md'; (Get-Content $f) -replace '> \*\*Last updated:.*\*\*', ('> **Last updated: '+$ts+' (New Zealand Time)**') | Set-Content $f; Write-Host ('  Timestamp set to: '+$ts)"
+echo Step 3: Verifying timestamp placeholder in index.md...
+powershell -Command "$f='%DOCS%\index.md'; if ((Get-Content $f) -match '\[Timestamp will load\]') { Write-Host '  [OK] Timestamp placeholder found - JavaScript will handle dynamic updates' } else { Write-Host '  [WARNING] Timestamp placeholder not found in index.md' }"
 
 echo.
 echo Step 4: Registering new files in mkdocs.yml nav...
