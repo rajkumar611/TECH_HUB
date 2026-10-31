@@ -41,6 +41,7 @@ nav:
     - 11_LangChain_LangGraph_Frameworks: 01_AI/11_LangChain_LangGraph_Frameworks.md
     - 12_Evals_Responsible_AI: 01_AI/12_Evals_Responsible_AI.md
     - 13_Model_Context_Protocol_MCP: 01_AI/13_Model_Context_Protocol_MCP.md
+    - 14_Jev_TypeSafe_Model: 01_AI/14_Jev_TypeSafe_Model.md
   - Cloud:
     - Akamai_CDN: 02_Cloud/Akamai_CDN.md
     - Azure_Functions_vs_App_Service: 02_Cloud/Azure_Functions_vs_App_Service.md
@@ -86,7 +87,7 @@ nav:
     - General_Concepts: 08_General/General_Concepts.md
     - Hardware_and_Storage: 08_General/Hardware_and_Storage.md
     - Insurance_Terms: 08_General/Insurance_Terms.md
-
+  - images:
 plugins:
   - search
 
